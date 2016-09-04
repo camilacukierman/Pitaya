@@ -18,26 +18,36 @@
 </head>
 <body>
 
-<div> INVITE HOME </div>
 
 
+<div>
+<form method="post" action="/postcomment" name="form" >
 
+    {% csrf_token %}
 
-<div class="event-box">
-    <div>{{ booking.company_name }}</div><br>
-    <div>{{ booking.manager_name }}</div><br>
-    <!--<div>{{booking.event_name}}</div><br>-->
-    <!--<div>{{booking.location}}</div><br>-->
-    <!--<div>{{booking.time}}</div><br>-->
-    <!--<div>{{booking.date}}</div><br>-->
-    <!--<div>{{booking.duration}}</div><br>-->
-    <!--<div>{{booking.duration}}</div><br>-->
-    <!--<div>{{booking.participants_number}}</div><br>-->
-    <!--<div>{{booking.participants}}</div><br>-->
-</div>
+    <div >
 
+   company: <input type="text" name="company_name" placeholder="company name"   required> <br>
+    menager:<input type="text" name="manager_name" placeholder="manager name"  required><br>
+    event:<input type="text" name="event_name" placeholder="event name"  required><br>
+   Location: <input type="text" name="location" placeholder="location"  required><br>
+    time:<input type="time" name="time" placeholder="time"  required><br>
+    date:<input type="date" name="date" placeholder="date name"  required><br>
+    duration:<input type="time" name="duration" placeholder="date duration"><br>
+    Participants number<input type="number" name="participants_number" placeholder="participants_number"  required><br>
+    participans emails:<input type="text" name="participants" placeholder="participants emails"  required><br>
 
+    </div>
 
+   <div class="border_add">
+       <div class="plus_btn">
+    <button type="submit" id="preview"  name="preview">PREVIEW</button>
+    <button type="button" id="cancel">SEND</button>
+       </div>
+        </div>
+
+</form>
+    </div>
 
 </body>
 </html>

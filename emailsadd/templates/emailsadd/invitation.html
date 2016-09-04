@@ -1,1 +1,20 @@
-<div> INVITE  </div>
+<div> INVITATION  </div>
+
+
+<div>
+{% for b in booking %}
+HEEYY
+    YOU ARE BEING INVITED BY  {{ b.company_name }}  TO THE  {{ b.event_name }}
+    WILL HAPPEND AT {{ b.location }} AT {{ b.date }}, {{ b.time }}
+
+
+
+    SEE YOU THERE,
+    {{ b.manager_name }}
+
+    {{ b.participants_number }}<br>
+    {{ b.participants }}<br>
+
+{% endfor %}
+
+</div>
