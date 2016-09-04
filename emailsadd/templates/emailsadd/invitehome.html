@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>emailsadd</title>
+
+
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static 'emailsadd/js/js.js' %}"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+</head>
+<body>
+
+<div> INVITE HOME </div>
+
+
+
+
+<div class="event-box">
+    <div>{{ booking.company_name }}</div><br>
+    <div>{{ booking.manager_name }}</div><br>
+    <!--<div>{{booking.event_name}}</div><br>-->
+    <!--<div>{{booking.location}}</div><br>-->
+    <!--<div>{{booking.time}}</div><br>-->
+    <!--<div>{{booking.date}}</div><br>-->
+    <!--<div>{{booking.duration}}</div><br>-->
+    <!--<div>{{booking.duration}}</div><br>-->
+    <!--<div>{{booking.participants_number}}</div><br>-->
+    <!--<div>{{booking.participants}}</div><br>-->
+</div>
+
+
+
+
+</body>
+</html>

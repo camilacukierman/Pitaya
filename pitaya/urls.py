@@ -16,9 +16,17 @@ Including another URLconf
 
 from django.conf.urls import include, url
 from django.contrib import admin
+from emailsadd import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^emailsadd/', include('emailsadd.urls')),
+    url(r'^emailsadd/', include('emailsadd.urls'),
+    #url(r'^invitehome$', views.invitehome, name='invitehome'),
+    # url(r'^reminder', views.reminder, name='reminder'),
+    # url(r'^invitation', views.invitation, name='invitation'),
+    # url(r'^invite_survey', views.invite_survey, name='invite_survey')
+    )
 ]
+
+
 
