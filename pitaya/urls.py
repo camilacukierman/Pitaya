@@ -17,10 +17,15 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from emailsadd import views
+from django.contrib.auth.views import login, logout
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^emailsadd/', include('emailsadd.urls')),
+    url(r'^emailsadd/', include('emailsadd.urls'),
+    url(r'^login/$', 'django.contrib.auth.views.login'),
+    url(r'^logout/$', logout, {'next_page': '/emailsadd'}),
+    url(r'^register/$', views.register, name='register'),
+    url('', include('social.apps.django_app.urls', namespace='social')),
     #url(r'^invitehome$', views.invitehome, name='invitehome'),
     #url(r'^reminder', views.reminder, name='reminder'),
     # url(r'^invitation', views.invitation, name='invitation'),
