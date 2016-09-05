@@ -21,7 +21,9 @@ from django.contrib.auth.views import login, logout
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^emailsadd/', include('emailsadd.urls')),
+    url(r'^emailsadd/', include('emailsadd.urls'),
+    url(r'^login/$', 'django.contrib.auth.views.login'),
+    url(r'^logout/$', logout, {'next_page': '/invitehome'}))
 ]
 
 
