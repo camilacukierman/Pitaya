@@ -21,7 +21,6 @@
 {{ user }}
 {% if user.is_anonymous %}
 <a href="{% url 'django.contrib.auth.views.login' %}">login</a>
-    <a href="/register/">register</a><br />
 {% else %}
 <a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>
 {% endif %}
@@ -31,8 +30,6 @@
 {% endblock %}
 
 {% if user.is_authenticated %}
-
-
 
 <div>
 <form method="post" action="/postcomment" name="form" >
@@ -62,6 +59,8 @@
 
 </form>
     </div>
+
+{% endif %}
 
 </body>
 </html>
