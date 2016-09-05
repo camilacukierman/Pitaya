@@ -1,4 +1,3 @@
-from django.conf.urls import url
 from . import views
 from django.conf.urls import include, url
 from django.contrib import admin
@@ -9,8 +8,9 @@ urlpatterns = [
     url(r'^$', views.invitehome, name='invitehome'),
     url(r'^register/$', views.register, name='register'),
     # url(r'^invitation', views.invitation, name='invitation'),
-    # url(r'^postform'r'$', views.postform, name='addform'),
+    # url(r'^postform/$', views.postform, name='addform'),
     url(r'^login/$', 'django.contrib.auth.views.login'),
+
 
 ]
 
