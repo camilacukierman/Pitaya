@@ -1,19 +1,18 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>emailsadd</title>
+     {% load static %}
 
-
-    {% load static %}
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/tabs.css' %}" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{% static 'emailsadd/js/js.js' %}"></script>
     <script src="{% static 'emailsadd/js/tabs.js' %}"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
 </head>
@@ -33,36 +32,36 @@
 {% if user.is_authenticated %}
 
 <div class="display_form">
-<form method="post" action="/postform" name="form" >
+<form method="post" action="/post-form/" name="form" >
 
-    <!--{% csrf_token %}-->
+   company: <input type="text" name="company_name" placeholder="company name"  value="{{company_name}}"required> <br>
+    manager:<input type="text" name="manager_name" placeholder="manager name"  value="{{manager_name}}" required><br>
+    event:<input type="text" name="event_name" placeholder="event name" value="{{event_name}}" required><br>
+   Location: <input type="text" name="location" placeholder="location"  value="{{location}}" required><br>
+    time:<input type="time" name="time" placeholder="time"  value="{{time}}" required><br>
+    date:<input type="date" name="date" placeholder="date name" value="{{date}}" required><br>
+    duration:<input type="time" name="duration" placeholder="date duration" value="{{duration}}"><br>
+    Participants number<input type="number" name="participants_number" placeholder="participants_number" value="{{participants_number}}" required><br>
 
-    <div class="activity_input">
-
-   company: <input type="text" name="company_name" placeholder="company name"   required> <br>
-    manager:<input type="text" name="manager_name" placeholder="manager name"  required><br>
-    event:<input type="text" name="event_name" placeholder="event name"  required><br>
-   Location: <input type="text" name="location" placeholder="location"  required><br>
-    time:<input type="time" name="time" placeholder="time"  required><br>
-    date:<input type="date" name="date" placeholder="date name"  required><br>
-    duration:<input type="time" name="duration" placeholder="date duration"><br>
-    Participants number<input type="number" name="participants_number" placeholder="participants_number"  required><br>
-    </div>
+</div>
 
 <div>
     <ul class="tab">
-  <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">London</a></li>
-  <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">Paris</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">SEND TO ALL PARTICIPANTS</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">SEND ONLY TO MY E-MAIL</a></li>
 </ul>
 
 <div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+  <input type="text" name="participant_name" placeholder="Name">
+    <input type="text" name="participant_email" placeholder="E-mail">
+
 </div>
 
 <div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p>
+  <div>
+{% for b in booking %}
+    {{ b.manager_name }} {{ b.manager_email }}
+{% endfor %}
 </div>
 
 </div>
@@ -70,11 +69,11 @@
    <div class="border_add">
        <div class="plus_btn">
     <button type="submit" id="preview"  name="preview"><a href="{%  url 'user_invitation' %}">PREVIEW</a></button>
-    <button type="button" id="cancel">SEND</button>
+               <input type="submit" value="SEND">
+    </form>
        </div>
         </div>
 
-</form>
     </div>
 
 {% endif %}

@@ -134,23 +134,8 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-
 LOGIN_REDIRECT_URL = '/emailsadd'
 LOGIN_URL = 'django.contrib.auth.views.login'
 
 
-
-AUTHENTICATION_BACKENDS = (
-    'social.backends.twitter.TwitterOAuth',
-    'social.backends.linkedin.LinkedinOAuth2',
-    'django.contrib.auth.backends.ModelBackend',
-)
-
-SOCIAL_AUTH_LINKEDIN_OAUTH2_KEY = '',
-SOCIAL_AUTH_LINKEDIN_OAUTH2_SECRET = '',
-SOCIAL_AUTH_LINKEDIN_OAUTH2_SECRET = '',
-SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/home',
-SOCIAL_AUTH_LOGIN_URL = '/',
-SOCIAL_AUTH_TWITTER_KEY = '',
-SOCIAL_AUTH_TWITTER_SECRET = ''
 

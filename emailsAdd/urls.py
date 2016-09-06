@@ -4,6 +4,7 @@ from django.contrib import admin
 from django.contrib.auth.views import login, logout
 
 
+
 urlpatterns = [
     url(r'^$', views.invite_home, name='invite_home'),
     url(r'^register/$', views.register, name='register'),
