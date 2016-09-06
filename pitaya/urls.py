@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^emailsadd/', include('emailsadd.urls')),
     # url(r'^login/$', 'django.contrib.auth.views.login'),
-    url(r'^logout/$', logout, {'next_page': '/invite_home'}),
+     url(r'^logout/$', logout, {'next_page': '/emailsadd/login'}),
     url(r'^postform/$', views.postform, name='addform'),
 ]
 

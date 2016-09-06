@@ -8,11 +8,12 @@
     {% load static %}
 
     <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/tabs.css' %}" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{% static 'emailsadd/js/js.js' %}"></script>
+    <script src="{% static 'emailsadd/js/tabs.js' %}"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 
 
 </head>
@@ -36,7 +37,7 @@
 
     <!--{% csrf_token %}-->
 
-    <div >
+    <div class="activity_input">
 
    company: <input type="text" name="company_name" placeholder="company name"   required> <br>
     manager:<input type="text" name="manager_name" placeholder="manager name"  required><br>
@@ -46,13 +47,29 @@
     date:<input type="date" name="date" placeholder="date name"  required><br>
     duration:<input type="time" name="duration" placeholder="date duration"><br>
     Participants number<input type="number" name="participants_number" placeholder="participants_number"  required><br>
-    participans emails:<input type="text" name="participants" placeholder="participants emails"  required><br>
-
     </div>
+
+<div>
+    <ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">London</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">Paris</a></li>
+</ul>
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+</div>
 
    <div class="border_add">
        <div class="plus_btn">
-    <button type="submit" id="preview"  name="preview">PREVIEW</button>
+    <button type="submit" id="preview"  name="preview"><a href="{%  url 'user_invitation' %}">PREVIEW</a></button>
     <button type="button" id="cancel">SEND</button>
        </div>
         </div>
