@@ -26,7 +26,7 @@ urlpatterns = [
     url(r'^emailsadd/', include('emailsadd.urls')),
     # url(r'^login/$', 'django.contrib.auth.views.login'),
      url(r'^logout/$', logout, {'next_page': '/emailsadd/login'}),
-    url(r'^postform/$', views.postform, name='addform'),
+    # url(r'^postform/$', views.postform, name='addform'),
 ]
 
 

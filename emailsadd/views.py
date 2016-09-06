@@ -49,7 +49,7 @@ def postform(request):
     myevent_name = request.POST.get("event_name")
     newActivity = Booker.objects.create(company_name=mycompany_name, manager_name=mymanager_name,event_name=myevent_name)
     newActivity.save()
-    return redirect("/emailsadd")
+    return redirect("/emailadd")
 
 
 def register(request):

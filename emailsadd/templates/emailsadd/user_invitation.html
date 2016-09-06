@@ -2,18 +2,18 @@
 
 
 <div>
-{% for b in booking %}
+{% for booker in booking %}
 HEEYY
-    YOU ARE BEING INVITED BY  {{ b.company_name }}  TO THE  {{ b.event_name }}
-    WILL HAPPEND AT {{ b.location }} AT {{ b.date }}, {{ b.time }}
+    YOU ARE BEING INVITED BY  {{ booker.company_name }}  TO THE  {{ booker.event_name }}
+    WILL HAPPEND AT {{ booker.location }} AT {{ booker.date }}, {{booker.time }}
 
 
 
     SEE YOU THERE,
-    {{ b.manager_name }}
+    {{ booker.manager_name }}
 
-    {{ b.participants_number }}<br>
-    {{ b.participants }}<br>
+    {{ booker.participants_number }}<br>
+    {{ booker.participants }}<br>
 
 {% endfor %}
 
