@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>emailsadd</title>
-     {% load static %}
+    {% load static %}
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/tabs.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/tabs.css' %}"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{% static 'emailsadd/js/js.js' %}"></script>
     <script src="{% static 'emailsadd/js/tabs.js' %}"></script>
@@ -32,51 +32,52 @@
 {% if user.is_authenticated %}
 
 <div class="display_form">
-<form method="post" action="postform" name="form" >
+    <form method="post" action="postform/" name="form">
+ {% csrf_token %}
+        company: <input type="text" name="company_name" placeholder="company name" value="{{booker.company_name}}"
+                        required > <br>
+        manager:<input type="text" name="manager_name" placeholder="manager name" value="{{booker.manager_name}}"
+                       required><br>
+        event:<input type="text" name="event_name" placeholder="event name" value="{{booker.event_name}}" required><br>
+        Location: <input type="text" name="location" placeholder="location" value="{{booker.location}}" required><br>
+        time:<input type="time" name="time" placeholder="time" value="{{booker.time}}" required><br>
+        date:<input type="date" name="date" placeholder="date name" value="{{booker.date}}" required><br>
+        duration:<input type="time" name="duration" placeholder="date duration" value="{{booker.duration}}"><br>
+        Participants number<input type="number" name="participants_number" placeholder="participants_number"
+                                  value="{{booker.participants_number}}" required><br>
 
-   company: <input type="text" name="company_name" placeholder="company name"  value="{{booker.company_name}}"required> <br>
-    manager:<input type="text" name="manager_name" placeholder="manager name"  value="{{booker.manager_name}}" required><br>
-    event:<input type="text" name="event_name" placeholder="event name" value="{{booker.event_name}}" required><br>
-   Location: <input type="text" name="location" placeholder="location"  value="{{booker.location}}" required><br>
-    time:<input type="time" name="time" placeholder="time"  value="{{booker.time}}" required><br>
-    date:<input type="date" name="date" placeholder="date name" value="{{booker.date}}" required><br>
-    duration:<input type="time" name="duration" placeholder="date duration" value="{{booker.duration}}"><br>
-    Participants number<input type="number" name="participants_number" placeholder="participants_number" value="{{booker.participants_number}}" required><br>
 
-    </form>
-</div>
+        <div>
+            <ul class="tab">
+                <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">SEND TO ALL PARTICIPANTS</a></li>
+                <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">SEND ONLY TO MY E-MAIL</a></li>
+            </ul>
 
-<div>
-    <ul class="tab">
-  <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">SEND TO ALL PARTICIPANTS</a></li>
-  <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">SEND ONLY TO MY E-MAIL</a></li>
-</ul>
+            <div id="London" class="tabcontent">
+                <input type="text" name="participant_name" placeholder="Name">
+                <input type="text" name="participant_email" placeholder="E-mail">
 
-<div id="London" class="tabcontent">
-  <input type="text" name="participant_name" placeholder="Name">
-    <input type="text" name="participant_email" placeholder="E-mail">
+            </div>
 
-</div>
+            <div id="Paris" class="tabcontent">
+                <div>
+                    {% for booker in booking %}
+                    {{ booker.manager_name }} {{ booker.manager_email }}
+                    {% endfor %}
+                </div>
 
-<div id="Paris" class="tabcontent">
-  <div>
-{% for booker in booking %}
-    {{ booker.manager_name }} {{ booker.manager_email }}
-{% endfor %}
-</div>
-
-</div>
-
-   <div class="border_add">
-       <div class="plus_btn">
-    <button type="submit" id="preview"  name="preview"><a href="{%  url 'user_invitation' %}">PREVIEW</a></button>
-               <input type="submit" value="SEND">
-
-       </div>
+            </div>
+            <div class="border_add">
+                <div class="plus_btn">
+                    <button type="submit" id="preview" name="preview">PREVIEW</button>
+                    <input type="submit" value="SEND">
+                </div>
+            </div>
         </div>
 
-    </div>
+    </form>
 
+</div>
 {% endif %}
 
 </body>

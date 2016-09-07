@@ -1,12 +1,15 @@
-<div> INVITATION  </div>
+<div> INVITATION</div>
 
+
+{% if booking %}
+{% for booker in booking %}
 
 <div>
-{% for booker in booking %}
-HEEYY
-    YOU ARE BEING INVITED BY  {{ booker.company_name }}  TO THE  {{ booker.event_name }}
-    WILL HAPPEND AT {{ booker.location }} AT {{ booker.date }}, {{booker.time }}
 
+
+    HEEYYbgfdgdfgdfhgdfgdfgdfgfdgfdgfdggfd
+    YOU ARE BEING INVITED BY {{ booker.company_name }} TO THE {{ booker.event_name }}
+    WILL HAPPEND AT {{ booker.location }} AT {{ booker.date }}, {{booker.time }}
 
 
     SEE YOU THERE,
@@ -15,6 +18,8 @@ HEEYY
     {{ booker.participants_number }}<br>
     {{ booker.participants }}<br>
 
-{% endfor %}
 
 </div>
+
+{% endfor %}
+{% endif %}
