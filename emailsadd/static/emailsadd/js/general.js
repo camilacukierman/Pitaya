@@ -18,6 +18,16 @@ $(document).ready(function(){
         });
         $(".display_form").hide();
     })
+
+    $('#participants_number').on ('change',function () {
+          $('.email_holder').empty();
+         var val = $('#participants_number').val();
+            var val = $(this).val();
+        for(i=0; i<val; i++) {
+        $('.email_holder').append('<div class="email_participant_input>"> <input type="text" name="participant_name" placeholder="Name"> <input type="text" name="participant_email" placeholder="E-mail"> </div>');
+    }
+
+    });
 });
 
 // FUNCTION UPLOAD IMAGE
