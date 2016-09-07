@@ -51,14 +51,14 @@ def postform(request):
     mymanager_name = request.POST.get("manager_name")
     myevent_name = request.POST.get("event_name")
     mylocation = request.POST.get("location")
-    mytime = request.POST.get("time")
+    myfromtime = request.POST.get("from_time")
+    mytotime = request.POST.get("to_time")
     mydate = request.POST.get("date")
-    myduration = request.POST.get("duration")
     myparticipants_number = request.POST.get("participants_number")
-    myparticipants = request.POST.get("participants")
+    myparticipants = request.POST.get("participants_email")
 
-    new_activity = Booker.objects.create(company_name=mycompany_name, manager_name=mymanager_name,event_name=myevent_name, location=mylocation,time=mytime,
-                                         date=mydate,participants_number=myparticipants_number,participants=myparticipants,duration = myduration)
+    new_activity = Booker.objects.create(company_name=mycompany_name, manager_name=mymanager_name,event_name=myevent_name, location=mylocation,from_time=myfromtime,to_time=mytotime,
+                                         date=mydate,participants_number=myparticipants_number,participants_email=myparticipants)
     # , duration = myduration
     new_activity.save()
     return redirect('user_invitation')
