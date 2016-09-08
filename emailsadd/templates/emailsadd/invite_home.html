@@ -19,12 +19,12 @@
 
 
 </head>
-<body>
+<body class="{{mode}}">
 
     <div class="col-md-3"></div>
         <div class="col-md-6">
 
-{{ user }}
+{{ user }} ({{number_of_bookings}} events)
 {% if user.is_anonymous %}
 <a href="{% url 'django.contrib.auth.views.login' %}">login</a>
 {% else %}
@@ -66,8 +66,8 @@
             <div id="London" class="tabcontent">
                 <div class="email_holder">
                 <div id="email_participant_input">
-                <input type="text" name="participants_name" placeholder="Name">
-                <input type="text" name="participants_email" placeholder="E-mail">
+                <input type="text" name="participants_name0" placeholder="Name">
+                <input type="text" name="participants_email0" placeholder="E-mail">
                 </div>
                 </div>
                 <button>Upload .xls or CSV</button>

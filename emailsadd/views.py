@@ -1,7 +1,6 @@
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
-from django.core.mail import EmailMessage
 from django.core.mail import EmailMultiAlternatives
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
@@ -14,14 +13,44 @@ from .models import Newsletter
 
 
 def invite_home(request):
-    booking = Booker.objects.all()
+    booking = None
+    if request.user:
+        booking = Booker.objects.filter(user_id = str(request.user.id))
     template = get_template('emailsadd/invite_home.html')
+
     context = {
         'booking': booking,
+        'number_of_bookings':len(booking),
+        'mode':"login"
 
     }
     return HttpResponse(template.render(context, request))
 
+def events(request):
+    booking = None
+    if request.user:
+        booking = Booker.objects.filter(user_id=str(request.user.id))
+    else:
+        return redirect('/')
+    template = get_template('emailsadd/events.html')
+
+    context = {
+        'booking': booking,
+        'number_of_bookings': len(booking),
+    }
+    return HttpResponse(template.render(context, request))
+
+
+def event_status(request,eid):
+    booking = Booker.objects.get(id=eid)
+    participants = Newsletter.objects.filter(booker_id=booking.id)
+
+    template = get_template('emailsadd/event_status.html')
+    context = {
+        'booking': booking,
+        'participants':participants
+    }
+    return HttpResponse(template.render(context, request))
 
 def user_invitation(request):
     booking = Booker.objects.get(pk = request.session.get('new_activity_id'))
@@ -70,20 +99,17 @@ def postform(request):
 
     numberOfEmails = int(request.POST.get("participants_number"))
 
-    new_mail = init_newsletter(new_activity, request, "participants_name", "participants_email")
-    email = EmailMessage(myevent_name, myevent_description, to=[new_mail.participants_email])
-    email.send()
-    send_email(new_mail, new_activity)
-    for i in range(1, numberOfEmails):
+
+    for i in range(0, numberOfEmails):
         new_mail = init_newsletter(new_activity, request, "participants_name" + str(i), "participants_email" + str(i))
-        email = EmailMessage(myevent_name, myevent_description, to=[new_mail.participants_email])
-        email.send()
-        send_email(new_mail, new_activity)
+
+        if new_mail:
+            send_email(new_mail, new_activity)
 
     new_activity.save()
 
     request.session['new_activity_id'] = new_activity.id
-    # request.session['myimage_preview'] = myimage_preview
+
     return redirect('user_invitation')
 
 
@@ -91,7 +117,7 @@ def send_email(new_mail, new_activity):
     plaintext = get_template('emailsadd/email.txt')
     htmly = get_template('emailsadd/user_invitation.html')
 
-    d = Context({'username': 'Tzvi'})
+    d = Context({'booking':new_activity,"invitee":new_mail})
 
     subject, from_email, to = new_activity.event_name, 'pitayaproject@gmail.com', new_mail.participants_email
     text_content = plaintext.render(d)
@@ -104,11 +130,23 @@ def send_email(new_mail, new_activity):
 def init_newsletter(new_activity, request, participants_name, participants_email):
     myparticipants_name = request.POST.get(participants_name)
     myparticipants_email = request.POST.get(participants_email)
-    new_mail = Newsletter.objects.create(booker_id=new_activity, participants_name=myparticipants_name,
+    if myparticipants_email:
+        new_mail = Newsletter.objects.create(booker_id=new_activity, participants_name=myparticipants_name,
                                          participants_email=myparticipants_email)
-    new_mail.save()
-    return new_mail
+        new_mail.save()
+        return new_mail
+    else:
+        return None
 
+def approved(request,pid):
+    approvedParticipant = Newsletter.objects.get(id=pid)
+    approvedParticipant.approved = True
+    approvedParticipant.save()
+    template = get_template('emailsadd/thankyou.html')
+    context = {
+        'invitee': approvedParticipant,
+    }
+    return HttpResponse(template.render(context, request))
 
 def register(request):
     if request.method == 'POST':
@@ -129,4 +167,5 @@ def register(request):
         form = UserCreationForm()
     return render(request, "registration/register.html", {
         'form': form,
+        'mode':"register"
     })

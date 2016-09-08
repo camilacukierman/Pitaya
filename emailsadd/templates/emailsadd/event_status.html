@@ -1,0 +1,7 @@
+<u>{{booking.event_name}}</u>
+
+<ul>
+{% for p in participants %}
+    <li>{{p.participants_name}} --- {% if p.approved %} APPROVED {% else %} NOT APPROVED {% endif %}</li>
+{% endfor %}
+</ul>

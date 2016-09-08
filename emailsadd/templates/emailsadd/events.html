@@ -1,0 +1,10 @@
+you have {{number_of_bookings}} events
+<ul>
+{% for e in booking %}
+    <li>
+    <a href="../status/{{e.id}}" >{{e.event_name}}</a>
+        </li>
+{% endfor %}
+    </ul>
+
+<a href="/emailsadd" >create new </a>

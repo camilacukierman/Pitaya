@@ -1,3 +1,8 @@
 .input-text-one{
     width: 100%;
 }
+
+.register .display_form {
+    display:none;
+
+}

@@ -7,9 +7,9 @@
 <div>
 
 
-    HEEYY
+    HEEYY {{invitee.participants_name}}
     YOU ARE BEING INVITED BY {{ booking.company_name }} TO THE {{ booking.event_name }}
-    WILL HAPPEND AT {{ booking.location }} AT {{ booking.date }}, {{booking.time }}
+    WILL HAPPEN AT {{ booking.location }} AT {{ booking.date }}, {{booking.to_time }}, {{booking.from_time }}
 
 
     SEE YOU THERE,
@@ -21,6 +21,9 @@
     <!--<img src="{{ image_src }}" name="image_preview" height="200" alt="Image preview">-->
 
 </div>
+
+<a href="http://127.0.0.1:8000/emailsadd/approved/{{invitee.id}}" style="background-color:blue;color:white;padding:5px 20px;text-decoration: none;">Confirm</a>
+
 
 
 {% endif %}
