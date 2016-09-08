@@ -2,24 +2,25 @@
 
 
 {% if booking %}
-{% for booker in booking %}
+
 
 <div>
 
 
-    HEEYY hhdhfdhdhfdhfdhfdhfdhfdhfd
-    YOU ARE BEING INVITED BY {{ booker.company_name }} TO THE {{ booker.event_name }}
-    WILL HAPPEND AT {{ booker.location }} AT {{ booker.date }}, {{booker.time }}
+    HEEYY
+    YOU ARE BEING INVITED BY {{ booking.company_name }} TO THE {{ booking.event_name }}
+    WILL HAPPEND AT {{ booking.location }} AT {{ booking.date }}, {{booking.time }}
 
 
     SEE YOU THERE,
-    {{ booker.manager_name }}
+    {{ booking.manager_name }}
 
-    {{ booker.participants_number }}<br>
-    {{ booker.participants }}<br>
+    {{ booking.participants_number }}<br>
+    {{ booking.participants }}<br>
 
+    <!--<img src="{{ image_src }}" name="image_preview" height="200" alt="Image preview">-->
 
 </div>
 
-{% endfor %}
+
 {% endif %}

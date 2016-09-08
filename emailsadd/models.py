@@ -22,6 +22,6 @@ class Booker(models.Model):
 class Newsletter(models.Model):
     booker_id = models.ForeignKey('Booker')
     participants_name = models.CharField(max_length=50, null=True)
-    participants_email = models.EmailField(max_length=254, blank=False, unique=True,
+    participants_email = models.EmailField(max_length=254, blank=False,
                                            error_messages={'required': 'Please provide the email address.',
                                                            'unique': 'An account with this email exist.'}, )
