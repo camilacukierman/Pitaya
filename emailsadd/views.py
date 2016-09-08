@@ -1,6 +1,7 @@
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
+from django.core.mail import EmailMessage
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from django.shortcuts import redirect, render
@@ -48,7 +49,6 @@ def invite_survey(request):
 
 @login_required
 def postform(request):
-
     mymanager_name = request.POST.get("manager_name")
     myevent_name = request.POST.get("event_name")
     mylocation = request.POST.get("location")
@@ -65,20 +65,27 @@ def postform(request):
                                          manager_message=mymanager_message)
 
     numberOfEmails = int(request.POST.get("participants_number"))
-    for i in range(0,numberOfEmails):
-        myparticipants_name = request.POST.get("participants_name" + str(i))
-        myparticipants_email = request.POST.get("participants_email" + str(i))
 
-        new_mail = Newsletter.objects.create(participants_name=myparticipants_name,
-                                             participants_email=myparticipants_email)
+    new_mail = init_newsletter(new_activity, request, "participants_name", "participants_email")
+    email = EmailMessage(myevent_name, myevent_description, to=[new_mail.participants_email])
+    email.send()
 
-        new_mail.save()
+    for i in range(1, numberOfEmails):
+        new_mail = init_newsletter(new_activity, request, "participants_name" + str(i), "participants_email" + str(i))
+        email = EmailMessage(myevent_name, myevent_description, to=[new_mail.participants_email])
+        email.send()
 
-
-    # , duration = myduration
     new_activity.save()
     return redirect('user_invitation')
 
+
+def init_newsletter(new_activity, request, participants_name, participants_email):
+    myparticipants_name = request.POST.get(participants_name)
+    myparticipants_email = request.POST.get(participants_email)
+    new_mail = Newsletter.objects.create(booker_id=new_activity, participants_name=myparticipants_name,
+                                         participants_email=myparticipants_email)
+    new_mail.save()
+    return new_mail
 
 
 def register(request):
@@ -101,5 +108,3 @@ def register(request):
     return render(request, "registration/register.html", {
         'form': form,
     })
-
-

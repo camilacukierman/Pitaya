@@ -30,7 +30,7 @@ $('#participants_number').on ('change',function () {
         var numberOfFieldsToAdd = currentValue - listLength;
         for (var i = 0; i < numberOfFieldsToAdd; i++) {
             var index = listLength + i;
-            $('.email_holder').append('<div class="email_participant_input>"> <input type="text" name="participant_name' + index + '" placeholder="Name"> <input type="text" name="participant_email' + index + '" placeholder="E-mail"> </div>');
+            $('.email_holder').append('<div class="email_participant_input>"> <input type="text" name="participants_name' + index + '" placeholder="Name"> <input type="text" name="participants_email' + index + '" placeholder="E-mail"> </div>');
         }
 
     } else {
@@ -39,6 +39,8 @@ $('#participants_number').on ('change',function () {
             $('.email_holder').children().last().remove();
         }
     }
+    
+    
 });
 
 // FUNCTION UPLOAD IMAGE
@@ -99,3 +101,5 @@ $("#submitbutton").on("click", function(){
         $("#submitbutton").removeAttr("disabled")
     });
 });
+
+    });
