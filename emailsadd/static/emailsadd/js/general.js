@@ -17,17 +17,28 @@ $(document).ready(function(){
             $(this).val("");
         });
         $(".display_form").hide();
-    })
-
-    $('#participants_number').on ('change',function () {
-          $('.email_holder').empty();
-         var val = $('#participants_number').val();
-            var val = $(this).val();
-        for(i=0; i<val; i++) {
-        $('.email_holder').append('<div class="email_participant_input>"> <input type="text" name="participant_name" placeholder="Name"> <input type="text" name="participant_email" placeholder="E-mail"> </div>');
-    }
-
     });
+
+
+    // FUNCTION PARTICIPANTS NUMBER
+
+
+$('#participants_number').on ('change',function () {
+    var currentValue = $(this).val();
+    var listLength = $('.email_holder').children().length;
+    if (currentValue > listLength) {
+        var numberOfFieldsToAdd = currentValue - listLength;
+        for (var i = 0; i < numberOfFieldsToAdd; i++) {
+            var index = listLength + i;
+            $('.email_holder').append('<div class="email_participant_input>"> <input type="text" name="participant_name' + index + '" placeholder="Name"> <input type="text" name="participant_email' + index + '" placeholder="E-mail"> </div>');
+        }
+
+    } else {
+        var numberOfFieldsToRemove = listLength - currentValue;
+        for (var i = 0; i < numberOfFieldsToRemove; i++) {
+            $('.email_holder').children().last().remove();
+        }
+    }
 });
 
 // FUNCTION UPLOAD IMAGE

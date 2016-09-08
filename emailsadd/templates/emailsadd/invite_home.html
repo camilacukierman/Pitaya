@@ -41,18 +41,16 @@
 <div class="display_form">
     <form method="post" action="postform/" name="form">
  {% csrf_token %}
-        <!--company: <input type="text" name="company_name" placeholder="company name" value="{{booker.company_name}}"-->
-                        <!--required > <br>-->
-        <!--manager:<input type="text" name="manager_name" placeholder="manager name" value="{{booker.manager_name}}"-->
-                       <!--required><br>-->
-        <br><input type="text" class="input-text-one" name="event_name" placeholder="Add booked activity's name" value="{{booker.event_name}}" required><br>
-        <input type="text" class="input-text-one" name="event_name" placeholder="Add booked activity's description" value="{{booker.event_description}}" required><br>
-        <input type="date" name="date" id="datepicker" placeholder="Date" value="{{booker.date}}" required>
-        <input type="time" name="time" placeholder="Time" value="{{booker.time}}" required>
-        <input type="time" name="duration" placeholder="Duration" value="{{booker.duration}}"><br>
-        <input type="number" min="1" max="5000" id="participants_number" name="participants_number" placeholder="Participants" value="{{booker.participants_number}}" required><br>
-        <input type="text" class="input-text-one" name="location" placeholder="Location" value="{{booker.location}}" required><br>
-        <input type="text" class="input-text-one" name="event_text" placeholder="Here you can write more about the activity or leave a personal note for your team." value="{{booker.event_text}}" ><br>
+
+        <input type="text" name="manager_name" placeholder="manager name" required><br>
+        <input type="text" class="input-text-one" name="event_name" placeholder="Add booked activity's name" required><br>
+        <input type="text" class="input-text-one" name="event_description" placeholder="Add booked activity's description"  required><br>
+        <input type="date" name="date" id="datepicker" placeholder="Date" required>
+        <input type="time" name="to_time" placeholder="Time"  required>
+        <input type="time" name="from_time" placeholder="Time" ><br>
+        <input type="number" min="1" max="5000" id="participants_number" name="participants_number" placeholder="Participants"  required><br>
+        <input type="text" class="input-text-one" name="location" placeholder="Location"  required><br>
+        <input type="text" class="input-text-one" name="manager_message" placeholder="Here you can write more about the activity or leave a personal note for your team." ><br>
         <br>
         <div>
             <div id="upload_image">

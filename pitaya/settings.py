@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -28,6 +29,15 @@ DEBUG = True
 
 # Application definition
 
+# ALLOWED_HOSTS =[]
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'pitayaproject@gmail.com'
+# EMAIL_HOST_PASSWORD= 'pitayaitc2016'
+# EMAIL_PORT =587
+# EMAIL_USE_TLS =True
+
+
+
 INSTALLED_APPS = [
     'emailsadd.apps.emailsaddConfig',
     'django.contrib.admin',
@@ -38,6 +48,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'social.apps.django_app.default',
+    'post_office'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -70,6 +81,9 @@ TEMPLATES = [
         },
     },
 ]
+
+
+
 
 WSGI_APPLICATION = 'pitaya.wsgi.application'
 

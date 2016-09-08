@@ -7,6 +7,7 @@ from django.shortcuts import redirect, render
 from django.template import loader
 
 from .models import Booker
+from .models import Newsletter
 
 
 def invite_home(request):
@@ -47,21 +48,37 @@ def invite_survey(request):
 
 @login_required
 def postform(request):
-    mycompany_name = request.POST.get("company_name")
+
     mymanager_name = request.POST.get("manager_name")
     myevent_name = request.POST.get("event_name")
     mylocation = request.POST.get("location")
     myfromtime = request.POST.get("from_time")
     mytotime = request.POST.get("to_time")
     mydate = request.POST.get("date")
-    myparticipants_number = request.POST.get("participants_number")
-    myparticipants = request.POST.get("participants_email")
+    myevent_description = request.POST.get("event_description")
+    mymanager_message = request.POST.get("manager_message")
 
-    new_activity = Booker.objects.create(company_name=mycompany_name, manager_name=mymanager_name,event_name=myevent_name, location=mylocation,from_time=myfromtime,to_time=mytotime,
-                                         date=mydate,participants_number=myparticipants_number,participants_email=myparticipants)
+    new_activity = Booker.objects.create(manager_name=mymanager_name,
+                                         event_name=myevent_name, location=mylocation, from_time=myfromtime,
+                                         to_time=mytotime,
+                                         date=mydate, event_description=myevent_description,
+                                         manager_message=mymanager_message)
+
+    numberOfEmails = int(request.POST.get("participants_number"))
+    for i in range(0,numberOfEmails):
+        myparticipants_name = request.POST.get("participants_name" + str(i))
+        myparticipants_email = request.POST.get("participants_email" + str(i))
+
+        new_mail = Newsletter.objects.create(participants_name=myparticipants_name,
+                                             participants_email=myparticipants_email)
+
+        new_mail.save()
+
+
     # , duration = myduration
     new_activity.save()
     return redirect('user_invitation')
+
 
 
 def register(request):
@@ -84,3 +101,5 @@ def register(request):
     return render(request, "registration/register.html", {
         'form': form,
     })
+
+

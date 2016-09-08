@@ -12,4 +12,3 @@ urlpatterns = [
     url(r'^invite_survey/$', views.invite_survey, name='invite_survey'),
     url(r'^postform/$', views.postform, name='addform'),
 ]
-
