@@ -26,3 +26,67 @@
 
     font-family: Helvetica;
 }
+
+.header_image{
+
+    background-image: url("../images/header-image.jpg") ;
+    height: 100px;
+
+    width: 100%;
+
+
+}
+
+.header_logo{
+    width: 75px;
+     margin: 10px 10px;
+}
+
+
+.header_menu{
+    display: inline-block;
+        width:89%;
+    text-align: right;
+
+}
+
+.header_infos{
+    display: inline-block;
+    width:100%;
+}
+
+.input-text-one{
+    margin: 5px 5px;
+}
+
+.header_user{
+    width: 100px;
+    display: inline-block;
+}
+
+.header_image_text{
+    font-family: HelveticaNeueBold;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 35px;
+    }
+
+.input_mail{
+    width: 800px;
+}
+
+.input_name {
+    width:400px;
+}
+
+.input_part {
+    width:400px;
+}
+
+.intro_text{
+    color:#838586;
+    font-family: HelveticaNeueBold;
+    font-size: 18px;
+    padding-left: 5px;
+}

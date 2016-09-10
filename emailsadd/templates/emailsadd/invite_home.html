@@ -8,12 +8,13 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
     <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/tabs.css' %}"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{% static 'emailsadd/js/general.js' %}"></script>
     <script src="{% static 'emailsadd/js/tabs.js' %}"></script>
-     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 
@@ -21,84 +22,111 @@
 </head>
 <body class="{{mode}}">
 
-    <div class="col-md-3"></div>
-        <div class="col-md-6">
-
-            {% if user.is_anonymous %}
-<a href="{% url 'django.contrib.auth.views.login' %}">login</a>
-{% else %}
-<a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>
-{% endif %}
-{% block content %}
-{% endblock %}
-
-{% if user.is_authenticated %}
-               <br>
- <br><p> Hello, {{ user }}</p> <a href="../emailsadd/my_events" >My Activities</a> <br>
- <br>
-<div class="display_form">
-    <form method="post" action="postform/" name="form">
- {% csrf_token %}
-
-        <input type="text" name="manager_name"  placeholder="manager name" required><br>
-        <input type="text" class="input-text-one" name="event_name" placeholder="Add booked activity's name" required><br>
-        <input type="text" class="input-text-one" name="event_description" placeholder="Add booked activity's description"  required><br>
-        <input type="date" name="date" id="datepicker" placeholder="Date" required>
-        <input type="time" name="to_time" placeholder="Time"  required>
-        <input type="time" name="from_time" placeholder="Time" ><br>
-        <input type="number" min="1" max="5000" id="participants_number" name="participants_number" placeholder="Participants"  required><br>
-        <input type="text" class="input-text-one" name="location" placeholder="Location"  required><br>
-        <input type="text" class="input-text-one" name="manager_message" placeholder="Here you can write more about the activity or leave a personal note for your team." ><br>
-        <br>
-        <div>
-            <div id="upload_image">
-                         <img src="" name="image_preview" height="200" alt="Image preview">
-                        <input type="file" onchange="previewFile()">
-                        <br/>
-
-            </div>
-            <ul class="tab">
-                <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">SEND TO ALL PARTICIPANTS</a></li>
-                <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">SEND ONLY TO MY E-MAIL</a></li>
-            </ul>
-
-            <div id="London" class="tabcontent">
-                <div class="email_holder">
-                <div id="email_participant_input">
-                <input type="text" name="participants_name0" placeholder="Name">
-                <input type="text" name="participants_email0" placeholder="E-mail">
-                </div>
-                </div>
-                <button>Upload .xls or CSV</button>
-            </div>
-
-            <div id="Paris" class="tabcontentp">
-                <div>
-                    {% for booker in booking %}
-                    {{ booker.manager_name }} {{ booker.manager_email }}
-                    {% endfor %}
-                </div>
-            </div>
-            <br>
- <input type="checkbox" name="send_reminder" value="True" checked> Send reminder to participants one day before the activity<br>
-  <input type="checkbox" name="send_survey" value="True" checked>Send request to answer the feedback survey one day after the event<br>
+<div class="col-md-2"></div>
+<div class="col-md-8">
 
 
-             <br>
-            <div class="border_add">
-                <div class="plus_btn">
-                    <button type="submit" id="preview" name="preview">PREVIEW</button>
-                    <input type="submit" value="SEND"><br>
-                    <br>
-                </div>
+    {% if user.is_anonymous %}
+    <a href="{% url 'django.contrib.auth.views.login' %}">login</a>
+    {% else %}
+    <a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>
+    {% endif %}
+    {% block content %}
+    {% endblock %}
+
+    {% if user.is_authenticated %}
+
+    <div class="header">
+        <div class="header_infos">
+            <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
+            <div class="header_menu">
+                <a href="../emailsadd/my_events">My Activities</a>
+                <div class="header_user"> Hello, {{ user }}</div>
             </div>
         </div>
-    </form>
-
-</div>
-{% endif %}
+        <div class="header_image">
+            <div class="header_image_text">
+                EASILY SEND INVITATIONS, MANAGE ATTENDANCE AND GET FEEDBACK
             </div>
-<div class="col-md-3"></div>
+        </div>
+
+    </div>
+
+
+    <br>
+    <div class="display_form">
+        <form method="post" action="postform/" name="form">
+            {% csrf_token %}
+         <div class="intro_text">Create an invitation</div>
+            <!--<input type="text" name="manager_name"  placeholder="manager name" required><br>-->
+            <input type="text" class="input-text-one" name="event_name" placeholder="Add booked activity's name"
+                   required><br>
+            <input type="text" class="input-text-one" name="event_description"
+                   placeholder="Add booked activity's description" required><br>
+            <input type="date" name="date" id="datepicker" placeholder="Date" required>
+            <input type="time" name="to_time" placeholder="Time" required>
+            <input type="time" name="from_time" placeholder="Time"><br>
+            <input type="text" class="input-text-one" name="location" placeholder="Location" required><br>
+            <input type="text" class="input-text-one" name="manager_message"
+                   placeholder="Here you can write more about the activity or leave a personal note for your team."><br>
+            <br>
+            <div>
+
+                <div id="upload_image">
+                    <img src="" name="image_preview" height="200" alt="Image preview">
+                    <input type="file" onchange="previewFile()">
+                    <br/>
+
+                </div>
+                <ul class="tab">
+
+                    <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">SEND TO ALL PARTICIPANTS</a>
+                    </li>
+                    <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">SEND ONLY TO MY E-MAIL</a></li>
+                </ul>
+
+
+                <div id="London" class="tabcontent">
+                    <input type="number" min="1" max="5000" id="participants_number" class="input_part" name="participants_number"
+                           placeholder="Participants" required><br>
+                    <div class="email_holder">
+                        <div id="email_participant_input">
+                            <input type="text"  class="input_name" name="participants_name0" placeholder="Name">
+                            <input type="text"  class="input_mail" name="participants_email0" placeholder="E-mail">
+                        </div>
+                    </div>
+                    <button>Upload .xls or CSV</button>
+                </div>
+
+                <div id="Paris" class="tabcontentp">
+                    <div>
+                        {% for booker in booking %}
+                        {{ booker.manager_name }} {{ booker.manager_email }}
+                        {% endfor %}
+                    </div>
+                </div>
+                <br>
+                <input type="checkbox" name="send_reminder" value="True" checked> Send reminder to participants one day
+                before the activity<br>
+                <input type="checkbox" name="send_survey" value="True" checked>Send request to answer the feedback
+                survey one day after the event<br>
+
+
+                <br>
+                <div class="border_add">
+                    <div class="plus_btn">
+                        <button type="submit" id="preview" name="preview">PREVIEW</button>
+                        <input type="submit" value="SEND"><br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    {% endif %}
+</div>
+<div class="col-md-2"></div>
 
 </body>
 </html>
