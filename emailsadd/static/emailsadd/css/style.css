@@ -87,6 +87,20 @@
     font-family: HelveticaNeue;
 }
 
+.input_loc {
+    width:500%;
+    margin: 5px 5px;
+    font-family: HelveticaNeue;
+}
+
+.input_descr {
+    width:500%;
+    height: 150px;
+    margin: 5px 5px;
+    font-family: HelveticaNeue;
+}
+
+
 .intro_text{
     color:#838586;
     font-family: HelveticaNeueBold;
@@ -117,9 +131,12 @@
     border: 1px solid #E5BF44;
 }
 
-.upload-image{
-    width: 50px;
-    height: 80px;
-    border: 2px solid black
-;
+.view_image{
+    width: 300px;
+    height: 200px;
+    border: 0.5px solid lightgray;
+}
+
+.image{
+      display: inline-block;
 }

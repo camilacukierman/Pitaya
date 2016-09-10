@@ -66,15 +66,15 @@
             <input type="date" name="date" id="datepicker" placeholder="Date" required>
             <input type="time" name="to_time" placeholder="Time" required>
             <input type="time" name="from_time" placeholder="Time"><br>
-            <input type="text" class="input-text-one" name="location" placeholder="Location" required><br>
-            <input type="text" class="input-text-one" name="manager_message"
+            <input type="text" class="input_loc" name="location" placeholder="Location" required><br>
+            <input type="text" class="input_descr" name="manager_message"
                    placeholder="Here you can write more about the activity or leave a personal note for your team."><br>
             <br>
             <div>
 
-                <div id="upload_image">
-                    <img src="" name="image_preview" height="200" alt="Image preview">
-                    <input type="file" class="upload-image" onchange="previewFile()">
+                <div id="upload_image" class="image">
+                    <img src="" name="image_preview"  class="view_image" height="200" alt="Image preview">
+                    <input type="file"  onchange="previewFile()">
                     <br/>
 
                 </div>

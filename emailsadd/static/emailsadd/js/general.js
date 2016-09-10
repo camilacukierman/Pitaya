@@ -56,9 +56,6 @@ $(document).ready(function () {
 
 // FUNCTION UPLOAD IMAGE
 
-
-
-
     // previewFile();  //calls the function named previewFile()
 
 //ocpu.seturl("//public.opencpu.org/ocpu/library/utils/R")
