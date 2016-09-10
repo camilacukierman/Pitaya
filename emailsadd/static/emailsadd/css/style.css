@@ -88,13 +88,13 @@
 }
 
 .input_loc {
-    width:500%;
+    width:800px;
     margin: 5px 5px;
     font-family: HelveticaNeue;
 }
 
 .input_descr {
-    width:500%;
+    width:800px;
     height: 150px;
     margin: 5px 5px;
     font-family: HelveticaNeue;
@@ -132,11 +132,19 @@
 }
 
 .view_image{
-    width: 300px;
+    width: 423px;
     height: 200px;
     border: 0.5px solid lightgray;
+    /*margin-top: 30px;*/
+    font-family: HelveticaNeue;
 }
 
 .image{
-      display: inline-block;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+.input_location{
+    display:inline-block ;
 }
