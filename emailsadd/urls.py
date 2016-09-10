@@ -16,3 +16,4 @@ urlpatterns = [
     url(r'^approved/(?P<pid>\w+)/$', views.approved, name='approved')
 
 ]
+

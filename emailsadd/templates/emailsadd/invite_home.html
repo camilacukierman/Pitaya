@@ -24,19 +24,18 @@
     <div class="col-md-3"></div>
         <div class="col-md-6">
 
-{{ user }} ({{number_of_bookings}} events)
-{% if user.is_anonymous %}
+            {% if user.is_anonymous %}
 <a href="{% url 'django.contrib.auth.views.login' %}">login</a>
 {% else %}
 <a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>
 {% endif %}
-
-<br/>
 {% block content %}
 {% endblock %}
 
 {% if user.is_authenticated %}
-
+               <br>
+ <br><p> Hello, {{ user }}</p> <a href="../emailsadd/my_events" >My Activities</a> <br>
+ <br>
 <div class="display_form">
     <form method="post" action="postform/" name="form">
  {% csrf_token %}
@@ -90,6 +89,7 @@
                 <div class="plus_btn">
                     <button type="submit" id="preview" name="preview">PREVIEW</button>
                     <input type="submit" value="SEND"><br>
+                    <br>
                 </div>
             </div>
         </div>
