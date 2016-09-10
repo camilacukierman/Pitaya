@@ -1,3 +1,17 @@
+
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('../fonts/HelveticaNeueBold.ttf')
+}
+
+@font-face {
+    font-family: 'HelveticaNeueItalic';
+    src: url('../fonts/HelveticaNeueItalic.ttf')
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue.ttf')
+}
 .input-text-one{
     width: 100%;
 }
@@ -5,4 +19,10 @@
 .register .display_form {
     display:none;
 
+}
+
+
+.index {
+
+    font-family: Helvetica;
 }
