@@ -14,7 +14,9 @@
 }
 .input-text-one{
     width: 100%;
+    margin: 5px 5px;
 }
+
 
 .register .display_form {
     display:none;
@@ -23,18 +25,13 @@
 
 
 .index {
-
     font-family: Helvetica;
 }
 
 .header_image{
-
     background-image: url("../images/header-image.jpg") ;
     height: 100px;
-
     width: 100%;
-
-
 }
 
 .header_logo{
@@ -45,9 +42,8 @@
 
 .header_menu{
     display: inline-block;
-        width:89%;
+    width:89%;
     text-align: right;
-
 }
 
 .header_infos{
@@ -57,6 +53,7 @@
 
 .input-text-one{
     margin: 5px 5px;
+    font-family: HelveticaNeue;
 }
 
 .header_user{
@@ -73,15 +70,21 @@
     }
 
 .input_mail{
-    width: 800px;
+    width: 790px;
+    margin: 5px 5px;
+    font-family: HelveticaNeue;
 }
 
 .input_name {
     width:400px;
+    margin: 5px 5px;
+    font-family: HelveticaNeue;
 }
 
 .input_part {
     width:400px;
+    margin: 5px 5px;
+    font-family: HelveticaNeue;
 }
 
 .intro_text{
@@ -89,4 +92,34 @@
     font-family: HelveticaNeueBold;
     font-size: 18px;
     padding-left: 5px;
+
+}
+
+.button_invite_preview {
+    padding: 2px 20px;
+    background-color: white;
+    color: #E5BF44;
+    box-shadow: none;
+    font-family: HelveticaNeueBold;
+    border: 1px solid #E5BF44;
+}
+
+.border_add{
+    text-align: center;
+}
+
+.button_invite_send{
+    padding: 2px 20px;
+    background-color:#E5BF44;
+    color: white;
+    box-shadow: none;
+    font-family: HelveticaNeueBold;
+    border: 1px solid #E5BF44;
+}
+
+.upload-image{
+    width: 50px;
+    height: 80px;
+    border: 2px solid black
+;
 }

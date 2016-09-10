@@ -20,6 +20,7 @@ ul.tab li a {
     transition: 0.3s;
     font-size: 12px;
     border: 1px solid #E5BF44;
+    font-family: HelveticaNeueBold;
 }
 
 /* Change background color of links on hover */
