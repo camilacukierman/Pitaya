@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'HelveticaNeueBold';
     src: url('../fonts/HelveticaNeueBold.ttf')
@@ -15,14 +14,13 @@
 .input-text-one{
     width: 100%;
     margin: 5px 5px;
+    font-family: HelveticaNeue;
 }
 
 
 .register .display_form {
     display:none;
-
 }
-
 
 .index {
     font-family: Helvetica;
@@ -39,7 +37,6 @@
      margin: 10px 10px;
 }
 
-
 .header_menu{
     display: inline-block;
     width:89%;
@@ -51,10 +48,6 @@
     width:100%;
 }
 
-.input-text-one{
-    margin: 5px 5px;
-    font-family: HelveticaNeue;
-}
 
 .header_user{
     width: 100px;
@@ -70,31 +63,33 @@
     }
 
 .input_mail{
-    width: 790px;
+    width: 100%;
     margin: 5px 5px;
     font-family: HelveticaNeue;
 }
 
 .input_name {
-    width:400px;
+    width: 100%;
     margin: 5px 5px;
     font-family: HelveticaNeue;
 }
 
 .input_part {
-    width:400px;
+    width: 100%;
     margin: 5px 5px;
     font-family: HelveticaNeue;
 }
 
+
+
 .input_loc {
-    width:800px;
+    width: 100%;
     margin: 5px 5px;
     font-family: HelveticaNeue;
 }
 
 .input_descr {
-    width:800px;
+    width: 100%;
     height: 150px;
     margin: 5px 5px;
     font-family: HelveticaNeue;
@@ -132,19 +127,23 @@
 }
 
 .view_image{
-    width: 423px;
+    width: 120%;
     height: 200px;
     border: 0.5px solid lightgray;
-    /*margin-top: 30px;*/
+    margin: 5px 5px;
     font-family: HelveticaNeue;
 }
 
 .image{
     display: inline-block;
-    margin-top: 10px;
-
+    width: auto;
+    /*margin-top: 10px;*/
 }
 
 .input_location{
     display:inline-block ;
 }
+
+/*.btn_upload{*/
+    /*margin-left: 10px;*/
+/*}*/

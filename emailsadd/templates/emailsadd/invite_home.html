@@ -54,11 +54,11 @@
 
 
     <br>
-    <div class="display_form">
-        <form method="post" action="postform/" name="form">
+    <div class="col-md-1"></div>
+
+        <form method="post" action="postform/" name="form" class="display_form col-md-10">
             {% csrf_token %}
             <br><div class="intro_text">Create an invitation</div><br>
-            <!--<input type="text" name="manager_name"  placeholder="manager name" required><br>-->
             <input type="text" class="input-text-one" name="event_name" placeholder="Add booked activity's name"
                    required><br>
             <input type="text" class="input-text-one" name="event_description"
@@ -66,7 +66,7 @@
 
             <div>
                 <div class="input_location">
-                    <input type="date" name="date" id="datepicker" placeholder="Date" required>
+                    <input type="date"   class="input-date" name="date" id="datepicker" placeholder="Date" required>
                     <input type="time" name="to_time" placeholder="Time" required>
                     <input type="time" name="from_time" placeholder="Time"><br>
                     <input type="text" class="input_loc" name="location" placeholder="Location" required><br>
@@ -78,7 +78,7 @@
                 <div class="image">
                     <div id="upload_image" >
                         <img src="" name="image_preview" class="view_image" height="200" alt="Image preview">
-                        <input type="file" onchange="previewFile()">
+                        <input type="file" class="btn_upload" onchange="previewFile()">
                         <br/>
                     </div>
                 </div>
@@ -128,8 +128,12 @@
                     <br>
                 </div>
             </div>
-    </div>
+
     </form>
+
+
+    <div class="col-md-1"></div>
+
 
 </div>
 {% endif %}
