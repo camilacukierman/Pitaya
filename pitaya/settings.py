@@ -55,7 +55,13 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'social.apps.django_app.default',
-    'post_office'
+    'post_office',
+    'django_cron',
+]
+
+CRON_CLASSES = [
+    "my_app.cron.MyCronJob",
+
 ]
 
 MIDDLEWARE_CLASSES = [

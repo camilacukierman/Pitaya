@@ -7,6 +7,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import redirect, render
 from django.template import Context
 from django.template.loader import get_template
+from django_cron import CronJobBase, Schedule
 
 from .models import Booker
 from .models import Newsletter
@@ -107,10 +108,25 @@ def postform(request):
             send_email(new_mail, new_activity)
 
     new_activity.save()
-
     request.session['new_activity_id'] = new_activity.id
-
     return redirect('user_invitation')
+
+ # STARTING CRONJOBS
+
+
+class MyCronJob(CronJobBase):
+    RUN_EVERY_MINS = 120 # every 2 hours
+    ALLOW_PARALLEL_RUNS = True
+    RUN_AT_TIMES = ['6:30']
+
+    schedule = Schedule(run_every_mins=RUN_EVERY_MINS, run_at_times=RUN_AT_TIMES)
+    code = 'my_app.my_cron_job'    # a unique code
+
+    def do(self):
+        pass    # do your thing here
+
+
+# STARTING CRONJOBS
 
 
 def send_email(new_mail, new_activity):
