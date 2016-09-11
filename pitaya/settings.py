@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #'social.apps.django_app.default',
     #'post_office',
-    'django_cron',
+    #'django_cron',
 ]
 
 CRON_CLASSES = [
