@@ -1,26 +1,27 @@
 <div> REMINDER  </div>
 
 
-
+{% if booking %}
 
 <div>
-{% for b in booking %}
 
 
 
-        {{ b.participants }}<br>
+
+        {{ invitee.participants_name }}<br>
 
 
     DONT FORGET !!!
-    TOMORROW  AT {{ b.location }} AT {{ b.date }}, {{ b.time }}
-    WE HAVE THE  {{ b.event_name }} SPONSORED BY     {{ b.company_name }}
+    TOMORROW  U HAVE THE {{ booking.event_name }} AT {{ booking.location }} AT {{ booking.date }}, {{booking.to_time }}, {{booking.from_time }}
 
     SEE YOU THERE,
-    {{ b.manager_name }}
+    {{ booking.manager_name }}
 
 
 
 
-{% endfor %}
 
 </div>
+
+
+{% endif %}

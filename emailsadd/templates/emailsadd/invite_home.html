@@ -59,10 +59,9 @@
         <form method="post" action="postform/" name="form" class="display_form col-md-10">
             {% csrf_token %}
             <br><div class="intro_text">Create an invitation</div><br>
-            <input type="text" class="input-text-one" name="event_name" placeholder="Add booked activity's name"
-                   required><br>
-            <input type="text" class="input-text-one" name="event_description"
-                   placeholder="Add booked activity's description" required><br>
+            <input type="text" class="input-text-one" name="event_name" placeholder="Add booked activity's name" required><br>
+            <input type="text" class="input-text-one" name="manager_name" placeholder="Add menager's name" required><br>
+            <input type="text" class="input-text-one" name="event_description" placeholder="Add booked activity's description" required><br>
 
             <div>
                 <div class="input_location">
