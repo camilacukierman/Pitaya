@@ -1,5 +1,22 @@
 <a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>
 
+
+    <div class="header">
+        <div class="header_infos">
+            <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
+            <div class="header_menu">
+                <div class="header_user"> Hello, {{ user }}</div>
+            </div>
+        </div>
+        <div class="header_image">
+            <div class="header_image_text">
+                EASILY SEND INVITATIONS, MANAGE ATTENDANCE AND GET FEEDBACK
+            </div>
+        </div>
+
+    </div>
+
+
  <a href="../my_events" >My Activities</a> <br> <br><p> Hello, {{ user }}</p>
 
 you have {{number_of_bookings}} events

@@ -63,20 +63,20 @@
     }
 
 .input_mail{
-    width: 100%;
+    width: 69%;
     margin: 5px 5px;
     font-family: HelveticaNeue;
 }
 
 .input_name {
-    width: 100%;
-    margin: 5px 5px;
+    width: 30%;
+    margin: 5px -4px;
     font-family: HelveticaNeue;
 }
 
 .input_part {
     width: 100%;
-    margin: 5px 5px;
+    margin: 5px -6px;
     font-family: HelveticaNeue;
 }
 

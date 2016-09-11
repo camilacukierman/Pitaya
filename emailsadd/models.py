@@ -4,7 +4,7 @@ from django.db import models
 
 class Booker(models.Model):
     user_id = models.ForeignKey(User,default=1)
-    manager_name = models.CharField(max_length=50)
+    manager_name = models.CharField(max_length=50, null=True)
     event_name = models.CharField(max_length=50)
     event_description = models.CharField(max_length=1000, null=True)
     location = models.CharField(max_length=50)
