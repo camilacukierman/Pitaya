@@ -54,8 +54,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
-    'social.apps.django_app.default',
-    'post_office',
+    #'social.apps.django_app.default',
+    #'post_office',
     'django_cron',
 ]
 
