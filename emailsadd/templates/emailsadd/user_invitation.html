@@ -4,25 +4,61 @@
 
 {% if booking %}
 
-
-<div>
-
-
-    HEEYY blavls {{ booking.participants_name}}
-    YOU ARE BEING INVITED TO THE {{ booking.event_name }}
-    WILL HAPPEN AT {{ booking.location }} AT {{ booking.date }}, {{booking.to_time }}, {{booking.from_time }}
+<div class="border_add">
+<a href="http://127.0.0.1:8000/emailsadd/approved/{{invitee.id}}" class="button_invite_preview">WILL ATTEND</a>
+    <a href="http://127.0.0.1:8000/emailsadd/approved/{{invitee.id}}" class="button_invite_preview">WILL  NOT ATTEND</a>
 
 
-    SEE YOU THERE,
-    {{ booking.manager_name }}
+    </div>
+<div class="box">
 
-    <li>{{ booking.pic.image }}</li>
-    <li>{{ booking.pic.url }}</li>
-    <img src="{{ booking.pic.url }}" name="image_preview" height="200" alt="Image preview">
+        <div class="box1">
+            <div class="text1"> YOU ARE INVITED TO  </div> <br>
+            <div class="text2"> {{ booking.event_name }}</div>
+            <div class="text3"> {{ booking.description }} </div>
+     </div>
 
-</div>
+  <div class="box2">
 
-<a href="http://127.0.0.1:8000/emailsadd/approved/{{invitee.id}}" style="background-color:blue;color:white;padding:5px 20px;text-decoration: none;">Confirm</a>
+      <div class="text3"> {{ booking.date }} from {{booking.from_time }} to {{booking.to_time }} </div>
+      <div class="text3"> {{ booking.location }} </div>
+
+     </div>
+
+     <div class="box3">
+        <div class="text4"> {{ booking.manager_message }}</div>
+
+     </div>
+
+     <div class="box4">
+
+         <li>{{ booking.pic.image }}</li>
+        <li>{{ booking.pic.url }}</li>
+        <img src="{{ booking.pic.url }}" name="image_preview" height="200" alt="Image preview">
+
+
+     </div>
+     </div>
+{% endif %}
+
+<!--<div class="camila">-->
+
+
+    <!--HEEYY blavls {{ booking.participants_name}}-->
+    <!--YOU ARE BEING INVITED TO THE {{ booking.event_name }}-->
+    <!--WILL HAPPEN AT {{ booking.location }} AT {{ booking.date }}, {{booking.to_time }}, {{booking.from_time }}-->
+
+
+    <!--SEE YOU THERE,-->
+    <!--{{ booking.manager_name }}-->
+
+    <!--<li>{{ booking.pic.image }}</li>-->
+    <!--<li>{{ booking.pic.url }}</li>-->
+    <!--<img src="{{ booking.pic.url }}" name="image_preview" height="200" alt="Image preview">-->
+
+<!--</div>-->
+
+<!--<a href="http://127.0.0.1:8000/emailsadd/approved/{{invitee.id}}" style="background-color:blue;color:white;padding:5px 20px;text-decoration: none;">Confirm</a>-->
 
 
 
