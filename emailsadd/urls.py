@@ -2,6 +2,8 @@ from django.conf.urls import url
 
 from . import views
 
+
+
 urlpatterns = [
     url(r'^$', views.invite_home, name='invite_home'),
     url(r'^register/$', views.register, name='register'),
@@ -11,9 +13,9 @@ urlpatterns = [
     url(r'^my_events/', views.events, name='events'),
     url(r'^user_reminder/$', views.user_reminder, name='user_reminder'),
     url(r'^invite_survey/$', views.invite_survey, name='invite_survey'),
-    url(r'^postform/$', views.postform, name='addform'),
+    url(r'^postform/$', views.postform, name='postform'),
     url(r'^status/(?P<eid>\w+)/$', views.event_status, name='event_status'),
-    url(r'^approved/(?P<pid>\w+)/$', views.approved, name='approved')
+    url(r'^approved/(?P<pid>\w+)/$', views.approved, name='approved'),
 
 ]
 

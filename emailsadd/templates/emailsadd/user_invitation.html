@@ -1,5 +1,5 @@
 
-
+{% load static %}
 
 
 {% if booking %}
@@ -16,9 +16,9 @@
     SEE YOU THERE,
     {{ booking.manager_name }}
 
-
-
-    <!--<img src="{{ image_src }}" name="image_preview" height="200" alt="Image preview">-->
+    <li>{{ booking.pic.image }}</li>
+    <li>{{ booking.pic.url }}</li>
+    <img src="{{ booking.pic.url }}" name="image_preview" height="200" alt="Image preview">
 
 </div>
 

@@ -2,23 +2,24 @@
  * Created by itc_user on 8/27/2016.
  */
 
- function previewFile() {
-        var preview = document.querySelector('img'); //selects the query named img
-        var file = document.querySelector('input[type=file]').files[0]; //sames as here
-        var reader = new FileReader();
 
-        reader.onloadend = function () {
-            preview.src = reader.result;
-        };
 
-        if (file) {
-            reader.readAsDataURL(file); //reads the data as a URL
-        } else {
-            preview.src = "";
-        }
-    }
 
 $(document).ready(function () {
+    // document.getElementById('image_preview').addEventListener('change', handleFileSelect, false);
+    document.getElementById("files").onchange = function () {
+        var reader = new FileReader();
+
+        reader.onloadend = function (e) {
+            // get loaded data and render thumbnail.
+            document.getElementById("image_preview").src = e.target.result;
+        };
+
+        // read the image file as a data URL.
+        reader.readAsDataURL(this.files[0]);
+
+    };
+
     $("#preview").click(function () {
         $(".display_form").toggle();
     });

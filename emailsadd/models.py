@@ -12,6 +12,7 @@ class Booker(models.Model):
     from_time = models.TimeField()
     date = models.DateField()
     manager_message = models.CharField(max_length=1000, null=True)
+    pic = models.ImageField(upload_to='pic_folder/', default='pic_folder/no-img.jpg')
 
     def __str__(self):
         return ' '.join([
