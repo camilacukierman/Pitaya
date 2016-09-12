@@ -8,7 +8,7 @@
 <div>
 
 
-    HEEYY blavls {{ booking.participants_name}}
+    Hello {{ booking.participants_name}}
     YOU ARE BEING INVITED TO THE {{ booking.event_name }}
     WILL HAPPEN AT {{ booking.location }} AT {{ booking.date }}, {{booking.to_time }}, {{booking.from_time }}
 
@@ -16,8 +16,8 @@
     SEE YOU THERE,
     {{ booking.manager_name }}
 
-    <li>{{ booking.pic.image }}</li>
-    <li>{{ booking.pic.url }}</li>
+
+    <img src="cid:image1" name="image_preview" alt="Image preview">
     <img src="{{ booking.pic.url }}" name="image_preview" height="200" alt="Image preview">
 
 </div>

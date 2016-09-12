@@ -1,3 +1,5 @@
+from email.mime.image import MIMEImage
+
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
@@ -107,6 +109,8 @@ def postform(request):
 
     numberOfEmails = int(request.POST.get("participants_number"))
 
+    save_image(new_activity, request)
+
     for i in range(0, numberOfEmails):
         new_mail = init_newsletter(new_activity, request, "participants_name" + str(i), "participants_email" + str(i))
 
@@ -114,9 +118,12 @@ def postform(request):
             send_email(new_mail, new_activity)
 
     new_activity.save()
+    request.session['new_activity_id'] = new_activity.id
+    return redirect(reverse('user_invitation'))
 
 
-    #saving the pic for the event
+def save_image(new_activity, request):
+    # saving the pic for the event
     if request.method == 'POST':
         form = ImageUploadForm(request.POST, request.FILES)
         if form.is_valid():
@@ -125,25 +132,29 @@ def postform(request):
         else:
             print (form.errors)
 
-    request.session['new_activity_id'] = new_activity.id
-    return redirect(reverse('user_invitation'))
-
-
 
 def send_email(new_mail, new_activity):
-    plaintext = get_template('emailsadd/email.txt')
-    htmly = get_template('emailsadd/user_invitation.html')
-
-    d = Context({'booking': new_activity, "invitee": new_mail})
-
-    subject, from_email, to = new_activity.event_name, 'pitayaproject@gmail.com', new_mail.participants_email
-    text_content = plaintext.render(d)
-    html_content = htmly.render(d)
-    msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
-    msg.attach_alternative(html_content, "text/html")
-    msg.send()
-
-
+    try:
+        plaintext = get_template('emailsadd/email.txt')
+        htmly = get_template('emailsadd/user_invitation.html')
+        d = Context({'booking': new_activity, "invitee": new_mail})
+        subject, from_email, to = new_activity.event_name, 'pitayaproject@gmail.com', new_mail.participants_email
+        text_content = plaintext.render(d)
+        html_content = htmly.render(d)
+        msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+        msg.attach_alternative(html_content, "text/html")
+        # settings.STATIC_ROOT + "pic_folder/" + new_activity.pic
+        image_file = open(new_activity.pic.path, 'rb')
+        msg_image = MIMEImage(image_file.read())
+        image_file.close()
+        msg_image.add_header('Content-ID', '<image1>')
+        msg.mixed_subtype = 'related'
+        msg.attach(msg_image)
+        msg.send()
+    except Exception as ex:
+        template = "An exception of type {0} occured. Arguments:\n{1!r}"
+        message = template.format(type(ex).__name__, ex.args)
+        print (message)
 
 def init_newsletter(new_activity, request, participants_name, participants_email):
     myparticipants_name = request.POST.get(participants_name)
