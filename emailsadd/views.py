@@ -7,7 +7,6 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import redirect, render
 from django.template import Context
 from django.template.loader import get_template
-from django_cron import CronJobBase, Schedule
 
 from .models import Booker
 from .models import Newsletter
