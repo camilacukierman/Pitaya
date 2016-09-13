@@ -1,15 +1,19 @@
 
 {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
 {% if booking %}
 
+<div class="col-md-2" > </div>
+<div class="col-md-8" >
+
 <div class="border_add">
-<a href="http://127.0.0.1:8000/emailsadd/approved/{{invitee.id}}" class="button_invite_preview">WILL ATTEND</a>
+`   <a href="http://127.0.0.1:8000/emailsadd/approved/{{invitee.id}}" class="button_invite_preview">WILL ATTEND</a>
     <a href="http://127.0.0.1:8000/emailsadd/approved/{{invitee.id}}" class="button_invite_preview">WILL  NOT ATTEND</a>
-
-
     </div>
+
 <div class="box">
 
         <div class="box1">
@@ -39,27 +43,9 @@
 
      </div>
      </div>
-{% endif %}
-
-<!--<div class="camila">-->
-
-
-    <!--HEEYY blavls {{ booking.participants_name}}-->
-    <!--YOU ARE BEING INVITED TO THE {{ booking.event_name }}-->
-    <!--WILL HAPPEN AT {{ booking.location }} AT {{ booking.date }}, {{booking.to_time }}, {{booking.from_time }}-->
-
-
-    <!--SEE YOU THERE,-->
-    <!--{{ booking.manager_name }}-->
-
-    <!--<li>{{ booking.pic.image }}</li>-->
-    <!--<li>{{ booking.pic.url }}</li>-->
-    <!--<img src="{{ booking.pic.url }}" name="image_preview" height="200" alt="Image preview">-->
-
-<!--</div>-->
-
-<!--<a href="http://127.0.0.1:8000/emailsadd/approved/{{invitee.id}}" style="background-color:blue;color:white;padding:5px 20px;text-decoration: none;">Confirm</a>-->
-
+</div>
+<div class="col-md-2" > </div>
 
 
 {% endif %}
+

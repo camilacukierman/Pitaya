@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>emailsadd</title>
-    {% load static %}
 
+    {% load static %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
@@ -19,13 +19,15 @@
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 
 
+
+
 </head>
 <body class="{{mode}}">
 
 <div class="col-md-2"></div>
 <div class="col-md-8">
 
-    Test
+   {{ user}}
     {% if user.is_anonymous %}
     <a href="{% url 'django.contrib.auth.views.login' %}">login</a>
     {% else %}
@@ -128,7 +130,7 @@
 
 
         <br>
-        <div class="border_add">
+        <div class="`">
             <div class="plus_btn">
                 <button type="submit" class="button_invite_preview" id="preview" name="preview">PREVIEW</button>
                 <input type="submit" class="button_invite_send" value="  SEND "><br>

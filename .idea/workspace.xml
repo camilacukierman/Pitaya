@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/emailsadd/static/emailsadd/css/register_login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css" afterPath="$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_reminder.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_reminder.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/registration/login.html" afterPath="$PROJECT_DIR$/emailsadd/templates/registration/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/registration/register.html" afterPath="$PROJECT_DIR$/emailsadd/templates/registration/register.html" />
     </list>
@@ -46,18 +51,38 @@
       <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/registration/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="493">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="808">
-              <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register_login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/register_login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emailsadd/templates/registration/logout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -66,45 +91,18 @@
       <file leaf-file-name="invite_home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="131" column="30" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="30" />
-              <folding>
-                <marker date="1473752377342" expanded="true" signature="39:1070" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="1094:5962" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="1147:5905" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="1462:1996" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="1497:1795" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="1628:1780" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="1830:1984" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="1874:1969" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="2169:5861" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="2389:2444" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="2671:2774" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="2793:3893" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="2834:3556" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="3350:3512" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="3589:3878" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="3629:3859" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="3920:4175" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="3938:4049" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="4222:4904" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="4319:4430" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="4473:4841" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="4539:4822" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="4950:5205" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="4968:5190" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="5560:5848" ph="..." />
-                <marker date="1473752377342" expanded="true" signature="5595:5833" ph="..." />
-              </folding>
+            <state relative-caret-position="2261">
+              <caret line="133" column="32" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2334">
-              <caret line="306" column="1" selection-start-line="306" selection-start-column="1" selection-end-line="306" selection-end-column="1" />
+            <state relative-caret-position="119">
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -113,8 +111,8 @@
       <file leaf-file-name="user_invitation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="-116">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -130,11 +128,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2684">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="user_reminder.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_reminder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -193,15 +201,17 @@
         <option value="$PROJECT_DIR$/emailsadd/urls.py" />
         <option value="$PROJECT_DIR$/pitaya/settings.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html" />
         <option value="$PROJECT_DIR$/emailsadd/views.py" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/thankyou.html" />
         <option value="$PROJECT_DIR$/emailsadd/CAMILA/camila user invitation.html" />
-        <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" />
         <option value="$PROJECT_DIR$/emailsadd/CAMILA/camila_css.css" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_reminder.html" />
-        <option value="$PROJECT_DIR$/emailsadd/templates/registration/register.html" />
+        <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" />
+        <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html" />
+        <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/login/register.css" />
         <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css" />
+        <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/register_login.css" />
+        <option value="$PROJECT_DIR$/emailsadd/templates/registration/register.html" />
         <option value="$PROJECT_DIR$/emailsadd/templates/registration/login.html" />
       </list>
     </option>
@@ -1050,7 +1060,14 @@
       <option name="project" value="LOCAL" />
       <updated>1473710407639</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="adding css + html">
+      <created>1473753383080</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1473753383080</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1071,11 +1088,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40520042" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40303358" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2686722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2686722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28169015" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21784233" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21784233" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36688313" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1163,9 +1180,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/b73ea1a/6c0ed673-927f-42fe-adc7-6a77466f0eb9/emailsadd_booker" />
-    <entry file="dbDummy://dbtable:/b73ea1a/6c0ed673-927f-42fe-adc7-6a77466f0eb9/emailsadd_booker" />
-    <entry file="dbDummy://dbtable:/b73ea1a/6c0ed673-927f-42fe-adc7-6a77466f0eb9/emailsadd_booker" />
     <entry file="dbDummy://dbtable:/b73ea1a/6c0ed673-927f-42fe-adc7-6a77466f0eb9/emailsadd_booker" />
     <entry file="file://$PROJECT_DIR$/emailsadd/admin.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1274,14 +1288,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1306,14 +1312,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1330,57 +1328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_reminder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="131" column="30" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="30" />
-          <folding>
-            <marker date="1473752377342" expanded="true" signature="39:1070" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="1094:5962" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="1147:5905" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="1462:1996" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="1497:1795" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="1628:1780" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="1830:1984" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="1874:1969" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="2169:5861" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="2389:2444" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="2671:2774" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="2793:3893" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="2834:3556" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="3350:3512" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="3589:3878" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="3629:3859" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="3920:4175" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="3938:4049" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="4222:4904" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="4319:4430" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="4473:4841" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="4539:4822" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="4950:5205" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="4968:5190" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="5560:5848" ph="..." />
-            <marker date="1473752377342" expanded="true" signature="5595:5833" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/CAMILA/camila_css.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1389,26 +1336,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/templates/registration/register.html">
+    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_reminder.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/templates/registration/login.html">
+    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+        <state relative-caret-position="-116">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2684">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/login/register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2334">
-          <caret line="306" column="1" selection-start-line="306" selection-start-column="1" selection-end-line="306" selection-end-column="1" />
+        <state relative-caret-position="119">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2261">
+          <caret line="133" column="32" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/templates/registration/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/register_login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/templates/registration/logout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>

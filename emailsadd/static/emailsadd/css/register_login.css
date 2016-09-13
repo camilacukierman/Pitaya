@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('../fonts/HelveticaNeueBold.ttf')
+}
+
+@font-face {
+    font-family: 'HelveticaNeueItalic';
+    src: url('../fonts/HelveticaNeueItalic.ttf')
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue.ttf')
+}
+
+
+/*REGISTER CSS*/
+
+.register_back{
+    background-color: #E5BF44;
+}
+
+.register_box {
+   margin: auto;
+    height: 40%;
+    width: 40%;
+    border: 0.5px solid black;
+    padding: 10px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    margin: -70px 0 0 -170px;
+    bottom: 50%;
+    display: table;
+}
+
+.register_btn {
+    padding: 2px 20px;
+    background-color: white;
+    padding: 2px 20px;
+    background-color: white;
+    color: #E5BF44;
+    box-shadow: none;
+    font-family: HelveticaNeueBold;
+    border: 1px solid #E5BF44;
+}
+
+.input_register {
+    width: 100%;
+    margin: 5px 5px;
+    font-family: HelveticaNeue;
+}
+
+
+.logo{
+   margin-left: 100px;
+    position: fixed;
+
+}
+
+
+
+/*LOGIN CSS*/
+
+.input_login {
+    width: 100%;
+    margin: 5px 5px;
+    font-family: HelveticaNeue;
+}
+
+
+.login_back{
+    background-color: #E5BF44;
+}
+
+.login_btn {
+    padding: 2px 20px;
+    background-color: white;
+    padding: 2px 20px;
+    background-color: white;
+    color: #E5BF44;
+    box-shadow: none;
+    font-family: HelveticaNeueBold;
+    border: 1px solid #E5BF44;
+}
+
+.login_box{
+    margin: auto;
+    display: table;
+}
