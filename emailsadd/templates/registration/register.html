@@ -16,7 +16,7 @@
   <!--</form>-->
 <!--{% endblock %}-->
 
-
+===============================
 
 {% extends "emailsadd/invite_home.html" %}
 
@@ -26,16 +26,26 @@
     <script >
 
     </script>
+<h1>Create an account</h1>
 
 <div class="register_back">
+
+    <div class="regster_box">
   <h1>Create an account</h1>
 
 
   <form action="" method="post">
       {% csrf_token %}
       {{ form.as_p }}
-      <input type="submit" value="Create the account">
-  </form>
-{% endblock %}
+      <ul>
+      <li id> </li>
 
+
+      </ul>
+      <input class="register_btn " type="submit" value="Create the account">
+  </form>
+
+</div>
     </div>
+
+{% endblock %}
