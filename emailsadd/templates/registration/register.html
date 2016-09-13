@@ -10,28 +10,34 @@
     <script >
     </script>
 
+<body class="body">
 <div class="col-md-2"></div>
 
-<div class="col-md-8">
+<div class="col-md-8 ">
 
-      <img src="../../static/emailsadd/images/yellow%20logo.png" class="logo">
+    <div class="logo"></div>
  <div class="register_box">
 
   <form action="" method="post">
-      {% csrf_token %}
-      {{ form.as_p }}
-      <ul>
-      <li id> </li>
-      </ul>
 
 
+     <input type='hidden' name='csrfmiddlewaretoken' value='NQ2sgpD9g1GQGagh9ar12NCgLQTSfuMJ' />
+    <p><label for="id_username" class="id_username">Username:</label> <input id="id_username" maxlength="30" name="username" type="text" />
+        <!--<span class="id_username">Required. 30 characters or fewer. Letters, digits and @/./+/-/_ only.</span></p>-->
+    <p><label for="id_password1" class="id_username">Password:</label> <input id="id_password1" name="password1" type="password" /></p>
+    <p><label for="id_password2" class="id_username">Password confirmation:</label> <input id="id_password2" name="password2" type="password" /> <br/>
+        <!--<span class="id_username" class="id_username">Enter the same password as above, for verification.</span></p>-->
+
+
+        <div class="centred">
       <input class="register_btn " type="submit" value="Create the account">
       <input class="login_btn" type="submit" value="login" />
+        </div>
 
   </form>
-
-
 </div>
+
      </div>
 
 <div class="col-md-2"></div>
+ </body>
