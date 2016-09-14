@@ -28,9 +28,9 @@
 <div class="col-md-8">
 
    {{ user}}
-    <!--{% if user.is_anonymous %}-->
-    <!--<a href="{% url 'django.contrib.auth.views.login' %}">login</a>-->
-    <!--{% else %}-->
+    {% if user.is_anonymous %}
+    <a href="{% url 'django.contrib.auth.views.login' %}">login</a>
+    {% else %}
     <a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>
     {% endif %}
     {% block content %}
@@ -43,7 +43,7 @@
 
             <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
             <div class="header_menu">
-                <a href="../emailsadd/my_events">My Activities</a>
+                <a href="../my_events">My Activities</a>
                 <div class="header_user"> Hello, {{ user }}</div>
             </div>
         </div>
