@@ -1,3 +1,4 @@
+from datetime import datetime
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
@@ -11,7 +12,6 @@ from email.mime.image import MIMEImage
 
 from .forms import ImageUploadForm
 from .models import Booker,Survey,Newsletter
-
 
 
 @login_required
@@ -99,6 +99,11 @@ def postform(request):
     mydate = request.POST.get("date")
     myevent_description = request.POST.get("event_description")
     mymanager_message = request.POST.get("manager_message")
+
+    myfromtime = datetime.strptime(mydate +' ' + myfromtime, "%Y-%m-%d %H:%M")
+    mytotime = datetime.strptime(mydate +' ' + mytotime, "%Y-%m-%d %H:%M")
+
+
 
     new_activity = Booker.objects.create(manager_name=mymanager_name,
                                          event_name=myevent_name, location=mylocation, from_time=myfromtime,
