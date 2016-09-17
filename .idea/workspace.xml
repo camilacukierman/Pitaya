@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="trying to make attend work in heroku">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" />
     </list>
     <ignored path="Pitaya.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,8 +104,8 @@
       <file leaf-file-name="user_invitation.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="289">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -788,13 +789,6 @@
       <option name="presentableId" value="Default" />
       <updated>1472285009134</updated>
     </task>
-    <task id="LOCAL-00011" summary="adding some code">
-      <created>1473146992537</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1473146992537</updated>
-    </task>
     <task id="LOCAL-00012" summary="adding some code">
       <created>1473164253320</created>
       <option name="number" value="00012" />
@@ -1131,7 +1125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474116353721</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="trying to make attend work in heroku">
+      <created>1474116360841</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1474116360841</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1677,8 +1678,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
