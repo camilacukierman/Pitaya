@@ -8,7 +8,6 @@ urlpatterns = [
     url(r'^$', views.invite_home, name='invite_home'),
     url(r'^register/$', views.register, name='register'),
     url(r'^login/$', 'django.contrib.auth.views.login'),
-    # url(r'^logout/$', logout, {'next_page': '/invite_home'}),
     url(r'^user_invitation/', views.user_invitation, name='user_invitation'),
     url(r'^my_events/', views.events, name='events'),
     url(r'^user_reminder/$', views.user_reminder, name='user_reminder'),
@@ -20,6 +19,5 @@ urlpatterns = [
     url(r'^survey_complete/$', views.survey_complete, name='survey_complete'),
     url(r'^postsurvey/$', views.postsurvey, name='postsurvey'),
     url(r'^postform/$', views.postform, name='postform'),
-
 ]
 
