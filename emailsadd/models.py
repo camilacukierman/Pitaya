@@ -8,9 +8,9 @@ class Booker(models.Model):
     event_name = models.CharField(max_length=50)
     event_description = models.CharField(max_length=1000, null=True)
     location = models.CharField(max_length=50)
-    to_time = models.TimeField()
-    from_time = models.TimeField()
-    date = models.DateField()
+    to_time = models.DateTimeField()
+    from_time = models.DateTimeField()
+    date = models.DateTimeField()
     manager_message = models.CharField(max_length=1000, null=True)
     pic = models.ImageField(upload_to='pic_folder/', default='pic_folder/no-img.jpg')
 

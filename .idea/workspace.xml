@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="working review">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/survey.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/survey_complete.html" />
+    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="Preparation for deployment&#10;css and html changes &#10;initial survey added">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0002_booker_participants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0003_auto_20160904_1333.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0004_auto_20160907_1708.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0005_auto_20160907_1729.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0006_auto_20160907_1741.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0007_auto_20160907_1818.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0008_auto_20160908_1019.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0009_auto_20160908_1054.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0010_auto_20160908_1102.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0011_remove_booker_company_name.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0012_auto_20160908_1123.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0013_auto_20160908_1408.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0014_newsletter_approved.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0015_booker_user_id.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0016_auto_20160911_1111.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/emailsadd/migrations/0017_booker_pic.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/admin.py" afterPath="$PROJECT_DIR$/emailsadd/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/models.py" afterPath="$PROJECT_DIR$/emailsadd/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css" afterPath="$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/event_status.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/event_status.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/events.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_survey.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_survey.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/urls.py" afterPath="$PROJECT_DIR$/emailsadd/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/views.py" afterPath="$PROJECT_DIR$/emailsadd/views.py" />
     </list>
     <ignored path="Pitaya.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,122 +46,20 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="invite_home.html" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="391">
-                    <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="42" />
-                    <folding>
-                      <element signature="n#style#0;n#div#1;n#form#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Pitaya" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="invite_survey.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_survey.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="events.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/events.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="89" selection-start-line="29" selection-start-column="89" selection-end-line="29" selection-end-column="89" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="303" column="16" selection-start-line="303" selection-start-column="16" selection-end-line="303" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event_status.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/event_status.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emailsadd/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="survey.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/survey.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thankyou.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/thankyou.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="survey_complete.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/survey_complete.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -177,7 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/project_name/settings.py" />
         <option value="$PROJECT_DIR$/project_name/urls.py" />
         <option value="$PROJECT_DIR$/project_name/wsgi.py" />
         <option value="$PROJECT_DIR$/emailsAdd/views.py" />
@@ -199,17 +103,14 @@
         <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/js/js.js" />
         <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/js/tabs.js" />
         <option value="$PROJECT_DIR$/emailsadd/apps.py" />
-        <option value="$PROJECT_DIR$/pitaya/wsgi.py" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/email.txt" />
         <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/tabs.css" />
         <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/js/general.js" />
-        <option value="$PROJECT_DIR$/pitaya/settings.py" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/thankyou.html" />
         <option value="$PROJECT_DIR$/emailsadd/CAMILA/camila user invitation.html" />
         <option value="$PROJECT_DIR$/emailsadd/CAMILA/camila_css.css" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_reminder.html" />
         <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/login/register.css" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/register_login.css" />
         <option value="$PROJECT_DIR$/emailsadd/templates/registration/register.html" />
         <option value="$PROJECT_DIR$/emailsadd/templates/registration/login.html" />
@@ -222,10 +123,16 @@
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/event_status.html" />
         <option value="$PROJECT_DIR$/emailsadd/views.py" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/survey_complete.html" />
-        <option value="$PROJECT_DIR$/emailsadd/models.py" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/events.html" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html" />
         <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/pitaya/settings.py" />
+        <option value="$PROJECT_DIR$/pitaya/wsgi.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/emailsadd/migrations/0004_auto_20160907_1708.py" />
+        <option value="$PROJECT_DIR$/emailsadd/models.py" />
       </list>
     </option>
   </component>
@@ -236,10 +143,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="215" />
-    <option name="y" value="4" />
-    <option name="width" value="1067" />
-    <option name="height" value="731" />
+    <option name="x" value="-1928" />
+    <option name="y" value="-121" />
+    <option name="width" value="1296" />
+    <option name="height" value="696" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -333,37 +240,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emailsadd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pitaya_new_version" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pitaya_new_version" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emailsadd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emailsadd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -912,7 +789,42 @@
       <option name="project" value="LOCAL" />
       <updated>1473847177928</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Preparation for deployment&#10;css and html changes &#10;initial survey added">
+      <created>1474099379754</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1474099379754</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Deployment preparation&#10;">
+      <created>1474102188795</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1474102188795</updated>
+    </task>
+    <task id="LOCAL-00039" summary="mysql adapter&#10;">
+      <created>1474102404209</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1474102404209</updated>
+    </task>
+    <task id="LOCAL-00040" summary="white noise addition">
+      <created>1474102718330</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1474102718330</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Pillow added for pic field">
+      <created>1474103065835</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1474103065835</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView">
@@ -925,18 +837,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="215" y="4" width="1067" height="731" extended-state="0" />
+    <frame x="-1928" y="-121" width="1296" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27110228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45873785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40520042" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42451155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28169015" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26841244" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26755852" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23076923" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24511546" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16889632" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -944,7 +857,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42470205" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -955,17 +867,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40520042" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28169015" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26841244" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26755852" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23076923" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18443497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24511546" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45873785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42470205" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42451155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16901408" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16889632" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -999,8 +911,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="Changing Repository name" />
-    <MESSAGE value="adding html + adding views and urls" />
     <MESSAGE value="adding login/logout" />
     <MESSAGE value="adding sime code" />
     <MESSAGE value="adding url" />
@@ -1021,7 +931,12 @@
     <MESSAGE value="test camila" />
     <MESSAGE value="adding css + html" />
     <MESSAGE value="working review" />
-    <option name="LAST_COMMIT_MESSAGE" value="working review" />
+    <MESSAGE value="Preparation for deployment&#10;css and html changes &#10;initial survey added" />
+    <MESSAGE value="Deployment preparation&#10;" />
+    <MESSAGE value="mysql adapter&#10;" />
+    <MESSAGE value="white noise addition" />
+    <MESSAGE value="Pillow added for pic field" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pillow added for pic field" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1029,47 +944,47 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>228</line>
+          <line>227</line>
           <option name="timeStamp" value="178" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>229</line>
+          <line>228</line>
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>230</line>
+          <line>229</line>
           <option name="timeStamp" value="180" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>181</line>
+          <line>180</line>
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>182</line>
+          <line>181</line>
           <option name="timeStamp" value="182" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>183</line>
+          <line>182</line>
           <option name="timeStamp" value="183" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>185</line>
+          <line>184</line>
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>184</line>
+          <line>183</line>
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>186</line>
+          <line>185</line>
           <option name="timeStamp" value="186" />
         </line-breakpoint>
       </breakpoints>
@@ -1093,39 +1008,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/b73ea1a/6c0ed673-927f-42fe-adc7-6a77466f0eb9/emailsadd_booker" />
-    <entry file="dbDummy://dbtable:/b73ea1a/6c0ed673-927f-42fe-adc7-6a77466f0eb9/emailsadd_booker" />
-    <entry file="dbDummy://dbtable:/b73ea1a/6c0ed673-927f-42fe-adc7-6a77466f0eb9/emailsadd_booker" />
-    <entry file="dbDummy://dbtable:/b73ea1a/6c0ed673-927f-42fe-adc7-6a77466f0eb9/emailsadd_booker" />
-    <entry file="file://$PROJECT_DIR$/emailsadd/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pitaya/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b73ea1a/6c0ed673-927f-42fe-adc7-6a77466f0eb9/emailsadd_booker" />
-    <entry file="dbDummy://dbtable:/b73ea1a/6c0ed673-927f-42fe-adc7-6a77466f0eb9/emailsadd_booker" />
-    <entry file="dbDummy://dbtable:/b73ea1a/6c0ed673-927f-42fe-adc7-6a77466f0eb9/emailsadd_booker" />
-    <entry file="dbDummy://dbtable:/b73ea1a/6c0ed673-927f-42fe-adc7-6a77466f0eb9/emailsadd_booker" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/efe11cdb-492b-4d0b-aa6c-5b82ab2eb1af/console.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9486cdbe-2431-46db-a11e-1c569022b9f4/console.sql" />
-    <entry file="dbDummy://dbtable:/b73ea1a/6c0ed673-927f-42fe-adc7-6a77466f0eb9/django_migrations" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/64f173b0-1d18-49c3-b109-66fa0a425db0/console.sql" />
     <entry file="dbDummy://dbtable:/b73ea1a/64f173b0-1d18-49c3-b109-66fa0a425db0/django_migrations" />
     <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/email.html" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/django/contrib/auth/decorators.py" />
@@ -1147,20 +1029,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pitaya/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/CAMILA/camila user invitation.html" />
     <entry file="file://$PROJECT_DIR$/emailsadd/CAMILA/camila_css.css" />
     <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_reminder.html">
@@ -1175,13 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1231,6 +1092,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1238,6 +1100,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#31#63#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1257,14 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/survey.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1276,10 +1133,8 @@
     <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
-          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+          <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1315,6 +1170,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="298" column="12" selection-start-line="298" selection-start-column="12" selection-end-line="298" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1325,11 +1188,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="303" column="16" selection-start-line="303" selection-start-column="16" selection-end-line="303" selection-end-column="16" />
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="46" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pitaya/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <element signature="e#228#237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pitaya/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+          <folding>
+            <element signature="e#331#353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pip/_vendor/packaging/requirements.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/migrations/0006_auto_20160907_1741.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/migrations/0007_auto_20160907_1818.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/migrations/0003_auto_20160904_1333.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/migrations/0002_booker_participants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/migrations/0004_auto_20160907_1708.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/migrations/0005_auto_20160907_1729.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/migrations/0008_auto_20160908_1019.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/migrations/0018_auto_20160914_1215.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/migrations/0019_survey.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/migrations/0020_auto_20160915_1431.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
