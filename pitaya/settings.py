@@ -170,7 +170,7 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-LOGIN_REDIRECT_URL = '/emailsadd/login'
+LOGIN_REDIRECT_URL = '/emailsadd'
 LOGIN_URL = 'django.contrib.auth.views.login'
 
 DATABASES = {
