@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="test get_host">
+    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="trying to make attend work in heroku">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" />
     </list>
     <ignored path="Pitaya.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -789,13 +788,6 @@
       <option name="presentableId" value="Default" />
       <updated>1472285009134</updated>
     </task>
-    <task id="LOCAL-00010" summary="adding some code">
-      <created>1473086642038</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1473086642038</updated>
-    </task>
     <task id="LOCAL-00011" summary="adding some code">
       <created>1473146992537</created>
       <option name="number" value="00011" />
@@ -1132,7 +1124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474116060752</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="trying to make attend work in heroku">
+      <created>1474116353721</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1474116353721</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1219,7 +1218,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="adding css/ html&#10;sync db" />
     <MESSAGE value="test" />
     <MESSAGE value="test camila" />
     <MESSAGE value="adding css + html" />
@@ -1244,7 +1242,8 @@
     <MESSAGE value="order of saving changed" />
     <MESSAGE value="test  mail" />
     <MESSAGE value="test get_host" />
-    <option name="LAST_COMMIT_MESSAGE" value="test get_host" />
+    <MESSAGE value="trying to make attend work in heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to make attend work in heroku" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
