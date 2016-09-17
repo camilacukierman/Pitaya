@@ -19,8 +19,7 @@
  <div class="register_box">
 
   <form action="" method="post">
-
-
+      {% csrf_token %}
      <input type='hidden' name='csrfmiddlewaretoken' value='NQ2sgpD9g1GQGagh9ar12NCgLQTSfuMJ' />
     <p><label for="id_username" class="id_username">Username:</label> <input id="id_username" maxlength="30" name="username" type="text" />
         <!--<span class="id_username">Required. 30 characters or fewer. Letters, digits and @/./+/-/_ only.</span></p>-->
