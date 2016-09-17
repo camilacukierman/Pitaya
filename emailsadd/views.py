@@ -1,3 +1,4 @@
+from datetime import datetime
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
@@ -11,7 +12,6 @@ from email.mime.image import MIMEImage
 
 from .forms import ImageUploadForm
 from .models import Booker,Survey,Newsletter
-
 
 
 @login_required
@@ -100,6 +100,11 @@ def postform(request):
     myevent_description = request.POST.get("event_description")
     mymanager_message = request.POST.get("manager_message")
 
+    myfromtime = datetime.strptime(mydate +' ' + myfromtime, "%Y-%m-%d %H:%M")
+    mytotime = datetime.strptime(mydate +' ' + mytotime, "%Y-%m-%d %H:%M")
+
+
+
     new_activity = Booker.objects.create(manager_name=mymanager_name,
                                          event_name=myevent_name, location=mylocation, from_time=myfromtime,
                                          to_time=mytotime,
@@ -110,13 +115,14 @@ def postform(request):
 
     save_image(new_activity, request)
 
+    new_activity.save()
+
     for i in range(0, numberOfEmails):
         new_mail = init_newsletter(new_activity, request, "participants_name" + str(i), "participants_email" + str(i))
 
         if new_mail:
             send_email(new_mail, new_activity)
 
-    new_activity.save()
     request.session['new_activity_id'] = new_activity.id
     return redirect(reverse('user_invitation'))
 
