@@ -3,7 +3,7 @@ from django.db import models
 
 
 class Booker(models.Model):
-    user_id = models.ForeignKey(User,default=1)
+    user_id = models.ForeignKey(User, default=1)
     manager_name = models.CharField(max_length=50, null=True)
     event_name = models.CharField(max_length=50)
     event_description = models.CharField(max_length=1000, null=True)
@@ -28,4 +28,9 @@ class Newsletter(models.Model):
     participants_email = models.EmailField(max_length=254, blank=False,
                                            error_messages={'required': 'Please provide the email address.',
                                                            'unique': 'An account with this email exist.'}, )
-    approved = models.BooleanField (default=False)
+    approved = models.BooleanField(default=False)
+
+class Survey(models.Model):
+    participant_ref = models.ForeignKey(Newsletter, on_delete=models.CASCADE, default=1)
+    a1 = models.IntegerField(default=0)
+

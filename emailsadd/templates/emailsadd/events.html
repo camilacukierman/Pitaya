@@ -1,11 +1,33 @@
-<a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/tabs.css' %}"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static 'emailsadd/js/general.js' %}"></script>
+    <script src="{% static 'emailsadd/js/tabs.js' %}"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+</head>
+<body>
+
+
+<div class="col-md-2"></div>
+<div class="col-md-8">
 
     <div class="header">
         <div class="header_infos">
             <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
             <div class="header_menu">
+                 <a href="../my_events" >My Activities</a>
                 <div class="header_user"> Hello, {{ user }}</div>
+                        <a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>
             </div>
         </div>
         <div class="header_image">
@@ -17,8 +39,6 @@
     </div>
 
 
- <a href="../my_events" >My Activities</a> <br> <br><p> Hello, {{ user }}</p>
-
 you have {{number_of_bookings}} events
 <ul>
 {% for e in booking %}
@@ -29,3 +49,6 @@ you have {{number_of_bookings}} events
     </ul>
 
 <a href="/emailsadd" >create new </a>
+<div class="col-md-2"></div>
+
+</body>

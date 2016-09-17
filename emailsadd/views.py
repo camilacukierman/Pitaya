@@ -1,5 +1,3 @@
-from email.mime.image import MIMEImage
-
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
@@ -9,10 +7,11 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import redirect, render
 from django.template import Context
 from django.template.loader import get_template
+from email.mime.image import MIMEImage
 
 from .forms import ImageUploadForm
-from .models import Booker
-from .models import Newsletter
+from .models import Booker,Survey,Newsletter
+
 
 
 @login_required
@@ -156,6 +155,7 @@ def send_email(new_mail, new_activity):
         message = template.format(type(ex).__name__, ex.args)
         print (message)
 
+
 def init_newsletter(new_activity, request, participants_name, participants_email):
     myparticipants_name = request.POST.get(participants_name)
     myparticipants_email = request.POST.get(participants_email)
@@ -177,6 +177,14 @@ def approved(request, pid):
         'invitee': approvedParticipant,
     }
     return HttpResponse(template.render(context, request))
+
+def survey(request, pid):
+    template = get_template('emailsadd/survey.html')
+    context = {
+        "pid": pid,
+    }
+    return HttpResponse(template.render(context, request))
+
 
 
 def register(request):
@@ -200,3 +208,23 @@ def register(request):
         'form': form,
         'mode': "register"
     })
+
+
+def event_feedback(request):
+    booking = Booker.objects.get(pk=request.session.get('new_activity_id'))
+    template = get_template('emailsadd/event_feedback.html')
+    context = {
+        'booking': booking,
+        # 'image_src': request.session.get('myimage_preview')
+    }
+    return HttpResponse(template.render(context, request))
+
+
+def survey_complete(request):
+    template = get_template('emailsadd/survey_complete.html')
+    return HttpResponse(template.render(context, request))
+
+
+def postsurvey(request):
+    answer_one = request.POST.get("a1")
+    return HttpResponse("hello world"+answer_one)

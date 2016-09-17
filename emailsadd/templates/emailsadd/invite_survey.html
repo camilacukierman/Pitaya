@@ -1,1 +1,22 @@
-<div> INVITATION TO SURVEY </div>
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+{% if booking %}
+
+
+
+
+<div class="col-md-2" > </div>
+<div class="col-md-8" >
+
+<br><div>Hello,  </div>
+
+
+<div>You’ve recently participated in {{ booking.event_name }}, we’d love to hear your thoughts!</div>
+
+    </div>
+    <div class="col-md-2" > </div>
+
+{% endif %}

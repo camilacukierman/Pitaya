@@ -26,7 +26,6 @@
 
 <div class="col-md-2"></div>
 <div class="col-md-8">
-
    {{ user}}
     {% if user.is_anonymous %}
     <a href="{% url 'django.contrib.auth.views.login' %}">login</a>
@@ -37,24 +36,26 @@
     {% endblock %}
 
     {% if user.is_authenticated %}
-
+</div>
+<div class="col-md-2"></div>
     <div class="header">
         <div class="header_infos">
-
+            <div class="spaceforlogo"></div>
             <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
             <div class="header_menu">
-                <a href="../my_events">My Activities</a>
+                <button class="my_activity_btn"><a class="my_activity" href="../emailsadd/my_events">MY ACTIVITIES</a></button>
+
                 <div class="header_user"> Hello, {{ user }}</div>
-            </div>
         </div>
+</div>
         <div class="header_image">
             <div class="header_image_text">
                 EASILY SEND INVITATIONS, MANAGE ATTENDANCE AND GET FEEDBACK
             </div>
         </div>
 
-    </div>
-
+<div class="col-md-2"></div>
+<div class="col-md-8">
 
     <br>
     <div class="col-md-1"></div>
@@ -62,34 +63,40 @@
     <form method="post" action="{% url 'postform' %}" name="form" class="display_form col-md-10" enctype="multipart/form-data">
         {% csrf_token %}
         <br>
-        <div class="intro_text">Create an invitation</div>
+        <div class="intro_text">Create a new invitation</div>
         <br>
         <input type="text" class="input-text-one" name="event_name" placeholder="Add booked activity's name"
-               required  value="Graduate ITC Bootcamp"><br>
-        <input type="text" class="input-text-one" name="manager_name" placeholder="Add menager's name" required value="Tzvi Gregory Kaidanov"><br>
+               required ><br>
         <input type="text" class="input-text-one" name="event_description"
-               placeholder="Add booked activity's description" required  value="Graduate ITC Bootcamp"><br>
+               placeholder="Add booked activity's description" required ><br>
 
-        <div>
-            <div class="input_location">
-                <input type="date" class="input-date" name="date" id="datepicker" placeholder="Date" required value="2016-09-15">
-                <input type="time" name="to_time" placeholder="Time" required value="13:00:00">
-                <input type="time" name="from_time" placeholder="Time" value="12:00:00"><br>
-                <input type="text" class="input_loc" name="location" placeholder="Location" required value="ITC campus"><br>
+        <div class="col-md-12" style="padding:0px">
+            <div class="input_location col-lg-7">
+                                <input type="text" class="input_loc" name="location" placeholder="Location"><br>
+                <input type="date" class="input-date" name="date" id="datepicker" placeholder="Date" required value="today">
+                                <div class="time-holder">
+                                    <div class="to_time_div">
+                        <div class="adding_time">from</div>
+                <input type="time" name="to_time" class="time_input" placeholder="Time" required></div>
+                   <div class="to_time_div"> <div class="adding_time">to</div>
+                <input type="time" name="from_time" class="time_input" placeholder="Time"><br></div></div>
+
                 <input type="text" class="input_descr" name="manager_message"
-                       placeholder="Here you can write more about the activity or leave a personal note for your team." value="Graduate ITC Bootcamp description"><br>
-                <br>
+                       placeholder="Here you can write more about the activity or leave a personal note for your team."><br>
+                <input type="text" class="input_loc" name="manager_name" placeholder="Add manager's name (Signature for the invite)" required ><br>
             </div>
 
-            <div class="image">
+            <div class="upload_holder col-lg-5">
                 <div id="upload_image">
                      <img src="" name="image_preview" id="image_preview" class="view_image" />
-                     <input type="file" id="files" name="image" class="btn_upload" />
+                    <div id="input_img_btn">
+                     <input type="file" id="files" name="image" class="btn_upload"/></div>
                     <br/>
                 </div>
             </div>
         </div>
 
+        <div>
 
         <ul class="tab">
 
@@ -122,6 +129,7 @@
                 {% endif %}
             </div>
         </div>
+            </div>
         <br>
         <input type="checkbox" name="send_reminder" value="True" checked> Send reminder to participants one day
         before the activity<br>
