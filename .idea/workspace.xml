@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="&#10;Wsgi changed&#10;">
+    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="adding csrf token to register page&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/registration/register.html" afterPath="$PROJECT_DIR$/emailsadd/templates/registration/register.html" />
     </list>
@@ -97,8 +97,8 @@
       <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/registration/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            <state relative-caret-position="52">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,6 +138,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="heroku" target-branch="master" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -203,8 +206,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1979" />
-    <option name="y" value="-113" />
+    <option name="x" value="-2068" />
+    <option name="y" value="13" />
     <option name="width" value="1356" />
     <option name="height" value="683" />
   </component>
@@ -931,7 +934,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474104960749</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="adding csrf token to register page&#10;">
+      <created>1474105578427</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1474105578427</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TodoView">
@@ -944,7 +954,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1979" y="-113" width="1356" height="683" extended-state="0" />
+    <frame x="-2068" y="13" width="1356" height="683" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12037037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1018,7 +1028,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="urls.py" />
     <MESSAGE value="adding some code&#10;" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;emailsAdd/urls.py&#10;" />
     <MESSAGE value="adding html + js" />
@@ -1043,7 +1052,8 @@
     <MESSAGE value="wsgi changed&#10;" />
     <MESSAGE value="&#10;" />
     <MESSAGE value="&#10;Wsgi changed&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;Wsgi changed&#10;" />
+    <MESSAGE value="adding csrf token to register page&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding csrf token to register page&#10;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1451,8 +1461,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/templates/registration/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        <state relative-caret-position="52">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
