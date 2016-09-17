@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="adding csrf token to register page&#10;">
+    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="fixing csrf token to register page&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/registration/register.html" afterPath="$PROJECT_DIR$/emailsadd/templates/registration/register.html" />
     </list>
@@ -98,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/registration/register.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="52">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -941,7 +941,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474105578427</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="fixing csrf token to register page&#10;">
+      <created>1474105792442</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1474105792442</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1028,7 +1035,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="adding some code&#10;" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;emailsAdd/urls.py&#10;" />
     <MESSAGE value="adding html + js" />
     <MESSAGE value="fixing the db" />
@@ -1053,7 +1059,8 @@
     <MESSAGE value="&#10;" />
     <MESSAGE value="&#10;Wsgi changed&#10;" />
     <MESSAGE value="adding csrf token to register page&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding csrf token to register page&#10;" />
+    <MESSAGE value="fixing csrf token to register page&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing csrf token to register page&#10;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1462,7 +1469,7 @@
     <entry file="file://$PROJECT_DIR$/emailsadd/templates/registration/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
           <folding />
         </state>
       </provider>
