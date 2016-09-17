@@ -115,13 +115,14 @@ def postform(request):
 
     save_image(new_activity, request)
 
+    new_activity.save()
+
     for i in range(0, numberOfEmails):
         new_mail = init_newsletter(new_activity, request, "participants_name" + str(i), "participants_email" + str(i))
 
         if new_mail:
             send_email(new_mail, new_activity)
 
-    new_activity.save()
     request.session['new_activity_id'] = new_activity.id
     return redirect(reverse('user_invitation'))
 
