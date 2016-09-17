@@ -43,7 +43,7 @@ you have {{number_of_bookings}} events
 <ul>
 {% for e in booking %}
     <li>
-    <a href="../status/{{e.id}}" >{{e.event_name}}</a>
+    <a href="../status/{{e.id}}" >{{e.event_name}} {{e.date}}</a>
         </li>
 {% endfor %}
     </ul>
