@@ -10,7 +10,7 @@
 <div class="col-md-8" >
 
 <div class="button_confirm">
-`   <a href="{% url 'approved' invitee.id %}" class="button_invite_preview">WILL ATTEND</a>
+`   <a href="{{ request.build_absolute_uri }}/emailsadd/approved/{{invitee.id}}" class="button_invite_preview">WILL ATTEND</a>
     <a href="{{ request.build_absolute_uri }}/emailsadd/approved/{{invitee.id}}" class="button_invite_preview">WILL  NOT ATTEND</a>
     </div>
 
