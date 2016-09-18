@@ -1,28 +1,62 @@
+{% load static %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/status.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}"/>
+
+
 <a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>
-
-
-    <div class="header">
-        <div class="header_infos">
-            <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
-            <div class="header_menu">
-                <div class="header_user"> Hello, {{ user }}</div>
-            </div>
+<div class="header">
+    <div class="header_infos">
+        <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
+        <div class="header_menu">
+            <div class="header_user"> Hello, {{ user }}</div>
         </div>
-        <div class="header_image">
-            <div class="header_image_text">
-                EASILY SEND INVITATIONS, MANAGE ATTENDANCE AND GET FEEDBACK
-            </div>
+    </div>
+    <div class="header_image">
+        <div class="header_image_text">
+            EASILY SEND INVITATIONS, MANAGE ATTENDANCE AND GET FEEDBACK
         </div>
+    </div>
+</div>
+
+<div class="col-md-2"></div>
+
+<div class="col-md-8">
+
+    <br>
+    <a class="btn_activities" href="../../my_events">MY ACTIVITIES</a> <br>
+    <br>
+
+    <div class="input_location">
+        <div class="img_cover"></div>
+        <!--<img src="{{ booking.pic.url }}">-->
+    </div>
+    <div class="input_event">
+        <div class="text6">{{booking.event_name}}</div>
+        <br>
+        <div class="text6">{{ booking.description }}</div>
+        <br>
+        <div class="text6"> {{ booking.location }}</div>
+        <br>
+        <div class="text6">{{ booking.date }} from {{booking.from_time }} to {{booking.to_time }}</div>
 
     </div>
 
+        {% for p in participants %}
 
- <a href="../../my_events" >My Activities</a> <br> <br>
+        <div class="box_grey">{{p.participants_name}}
+            {% if p.approved %}<i class="fa fa-check margin_confirmed symbol_txt" aria-hidden="true">CONFIRMED</i>
+            {% else %}<i class="fa fa-times margin_notconfirmed symbol_txt" aria-hidden="true"> NOT CONFIRMED</i> {% endif %}</div>
+        {% endfor %}
 
-<u>{{booking.event_name}}</u>
 
-<ul>
-{% for p in participants %}
-    <li>{{p.participants_name}} --- {% if p.approved %} APPROVED {% else %} NOT APPROVED {% endif %}</li>
-{% endfor %}
-</ul>
+
+        <!--{% for p in participants %}-->
+
+        <!--<div class="box_grey">{{p.participants_name}} -&#45;&#45; {% if p.approved %} APPROVED {% else %} NOT APPROVED {% endif %}</div>-->
+        <!--{% endfor %}-->
+
+</div>
+
+<div class="col-md-2"></div>
