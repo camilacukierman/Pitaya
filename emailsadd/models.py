@@ -30,6 +30,7 @@ class Newsletter(models.Model):
                                                            'unique': 'An account with this email exist.'}, )
     approved = models.BooleanField(default=False)
 
+
 class Survey(models.Model):
     participant_ref = models.ForeignKey(Newsletter, on_delete=models.CASCADE, default=1)
     a1 = models.IntegerField(default=0)
