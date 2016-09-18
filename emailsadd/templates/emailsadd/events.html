@@ -25,8 +25,7 @@
         <div class="header_infos">
             <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
             <div class="header_menu">
-                 <a href="../my_events" >My Activities</a>
-                <div class="header_user"> Hello, {{ user }}</div>
+                <div class="header_user"> Hello, {{ user }}</div> <br>
                         <a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>
             </div>
         </div>
@@ -39,16 +38,18 @@
     </div>
 
 
-you have {{number_of_bookings}} events
+
 <ul>
+   <div class="text5">   you have {{number_of_bookings}} events </div>
 {% for e in booking %}
+
     <li>
-    <a href="../status/{{e.id}}" >{{e.event_name}} {{e.date}}</a>
+    <a href="../status/{{e.id}}" class="text3" >{{e.event_name}} {{e.date}}</a>
         </li>
 {% endfor %}
     </ul>
 
-<a href="/emailsadd" >create new </a>
+<a href="/emailsadd"  class="button_invite_preview">CREATE NEW </a>
 <div class="col-md-2"></div>
 
 </body>

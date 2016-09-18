@@ -1,4 +1,5 @@
 
+
 {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}"/>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,8 +11,16 @@
 <div class="col-md-8" >
 
 <div class="button_confirm">
-   <a href="https://frozen-atoll-20042.herokuapp.com/emailsadd/approved/{{invitee.id}}" class="button_invite_preview">WILL ATTEND</a>
-    <a href="https://frozen-atoll-20042.herokuapp.com/emailsadd/approved/{{invitee.id}}" class="button_invite_preview">WILL  NOT ATTEND</a>
+   <!--<a href="https://frozen-atoll-20042.herokuapp.com/emailsadd/approved/{{invitee.id}}" class="button_invite_preview">WILL ATTEND</a>-->
+    <!--<a href="https://frozen-atoll-20042.herokuapp.com/emailsadd/approved/{{invitee.id}}" class="button_invite_preview">WILL  NOT ATTEND</a>-->
+    <!---->
+
+
+    <a href="http://127.0.0.1:8000/emailsadd/approved/{{invitee.id}}" class="button_invite_preview">WILL ATTEND</a>
+    <!--<a href="http://127.0.0.1:8000/emailsadd/approved/{{invitee.id}}" class="button_invite_preview">WILL  NOT ATTEND</a>-->
+
+
+
     </div>
 
 <div class="box">
@@ -31,11 +40,13 @@
 
      <div class="box3">
         <div class="text4"> {{ booking.manager_message }}</div>
+         <div class="text3"> {{ booking.manager_name }}</div>
 
      </div>
 
      <div class="box4">
 
+         <img src="cid:image1" name="image_preview" alt="Image preview">
          <!--<li>{{ booking.pic.image }}</li>-->
          <!--<li>{{ booking.pic.url }}</li>-->
          <img src="{{ booking.pic.url }}" name="image_preview" height="200" alt="Image preview">

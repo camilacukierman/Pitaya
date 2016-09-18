@@ -4,6 +4,8 @@ from . import views
 
 
 
+
+
 urlpatterns = [
     url(r'^$', views.invite_home, name='invite_home'),
     url(r'^register/$', views.register, name='register'),

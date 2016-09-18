@@ -241,7 +241,15 @@
     size: 18px;
     text-align:right;
     padding-top: 15px;
+    margin-left: 5px;
 }
+
+.text5{
+    font-family: HelveticaNeue;
+    size: 18px;
+    text-align: left;
+}
+
 
 .button_confirm{
     display: block;
