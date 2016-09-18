@@ -144,7 +144,7 @@ def send_email(new_mail, new_activity):
         plaintext = get_template('emailsadd/email.txt')
         htmly = get_template('emailsadd/user_invitation.html')
         d = Context({'booking': new_activity, "invitee": new_mail})
-        subject, from_email, to = new_activity.event_name, 'pitayaproject@gmail.com', new_mail.participants_email
+        subject, from_email, to = new_activity.event_name, 'donotreplypitaya@gmail.com', new_mail.participants_email
         text_content = plaintext.render(d)
         html_content = htmly.render(d)
         msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
