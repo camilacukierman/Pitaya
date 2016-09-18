@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="changing e-mail to donotreply@pitaya.com because of smtp google error">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Pitaya.iml" afterPath="$PROJECT_DIR$/.idea/Pitaya.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="cron jobs test ---&gt; ready">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/management/commands/send_mails.py" afterPath="$PROJECT_DIR$/emailsadd/management/commands/send_mails.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/models.py" afterPath="$PROJECT_DIR$/emailsadd/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_survey.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_survey.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_reminder.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_reminder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/views.py" afterPath="$PROJECT_DIR$/emailsadd/views.py" />
     </list>
     <ignored path="Pitaya.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,10 +86,8 @@
         <entry file="file://$PROJECT_DIR$/emailsadd/management/commands/send_mails.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+              <caret line="15" column="38" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,10 +96,8 @@
         <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="258">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -771,13 +760,6 @@
       <option name="presentableId" value="Default" />
       <updated>1472285009134</updated>
     </task>
-    <task id="LOCAL-00015" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;emailsAdd/urls.py&#10;">
-      <created>1473255973180</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1473255973180</updated>
-    </task>
     <task id="LOCAL-00016" summary="test">
       <created>1473256030561</created>
       <option name="number" value="00016" />
@@ -1114,7 +1096,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474190112293</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="cron jobs test ---&gt; ready">
+      <created>1474216034490</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1474216034490</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1201,7 +1190,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="working review" />
     <MESSAGE value="Preparation for deployment&#10;css and html changes &#10;initial survey added" />
     <MESSAGE value="Deployment preparation&#10;" />
     <MESSAGE value="mysql adapter&#10;" />
@@ -1226,7 +1214,8 @@
     <MESSAGE value="structure for command managment cron" />
     <MESSAGE value="adding survey part - fixing db" />
     <MESSAGE value="changing e-mail to donotreply@pitaya.com because of smtp google error" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing e-mail to donotreply@pitaya.com because of smtp google error" />
+    <MESSAGE value="cron jobs test ---&gt; ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="cron jobs test ---&gt; ready" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1234,37 +1223,37 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/management/commands/send_mails.py</url>
-          <line>14</line>
+          <line>15</line>
           <option name="timeStamp" value="228" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/management/commands/send_mails.py</url>
-          <line>15</line>
+          <line>16</line>
           <option name="timeStamp" value="229" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/management/commands/send_mails.py</url>
-          <line>38</line>
+          <line>39</line>
           <option name="timeStamp" value="230" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/management/commands/send_mails.py</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="251" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/management/commands/send_mails.py</url>
-          <line>76</line>
+          <line>77</line>
           <option name="timeStamp" value="254" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/management/commands/send_mails.py</url>
-          <line>79</line>
+          <line>80</line>
           <option name="timeStamp" value="256" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/management/commands/send_mails.py</url>
-          <line>74</line>
+          <line>75</line>
           <option name="timeStamp" value="257" />
         </line-breakpoint>
       </breakpoints>
@@ -1571,20 +1560,16 @@
     <entry file="file://$PROJECT_DIR$/emailsadd/management/commands/send_mails.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
