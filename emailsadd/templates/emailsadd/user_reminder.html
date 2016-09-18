@@ -1,39 +1,5 @@
 
-{% load static %}
-
-
-{% if booking %}
-
-<div class="box">
-
-        <div class="box1">
-            <div class="text1"> YOU ARE INVITED TO  </div> <br>
-            <div class="text2"> {{ booking.event_name }}</div>
-            <div class="text3"> {{ booking.description }} </div>
-     </div>
-
-  <div class="box2">
-
-      <div class="text3"> {{ booking.date }} from {{booking.from_time }} to {{booking.to_time }} </div>
-      <div class="text3"> {{ booking.location }} </div>
-
-     </div>
-
-     <div class="box3">
-        <div class="text4"> {{ booking.manager_message }}</div>
-
-     </div>
-
-     <div class="box4">
-
-         <li>{{ booking.pic.image }}</li>
-        <li>{{ booking.pic.url }}</li>
-        <img src="{{ booking.pic.url }}" name="image_preview" height="200" alt="Image preview">
-
-
-     </div>
-     </div>
-{% endif %}
+<div>THIS IS A REMINDER FOR YOUR ACTIVITY</div>
 
 
 

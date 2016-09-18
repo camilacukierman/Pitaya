@@ -8,7 +8,7 @@ from email.mime.image import MIMEImage
 from emailsadd.models import Booker, Newsletter
 
 
-def send_email_reminder (event_name, participant_email_reminder, participant_name_reminder,event_pic):
+def send_email_reminder(event_name, participant_email_reminder, participant_name_reminder,event_pic):
     try:
         plaintext = get_template('emailsadd/email.txt')
         htmly = get_template('emailsadd/user_reminder.html')

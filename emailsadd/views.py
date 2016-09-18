@@ -139,6 +139,7 @@ def save_image(new_activity, request):
 
 
 def send_email(new_mail, new_activity):
+    print('entramos na func email')
     try:
         plaintext = get_template('emailsadd/email.txt')
         htmly = get_template('emailsadd/user_invitation.html')
