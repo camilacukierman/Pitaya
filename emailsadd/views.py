@@ -1,4 +1,6 @@
 from datetime import datetime
+from email.mime.image import MIMEImage
+
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
@@ -8,10 +10,9 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import redirect, render
 from django.template import Context
 from django.template.loader import get_template
-from email.mime.image import MIMEImage
 
 from .forms import ImageUploadForm
-from .models import Booker,Survey,Newsletter
+from .models import Booker,Newsletter
 
 
 @login_required
