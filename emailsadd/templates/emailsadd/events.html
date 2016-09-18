@@ -25,8 +25,7 @@
         <div class="header_infos">
             <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
             <div class="header_menu">
-                 <a href="../my_events" >My Activities</a>
-                <div class="header_user"> Hello, {{ user }}</div>
+                <div class="header_user"> Hello, {{ user }}</div> <br>
                         <a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>
             </div>
         </div>
