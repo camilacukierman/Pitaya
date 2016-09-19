@@ -92,8 +92,7 @@ class Command(BaseCommand):
                 participant_name_reminder = attender.participants_name
                 participant_email_reminder = attender.participants_email
 
-                send_email_reminder(event_name, participant_email_reminder, participant_name_reminder, event_pic,
-                                    event_date)
+                send_email_reminder(event_name, participant_email_reminder, participant_name_reminder, event_pic)
 
         print("eventos de amanha tomorrow_events.count() = " + str(tomorrow_events.count()))
         for event in tomorrow_events:
