@@ -63,7 +63,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
 
-        print("db.connections.databases " + db.connections.databases)
+        print("db.connections.databases " + db.connections.databases['default']['NAME'] + " db.engine " + db.connections.databases['default']['ENGINE'])
         yesterday = datetime.date.today() - datetime.timedelta(days=1)
         tomorrow = datetime.date.today() + datetime.timedelta(days=1)
         print(tomorrow)
