@@ -13,11 +13,12 @@ from emailsadd.models import Booker, Newsletter
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pitaya.settings")
 
 
-def send_email_reminder(event_name, participant_email_reminder, participant_name_reminder, event_pic, event_date):
+def send_email_reminder(event_name, participant_email_reminder, participant_name_reminder, event_pic):
     try:
         plaintext = get_template('emailsadd/email.txt')
         htmly = get_template('emailsadd/user_reminder.html')
-        d = Context({'participant_name': participant_name_reminder, 'event_date': event_date})
+        d = Context({'participant_name': participant_name_reminder,
+                     'participant_email_reminder': participant_email_reminder, 'event_name': event_name})
         subject, from_email, to = event_name, 'donotreplypitaya@gmail.com', participant_email_reminder
         print("subject " + subject + " from_email " + from_email + " to " + to)
         text_content = plaintext.render(d)
@@ -38,11 +39,11 @@ def send_email_reminder(event_name, participant_email_reminder, participant_name
         print(message)
 
 
-def send_email_survey(event_name, participant_name_survey, participant_email_survey, event_date):
+def send_email_survey(event_name, participant_name_survey, participant_email_survey ):
     try:
         plaintext = get_template('emailsadd/email.txt')
-        htmly = get_template('emailsadd/invite_survey.html')
-        d = Context({'participant_name': participant_name_survey, 'event_date': event_date})
+        htmly = get_template('emailsadd/survey.html')
+        d = Context({'participant_name': participant_name_survey, 'event_name' : event_name , 'participant_email_survey':participant_email_survey})
         subject, from_email, to = event_name, 'donotreplypitaya@gmail.com', participant_email_survey
         print("subject " + subject + " from_email " + from_email + " to " + to)
         text_content = plaintext.render(d)
@@ -105,7 +106,7 @@ class Command(BaseCommand):
                 participant_name_survey = attender.participants_name
                 participant_email_survey = attender.participants_email
 
-                send_email_survey(event_name, participant_name_survey, participant_email_survey, event_date)
+                send_email_survey(event_name, participant_name_survey, participant_email_survey )
 
 
 
