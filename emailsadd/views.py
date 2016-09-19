@@ -13,7 +13,7 @@ from django.template import Context
 from django.template.loader import get_template
 
 from .forms import ImageUploadForm
-from .models import Booker,Newsletter
+from .models import Booker,Newsletter,Survey
 
 
 @login_required
@@ -237,4 +237,7 @@ def survey_complete(request):
 
 def postsurvey(request):
     answer_one = request.POST.get("a1")
+    new_survey = Survey.objects.create(a1=answer_one)
+    new_survey.save()
+
     return HttpResponse("hello world"+answer_one)

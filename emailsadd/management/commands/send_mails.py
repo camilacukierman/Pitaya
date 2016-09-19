@@ -65,8 +65,9 @@ class Command(BaseCommand):
 
         print("db.connections.databases " + db.connections.databases['default']['NAME'] + " db.engine " +
               db.connections.databases['default']['ENGINE'])
-        yesterday = datetime.date.today() - datetime.timedelta(days=1)
-        tomorrow = datetime.date.today() + datetime.timedelta(days=1)
+        yesterday = datetime.date.today() - datetime.timedelta(days=2)
+        tomorrow = datetime.date.today() + datetime.timedelta(days=2)
+        print(yesterday)
         print(tomorrow)
         today = datetime.date.today()
 
