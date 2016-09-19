@@ -12,7 +12,7 @@ from django.template.loader import get_template
 from email.mime.image import MIMEImage
 
 from .forms import ImageUploadForm
-from .models import Booker,Newsletter
+from .models import Booker, Newsletter
 
 
 @login_required
@@ -64,9 +64,13 @@ def event_status(request, eid):
 @login_required
 def user_invitation(request):
     booking = Booker.objects.get(pk=request.session.get('new_activity_id'))
+    print(booking.event_name)
+    newsletter = Newsletter.objects.get(pk=request.session.get('new_mail_id'))
     template = get_template('emailsadd/user_invitation.html')
     context = {
         'booking': booking,
+        'invitee': newsletter,
+        'not_email': True
     }
     return HttpResponse(template.render(context, request))
 
@@ -102,10 +106,8 @@ def postform(request):
     myevent_description = request.POST.get("event_description")
     mymanager_message = request.POST.get("manager_message")
 
-    myfromtime = datetime.strptime(mydate +' ' + myfromtime, "%Y-%m-%d %H:%M")
-    mytotime = datetime.strptime(mydate +' ' + mytotime, "%Y-%m-%d %H:%M")
-
-
+    myfromtime = datetime.strptime(mydate + ' ' + myfromtime, "%Y-%m-%d %H:%M")
+    mytotime = datetime.strptime(mydate + ' ' + mytotime, "%Y-%m-%d %H:%M")
 
     new_activity = Booker.objects.create(manager_name=mymanager_name,
                                          event_name=myevent_name, location=mylocation, from_time=myfromtime,
@@ -126,6 +128,7 @@ def postform(request):
             send_email(new_mail, new_activity)
 
     request.session['new_activity_id'] = new_activity.id
+    request.session['new_mail_id'] = new_mail.id
     return redirect(reverse('user_invitation'))
 
 
@@ -187,13 +190,13 @@ def approved(request, pid):
     }
     return HttpResponse(template.render(context, request))
 
+
 def survey(request, pid):
     template = get_template('emailsadd/survey.html')
     context = {
         "pid": pid,
     }
     return HttpResponse(template.render(context, request))
-
 
 
 def register(request):
@@ -236,4 +239,4 @@ def survey_complete(request):
 
 def postsurvey(request):
     answer_one = request.POST.get("a1")
-    return HttpResponse("hello world"+answer_one)
+    return HttpResponse("hello world" + answer_one)
