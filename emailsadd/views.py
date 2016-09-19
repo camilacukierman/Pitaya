@@ -85,7 +85,7 @@ def user_reminder(request):
 @login_required
 def invite_survey(request):
     booking = Booker.objects.all()
-    template = get_template('emailsadd/invite_survey.html')
+    template = get_template('emailsadd/invitesurvey.html')
     context = {
         'booking': booking,
     }

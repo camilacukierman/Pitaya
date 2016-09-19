@@ -39,11 +39,11 @@ def send_email_reminder(event_name, participant_email_reminder, participant_name
         print(message)
 
 
-def send_email_survey(event_name, participant_name_survey, participant_email_survey ):
+def send_email_survey(event_name, participant_name_survey, participant_email_survey, participant_id, event_id ):
     try:
         plaintext = get_template('emailsadd/email.txt')
-        htmly = get_template('emailsadd/survey.html')
-        d = Context({'participant_name': participant_name_survey, 'event_name': event_name , 'participant_email_survey':participant_email_survey, 'participant_id':})
+        htmly = get_template('emailsadd/invitesurvey.html')
+        d = Context({'participant_id':str(participant_id)})
         subject, from_email, to = event_name, 'donotreplypitaya@gmail.com', participant_email_survey
         print("subject " + subject + " from_email " + from_email + " to " + to)
         text_content = plaintext.render(d)
@@ -104,8 +104,10 @@ class Command(BaseCommand):
                 print('inside tomorrow_events participants')
                 participant_name_survey = attender.participants_name
                 participant_email_survey = attender.participants_email
+                participant_id = attender.id
+                event_id = attender.booker_id_id
 
-                send_email_survey(event_name, participant_name_survey, participant_email_survey )
+                send_email_survey(event_name, participant_name_survey, participant_email_survey,participant_id,event_id )
 
 
 

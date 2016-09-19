@@ -1,16 +1,12 @@
 <div> THIS IS THE SURVEY</div>
 
 Yesterday
-
-    <input type="number" min="1" max="5" class="input-text-one" name="a1" required><br>
+<form action="post_survey">
+    <input type="hidden" value="{{pid}}" />
+        <input type="number" min="1" max="5" class="input-text-one" name="a1" required><br>
 
     <input type="submit" class="button_invite_send" value="SEND FEEDBACK"><br>
-    {{ event_name }}
-
-    {{ participant_email_survey}}
-
-
-    {{participant_name_survey }}
+</form>
 
 
 
