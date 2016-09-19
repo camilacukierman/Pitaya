@@ -36,7 +36,7 @@ def send_email_reminder(event_name, participant_email_reminder, participant_name
 def send_email_survey(event_name, participant_name_survey, participant_email_survey,event_date):
     try:
         plaintext = get_template('emailsadd/email.txt')
-        htmly = get_template('emailsadd/survey.html')
+        htmly = get_template('emailsadd/invite_survey.html')
         d = Context({'participant_name': participant_name_survey, 'event_date': event_date})
         subject, from_email, to = event_name, 'donotreplypitaya@gmail.com', participant_email_survey
         text_content = plaintext.render(d)
