@@ -73,7 +73,7 @@
         <div class="form_invite col-md-12" style="padding:0px">
             <div class="input_location col-lg-7">
                                 <input type="text" class="input_loc" name="location" placeholder=" Location"><br>
-                <input type="date" class="input-date" name="date" id="datepicker" placeholder="Date" required value="today">
+                <input type="date" class="input-date" name="date" id="datepicker" placeholder="Date" required>
                                 <div class="time-holder">
                                     <div class="to_time_div">
                         <div class="adding_time">from</div>
@@ -110,10 +110,11 @@
                    name="participants_number"
                    placeholder="Participants" required value="1"></div>
             <div class="email_holder col-lg-12" style="padding: 0px">
+                <div class="email_holder_nojs col-lg-12" style="padding: 0px">
                 <div id="email_participant_input input_location">
                     <input type="text" class="input_name col-lg-4" name="participants_name0" placeholder=" Name" >
                     <input type="text" class="input_mail col-lg-6" name="participants_email0" placeholder=" E-mail">
-
+                </div>
                 </div>
             </div>
             <button>Upload .xls or CSV</button>
