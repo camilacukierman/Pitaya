@@ -15,23 +15,24 @@
 <div class="col-md-2"></div>
 <div class="col-md-8">
 
+     <div class ="register_box" style="height: 40%">
       <div class="logo"></div>
-    <div class ="register_box" >
+
 
 {% if form.errors %}
 <p>Your username and password didn't match. Please try again.</p>
 {% endif %}
 
-<form class="login_box" method="post" action="{% url 'django.contrib.auth.views.login' %}">
+<form class="form" method="post" action="{% url 'django.contrib.auth.views.login' %}">
 {% csrf_token %}
 <table>
 <tr>
-    <td class="input_login">{{ form.username.label_tag }}</td>
-    <td class="input_login">{{ form.username }}</td>
+    <td class="id_username">{{ form.username.label_tag }}</td>
+    <td class="id_username">{{ form.username }}</td>
 </tr>
 <tr>
-    <td class="input_login">{{ form.password.label_tag }}</td>
-    <td class="input_login">{{ form.password }}</td>
+    <td class="id_username">{{ form.password.label_tag }}</td>
+    <td class="id_username">{{ form.password }}</td>
 </tr>
 </table>
 

@@ -113,42 +113,15 @@
 
 }
 
-.button_invite_preview {
-    padding: 2px 20px;
-    background-color: white;
-    padding: 2px 20px;
-    background-color: white;
-    color: #E5BF44;
-    box-shadow: none;
-    font-family: HelveticaNeueBold;
-    border: 1px solid #E5BF44;
-}
-.button_invite_preview {
-    padding: 2px 20px;
-    background-color: white;
-    color: #E5BF44;
-    box-shadow: none;
-    font-family: HelveticaNeueBold;
-    border: 1px solid #E5BF44;
-}
-.button_invite_preview {
-    padding: 2px 20px;
-    background-color: white;
-    color: #E5BF44;
-    box-shadow: none;
-    font-family: HelveticaNeueBold;
-    border: 1px solid #E5BF44;
-}
-.button_invite_preview {
-    padding: 2px 20px;
-    background-color: white;
-    color: #E5BF44;
-    box-shadow: none;
-    font-family: HelveticaNeueBold;
-    border: 1px solid #E5BF44;
-}
 
-
+.button_invite_preview {
+    padding: 2px 20px;
+    background-color: white;
+    color: #E5BF44;
+    box-shadow: none;
+    font-family: HelveticaNeueBold;
+    border: 1px solid #E5BF44;
+}
 
 .border_add{
     text-align: center;
