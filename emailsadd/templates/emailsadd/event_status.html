@@ -12,7 +12,7 @@
             <div class="spaceforlogo"></div>
             <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
             <div class="header_menu">
-                <button class="my_activity_btn"><a class="my_activity" href="../emailsadd/my_events">MY ACTIVITIES</a></button>
+                <button class="my_activity_btn"><a class="my_activity" href="../../my_events">MY ACTIVITIES</a></button>
 
                 <div class="header_user"> Hello, {{ user }}</div>
         </div>
@@ -28,32 +28,39 @@
 <div class="col-md-8">
 
     <br>
-    <a class="btn_activities" href="../../my_events">MY ACTIVITIES</a> <br>
-    <br>
 
-    <div class="input_location">
-        <div class="img_cover"></div>
-        <!--<img src="{{ booking.pic.url }}">-->
+
+    <br>
+    <div class="col-md-12">
+    <div  class="col-md-6">
+          <img src="" name="image_preview" id="image_preview_status" class="view_image" />
     </div>
-    <div class="input_event">
-        <div class="text6">{{booking.event_name}}</div>
+
+    <div class="input_event col-md-6">
+
+        <div class="intro_text">{{booking.event_name}}</div>
         <br>
-        <div class="text6">{{ booking.description }}</div>
+        <div class="intro_text">{{ booking.description }}</div>
         <br>
         <div class="text6"> {{ booking.location }}</div>
         <br>
         <div class="text6">{{ booking.date }} from {{booking.from_time }} to {{booking.to_time }}</div>
-
     </div>
 
-        {% for p in participants %}
+        </div>
+
+
+        <div class="col-md-12" >
+
+         {% for p in participants %}
 
         <div class="box_grey">{{p.participants_name}}
             {% if p.approved %}<i class="fa fa-check margin_confirmed symbol_txt" aria-hidden="true">CONFIRMED</i>
-            {% else %}<i class="fa fa-times margin_notconfirmed symbol_txt" aria-hidden="true"> NOTCONFIRMED</i> {% endif %}
+            {% else %}<i class="fa fa-times margin_notconfirmed symbol_txt" aria-hidden="true"> NOT CONFIRMED</i> {% endif %}
         </div>
 
         {% endfor %}
+        </div>
 
 </div>
 
