@@ -1,0 +1,48 @@
+
+
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="https://frozen-atoll-20042.herokuapp.com{% static 'emailsadd/css/style.css' %}"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+{% if booking %}
+
+<div class="col-md-2" > </div>
+<div class="col-md-8" >
+
+<div style=" display: block;    margin: 50px auto;    text-align: -webkit-center;">
+   <a href="http://127.0.0.1:8000{% url 'approved' pid=invitee.id  approved='true' %}" style = " padding: 2px 20px;    background-color: white;    padding: 2px 20px;    background-color: white;    color: #E5BF44;    box-shadow: none;    font-family: HelveticaNeueBold;    border: 1px solid #E5BF44;">WILL ATTEND</a>
+    <a href="http://127.0.0.1:8000{% url 'approved' pid=invitee.id  approved='false' %}" style = " padding: 2px 20px;    background-color: white;    padding: 2px 20px;    background-color: white;    color: #E5BF44;    box-shadow: none;    font-family: HelveticaNeueBold;    border: 1px solid #E5BF44;">WILL  NOT ATTEND</a>
+</div>
+
+<div style =  "height: 70%;    width: 50%;    border: 0.5px solid black;     display: block;    margin: 100px auto ;">
+
+        <div style=" height: 20%;    width: 100%;     border-bottom: 0.5px solid black;    display: block;    margin: 0 0;">
+            <div style=" font-family: HelveticaNeueBold;  size: 18px;    text-align: center;   padding-top: 20px;"> YOU ARE INVITED TO  </div> <br>
+            <div style="  font-family: HelveticaNeue;    size: 18px;    text-align: center;    margin-top: -21px;"> {{ booking.event_name }}</div>
+            <div style=" font-family: HelveticaNeue;    size: 18px;    text-align: center;"> {{ booking.description }} </div>
+     </div>
+
+  <div style="height: 15%;    width: 100%;     border-bottom: 0.5px solid black;    display: block;    margin: 0 0;">
+
+      <div style=" font-family: HelveticaNeue;    size: 18px;    text-align: center;"> {{ booking.date }} from {{booking.from_time }} to {{booking.to_time }} </div>
+      <div style=" font-family: HelveticaNeue;    size: 18px;    text-align: center;"> {{ booking.location }} </div>
+
+     </div>
+
+     <div style="height: 20%;    width: 100%;     border-bottom: 0.5px solid black;    display: block;    margin: 0 0;">
+        <div class="text4"> {{ booking.manager_message }}</div>
+         <div class="text4"> {{ booking.manager_name }}</div>
+
+     </div>
+
+     <div style="  width: 100%;    height:200px;    background-image: url("../images/image_defult.jpg");    background-repeat: no-repeat;    background-position: center;    border: 0px;">
+         <img src="cid:image1" name="image_preview" alt="Image preview">
+     </div>
+     </div>
+</div>
+<div class="col-md-2" > </div>
+
+
+{% endif %}
+

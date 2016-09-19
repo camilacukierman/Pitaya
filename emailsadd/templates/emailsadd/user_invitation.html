@@ -1,7 +1,7 @@
 
 
 {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{{site}}{% static 'emailsadd/css/style.css' %}"/>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
@@ -18,7 +18,7 @@
 <div class="box">
 
         <div class="box1">
-            <div class="text1"> YOU ARE INVITED TO  </div> <br>
+            <div class="text1" > YOU ARE INVITED TO  </div> <br>
             <div class="text2"> {{ booking.event_name }}</div>
             <div class="text3"> {{ booking.description }} </div>
      </div>

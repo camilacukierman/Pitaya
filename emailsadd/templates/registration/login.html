@@ -1,21 +1,22 @@
 
-<!--{% extends "emailsadd/invite_home.html" %}-->
+
 
 {% load static %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/register_login.css' %}"/>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}"/>
 
 
 {% block content %}
 
-
+<body class="body">
 
 <div class="col-md-2"></div>
 <div class="col-md-8">
 
       <div class="logo"></div>
-    <div register_box >
+    <div class ="register_box" >
 
 {% if form.errors %}
 <p>Your username and password didn't match. Please try again.</p>
@@ -34,12 +35,16 @@
 </tr>
 </table>
 
-<input class="login_btn" type="submit" value="login" />
+<input class="login_btn button_login" type="submit" value="LOGIN" />
 <input class="login_btn" type="hidden" name="next" value="{{ next }}" />
 </form>
 
 </div>
+
 </div>
+
 <div class="col-md-2"></div>
 
 {% endblock %}
+
+ </body>

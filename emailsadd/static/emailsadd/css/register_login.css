@@ -109,3 +109,27 @@
     margin: auto;
     display: table;
 }
+
+
+.label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+     font-family: HelveticaNeue;
+}
+
+.button, input, select, textarea{
+    font-family: HelveticaNeue;
+}
+
+.input{
+    background-color: red;
+}
+
+
+.button_login{
+    display: block;
+    margin: 50px auto;
+    text-align: -webkit-center;
+}

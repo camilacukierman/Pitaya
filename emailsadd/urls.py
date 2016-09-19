@@ -1,8 +1,10 @@
+from django.conf import settings
+from django.conf.urls import include, url
 from django.conf.urls import url
+from django.conf.urls.static import static
+from django.contrib import admin
 
 from . import views
-
-
 
 
 
@@ -11,11 +13,12 @@ urlpatterns = [
     url(r'^register/$', views.register, name='register'),
     url(r'^login/$', 'django.contrib.auth.views.login'),
     url(r'^user_invitation/', views.user_invitation, name='user_invitation'),
+    url(r'^user_email_invitation/', views.user_email_invitation, name='user_email_invitation'),
     url(r'^my_events/', views.events, name='events'),
     url(r'^user_reminder/$', views.user_reminder, name='user_reminder'),
     url(r'^invite_survey/$', views.invite_survey, name='invite_survey'),
     url(r'^status/(?P<eid>\w+)/$', views.event_status, name='event_status'),
-    url(r'^approved/(?P<pid>\w+)/$', views.approved, name='approved'),
+    url(r'^approved/(?P<pid>\w+)/(?P<approved>\w+)/$', views.approved, name='approved'),
     url(r'^survey/(?P<pid>\w+)/$', views.survey, name='survey'),
     url(r'^event_feedback/$', views.event_feedback, name='event_feedback'),
     url(r'^survey_complete/$', views.survey_complete, name='survey_complete'),

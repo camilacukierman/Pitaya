@@ -1,6 +1,4 @@
 from datetime import datetime
-from email.mime.image import MIMEImage
-
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
@@ -11,6 +9,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import redirect, render
 from django.template import Context
 from django.template.loader import get_template
+from email.mime.image import MIMEImage
 
 from .forms import ImageUploadForm
 from .models import Booker,Newsletter
@@ -18,7 +17,7 @@ from .models import Booker,Newsletter
 
 @login_required
 def invite_home(request):
-    call_command('send_mails')
+    # call_command('send_mails')
     booking = None
     if request.user:
         booking = Booker.objects.filter(user_id=str(request.user.id))
@@ -73,6 +72,17 @@ def user_invitation(request):
 
 
 @login_required
+def user_email_invitation(request):
+    booking = Booker.objects.get(pk=request.session.get('new_activity_id'))
+    template = get_template('emailsadd/user_email_invitation.html')
+    context = {
+        'booking': booking,
+    }
+    return HttpResponse(template.render(context, request))
+
+
+
+@login_required
 def user_reminder(request):
     booking = Booker.objects.all()
     template = get_template('emailsadd/user_reminder.html')
@@ -92,6 +102,7 @@ def invite_survey(request):
     return HttpResponse(template.render(context, request))
 
 
+
 @login_required
 def postform(request):
     mymanager_name = request.POST.get("manager_name")
@@ -105,8 +116,6 @@ def postform(request):
 
     myfromtime = datetime.strptime(mydate +' ' + myfromtime, "%Y-%m-%d %H:%M")
     mytotime = datetime.strptime(mydate +' ' + mytotime, "%Y-%m-%d %H:%M")
-
-
 
     new_activity = Booker.objects.create(manager_name=mymanager_name,
                                          event_name=myevent_name, location=mylocation, from_time=myfromtime,
@@ -145,7 +154,7 @@ def send_email(new_mail, new_activity):
     print('entramos na func email')
     try:
         plaintext = get_template('emailsadd/email.txt')
-        htmly = get_template('emailsadd/user_invitation.html')
+        htmly = get_template('emailsadd/user_email_invitation.html')
         d = Context({'booking': new_activity, "invitee": new_mail})
         subject, from_email, to = new_activity.event_name, 'donotreplypitaya@gmail.com', new_mail.participants_email
         text_content = plaintext.render(d)
@@ -178,9 +187,9 @@ def init_newsletter(new_activity, request, participants_name, participants_email
         return None
 
 
-def approved(request, pid):
+def approved(request, pid, approved):
     approvedParticipant = Newsletter.objects.get(id=pid)
-    approvedParticipant.approved = True
+    approvedParticipant.approved = approved
     approvedParticipant.save()
     template = get_template('emailsadd/thankyou.html')
     context = {
