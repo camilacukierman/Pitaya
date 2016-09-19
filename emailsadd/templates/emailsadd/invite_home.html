@@ -65,14 +65,14 @@
         <br>
         <div class="intro_text">Create a new invitation</div>
         <br>
-        <input type="text" class="input-text-one" name="event_name" placeholder="Add booked activity's name"
+        <input type="text" class="input-text-one" name="event_name" placeholder=" Add booked activity's name"
                required ><br>
         <input type="text" class="input-text-one" name="event_description"
-               placeholder="Add booked activity's description" required ><br>
+               placeholder=" Add booked activity's description" required ><br>
 
-        <div class="col-md-12" style="padding:0px">
+        <div class="form_invite col-md-12" style="padding:0px">
             <div class="input_location col-lg-7">
-                                <input type="text" class="input_loc" name="location" placeholder="Location"><br>
+                                <input type="text" class="input_loc" name="location" placeholder=" Location"><br>
                 <input type="date" class="input-date" name="date" id="datepicker" placeholder="Date" required value="today">
                                 <div class="time-holder">
                                     <div class="to_time_div">
@@ -82,8 +82,8 @@
                 <input type="time" name="to_time" class="time_input" placeholder="Time"><br></div></div>
 
                 <input type="text" class="input_descr" name="manager_message"
-                       placeholder="Here you can write more about the activity or leave a personal note for your team."><br>
-                <input type="text" class="input_loc" name="manager_name" placeholder="Add manager's name (Signature for the invite)" required ><br>
+                       placeholder=" Here you can write more about the activity or leave a personal note for your team."><br>
+                <input type="text" class="input_loc" name="manager_name" placeholder=" Add manager's name (Signature for the invite)" required ><br>
             </div>
 
             <div class="upload_holder col-lg-5">
@@ -94,26 +94,25 @@
                     <br/>
                 </div>
             </div>
-        </div>
+</div>
 
-        <div>
 
+        <div class="tabs_addparticipants col-lg-12">
         <ul class="tab">
-
             <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">SEND TO ALL PARTICIPANTS</a>
             </li>
             <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">SEND ONLY TO MY E-MAIL</a></li>
         </ul>
-
-
         <div id="London" class="tabcontent">
+            <div class="num_of_participants col-lg-12">
+                <label class="adding_participants_txt"> Number of participants:</label>
             <input type="number" min="1" max="5000" id="participants_number" class="input_part"
                    name="participants_number"
-                   placeholder="Participants" required value="1"><br>
-            <div class="email_holder">
+                   placeholder="Participants" required value="1"></div>
+            <div class="email_holder col-lg-12" style="padding: 0px">
                 <div id="email_participant_input input_location">
-                    <input type="text" class="input_name" name="participants_name0" placeholder="Name" value="mila">
-                    <input type="text" class="input_mail" name="participants_email0" placeholder="E-mail" value="milacukierman@gmail.com">
+                    <input type="text" class="input_name col-lg-4" name="participants_name0" placeholder=" Name" >
+                    <input type="text" class="input_mail col-lg-6" name="participants_email0" placeholder=" E-mail">
 
                 </div>
             </div>

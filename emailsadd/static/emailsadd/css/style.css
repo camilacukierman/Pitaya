@@ -65,20 +65,30 @@
 
 .input_mail{
     width: 69%;
-    margin: 5px 5px;
     font-family: HelveticaNeue;
-}
+    background-color: #F2F2F2;
+    border:none;
+    height: 26px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;}
 
 .input_name {
     width: 30%;
-    margin: 5px -4px;
+    margin-top: 5px;
     font-family: HelveticaNeue;
+    background-color: #F2F2F2;
+    border:none;
+    height: 26px;
+    margin-bottom: 5px;
+
 }
 
 .input_part {
     width: 100%;
     margin: 5px -6px;
     font-family: HelveticaNeue;
+    margin-top: 5px;
 }
 
 
@@ -173,7 +183,8 @@
 
 .input_location{
     display:inline-block ;
-    padding:0px;
+    padding-left:0px;
+    padding-right: 20px;
 }
 
 
@@ -293,7 +304,7 @@
 
 #image_preview{
     width: 100%;
-    height:250px;
+    height:270px;
 }
 .adding_time{
     display: inline-block;
@@ -353,3 +364,48 @@
 .final_btns{
     text-align: center;
 }
+
+.tabs_addparticipants{
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+
+#participants_number.input_part{
+    width: 15%;
+    font-family: HelveticaNeue;
+    background-color: #F2F2F2;
+    color: #95989A;
+    margin-top: 0px;
+    margin-left: 10px;
+    border:none;
+}
+
+.adding_participants_txt{
+    font-family: HelveticaNeue;
+    background-color: #F2F2F2;
+    color: #95989A;
+    font-size:12px;
+    padding-left: 5px;
+
+}
+
+.num_of_participants{
+    display: inline-block;
+    background-color: #F2F2F2;
+    padding: 0px;
+    margin-top:10px;
+    width: 99.25%;
+    margin-bottom: 5px;
+}
+
+#image_preview{
+    background-image: url("../images/image_defult.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0px;
+
+}
+

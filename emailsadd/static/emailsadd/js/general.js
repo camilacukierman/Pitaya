@@ -42,7 +42,7 @@ $(document).ready(function () {
             var numberOfFieldsToAdd = currentValue - listLength;
             for (var i = 0; i < numberOfFieldsToAdd; i++) {
                 var index = listLength + i;
-                $('.email_holder').append('<div class="email_participant_input>"> <input type="text" name="participants_name' + index + '" placeholder="Name"> <input type="text" name="participants_email' + index + '" placeholder="E-mail"> </div>');
+                $('.email_holder').append('<div class="email_holder col-lg-12" style="padding: 0px"><div id="email_participant_input input_location"><input type="text" name="participants_name' + index + '" placeholder="Name" class="input_name col-lg-4"> <input type="text" name="participants_email' + index + '" placeholder="E-mail" class="input_mail col-lg-6"> </div></div>');
             }
 
         } else {
