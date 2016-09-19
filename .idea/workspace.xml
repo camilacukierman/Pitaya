@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="fixing frontend look on invite_home">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/emailsadd/static/emailsadd/images/image_defult.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pitaya.iws" />
@@ -101,8 +100,8 @@
       <file leaf-file-name="tabs.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/tabs.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+            <state relative-caret-position="496">
+              <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -806,13 +805,6 @@
       <option name="presentableId" value="Default" />
       <updated>1472285009134</updated>
     </task>
-    <task id="LOCAL-00020" summary="update db +invite_home">
-      <created>1473326318492</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1473326318492</updated>
-    </task>
     <task id="LOCAL-00021" summary="views + sending email !!!">
       <created>1473331706953</created>
       <option name="number" value="00021" />
@@ -1149,7 +1141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474263012527</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="fixing frontend look on invite_home">
+      <created>1474268307216</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1474268307216</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1664,8 +1663,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/tabs.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        <state relative-caret-position="496">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
           <folding />
         </state>
       </provider>
