@@ -805,13 +805,6 @@
       <option name="presentableId" value="Default" />
       <updated>1472285009134</updated>
     </task>
-    <task id="LOCAL-00021" summary="views + sending email !!!">
-      <created>1473331706953</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1473331706953</updated>
-    </task>
     <task id="LOCAL-00022" summary="adding some changes">
       <created>1473497283360</created>
       <option name="number" value="00022" />
@@ -1148,7 +1141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474268307216</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="fixing frontend look on invite_home">
+      <created>1474268318564</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1474268318564</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TodoView">
