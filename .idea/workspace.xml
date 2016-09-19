@@ -44,12 +44,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="191" column="45" selection-start-line="191" selection-start-column="39" selection-end-line="191" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="629">
+              <caret line="38" column="9" selection-start-line="37" selection-start-column="69" selection-end-line="38" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="send_mails.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="send_mails.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailsadd/management/commands/send_mails.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="51" column="57" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
+            <state relative-caret-position="272">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -111,7 +113,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <push-targets>
-      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="master" />
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="heroku" target-branch="master" />
     </push-targets>
   </component>
   <component name="IdeDocumentHistory">
@@ -163,11 +165,11 @@
         <option value="$PROJECT_DIR$/emailsadd/management/commands/testing_scheduler.py" />
         <option value="$PROJECT_DIR$/pitaya/wsgi.py" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_reminder.html" />
-        <option value="$PROJECT_DIR$/emailsadd/views.py" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_survey.html" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/survey.html" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/invitesurvey.html" />
         <option value="$PROJECT_DIR$/emailsadd/management/commands/send_mails.py" />
+        <option value="$PROJECT_DIR$/emailsadd/views.py" />
       </list>
     </option>
   </component>
@@ -716,20 +718,6 @@
       <option name="presentableId" value="Default" />
       <updated>1472285009134</updated>
     </task>
-    <task id="LOCAL-00040" summary="white noise addition">
-      <created>1474102718330</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1474102718330</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Pillow added for pic field">
-      <created>1474103065835</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1474103065835</updated>
-    </task>
     <task id="LOCAL-00042" summary="Deleted migrations, clean start.&#10;Change time filed to DateTimeField">
       <created>1474104285445</created>
       <option name="number" value="00042" />
@@ -1059,7 +1047,21 @@
       <option name="project" value="LOCAL" />
       <updated>1474303864277</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="setting invite_survey as the email from email_send_survey and starting to add the survey part">
+      <created>1474303952196</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1474303952196</updated>
+    </task>
+    <task id="LOCAL-00090" summary="taking off test for send_mails">
+      <created>1474304223171</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1474304223171</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1073,9 +1075,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23187633" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23187633" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40303358" sideWeight="0.50319827" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1146,7 +1148,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="local bootsrapp&#10;&#10;" />
     <MESSAGE value="Adding bootsrap file" />
     <MESSAGE value="bootstrp external" />
     <MESSAGE value="deleted bootsrap file" />
@@ -1171,7 +1172,8 @@
     <MESSAGE value="taking out the testing in heroku" />
     <MESSAGE value="testing parameters in emails command from user to send to the survey" />
     <MESSAGE value="setting invite_survey as the email from email_send_survey and starting to add the survey part" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting invite_survey as the email from email_send_survey and starting to add the survey part" />
+    <MESSAGE value="taking off test for send_mails" />
+    <option name="LAST_COMMIT_MESSAGE" value="taking off test for send_mails" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1179,7 +1181,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>242</line>
+          <line>240</line>
           <option name="timeStamp" value="264" />
         </line-breakpoint>
       </breakpoints>
@@ -1559,14 +1561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="191" column="45" selection-start-line="191" selection-start-column="39" selection-end-line="191" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1577,9 +1571,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/management/commands/send_mails.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="51" column="57" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
+        <state relative-caret-position="272">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="38" column="9" selection-start-line="37" selection-start-column="69" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
