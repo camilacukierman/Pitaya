@@ -72,13 +72,13 @@ class Command(BaseCommand):
 
 
 
-        print("eventos de ontem yesterday_events.count() = " + yesterday_events.count())
+        print("eventos de ontem yesterday_events.count() = " + str(yesterday_events.count()))
         for event in yesterday_events:
             event_date = event.date
             event_pic = event.pic
             event_name = event.event_name
             participants = Newsletter.objects.filter(booker_id=event.id, approved=True)
-            print("yesterday_events participants.count() = " + participants.count())
+            print("yesterday_events participants.count() = " + str(participants.count()))
             for attender in participants:
                 print('inside yesterday_events participants')
                 participant_name_reminder = attender.participants_name
@@ -86,12 +86,12 @@ class Command(BaseCommand):
 
                 send_email_reminder(event_name, participant_email_reminder, participant_name_reminder, event_pic,event_date)
 
-        print("eventos de amanha tomorrow_events.count() = " + tomorrow_events.count())
+        print("eventos de amanha tomorrow_events.count() = " + str(tomorrow_events.count()))
         for event in tomorrow_events:
             event_date = event.date
             event_name = event.event_name
             participants = Newsletter.objects.filter(booker_id_id=event.id, approved=True)
-            print("tomorrow_events participants.count() = " + participants.count())
+            print("tomorrow_events participants.count() = " + str(participants.count()))
             for attender in participants:
                 print('inside tomorrow_events participants')
                 participant_name_survey = attender.participants_name
