@@ -65,15 +65,16 @@ class Command(BaseCommand):
 
         print("db.connections.databases " + db.connections.databases['default']['NAME'] + " db.engine " +
               db.connections.databases['default']['ENGINE'])
-        yesterday = datetime.date.today() - datetime.timedelta(days=2)
-        tomorrow = datetime.date.today() + datetime.timedelta(days=2)
+        yesterday = datetime.date.today() - datetime.timedelta(days=1)
+        tomorrow = datetime.date.today() + datetime.timedelta(days=1)
         print(yesterday)
         print(tomorrow)
         today = datetime.date.today()
 
-        yesterday_events = Booker.objects.filter(date__gt=datetime.date(yesterday.year, yesterday.month, yesterday.day),
-                                                 date__lt=datetime.date(today.year, today.month, today.day))
-        tomorrow_events = Booker.objects.filter(date__gt=today, date__lt=tomorrow)
+        #datetime.datetime.strptime(
+        yesterday_events = Booker.objects.filter(date__gte=datetime.date(yesterday.year, yesterday.month, yesterday.day), date__lt=datetime.date(today.year, today.month, today.day))
+        tomorrow_events = Booker.objects.filter(date__gt=datetime.date(today.year, today.month, today.day) , date__lte=datetime.date(tomorrow.year, tomorrow.month, tomorrow.day))
+
         print(tomorrow_events)
 
         print("eventos de ontem yesterday_events.count() = " + str(yesterday_events.count()))
