@@ -63,13 +63,15 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
 
-        print("db.connections.databases " + db.connections.databases['default']['NAME'] + " db.engine " + db.connections.databases['default']['ENGINE'])
+        print("db.connections.databases " + db.connections.databases['default']['NAME'] + " db.engine " +
+              db.connections.databases['default']['ENGINE'])
         yesterday = datetime.date.today() - datetime.timedelta(days=1)
         tomorrow = datetime.date.today() + datetime.timedelta(days=1)
         print(tomorrow)
         today = datetime.date.today()
 
-        yesterday_events = Booker.objects.filter(date__gt=yesterday, date__lt=today)
+        yesterday_events = Booker.objects.filter(date__gt=datetime.date(yesterday.year, yesterday.month, yesterday.day),
+                                                 date__lt=datetime.date(today.year, today.month, today.day))
         tomorrow_events = Booker.objects.filter(date__gt=today, date__lt=tomorrow)
         print(tomorrow_events)
 
