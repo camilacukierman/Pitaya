@@ -13,12 +13,14 @@ from emailsadd.models import Booker, Newsletter
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pitaya.settings")
 
 
-def send_email_reminder(event_name, participant_email_reminder, participant_name_reminder, event_pic, event_date):
+def send_email_reminder(event_name, participant_email_reminder, participant_name_reminder, event_pic):
     try:
         plaintext = get_template('emailsadd/email.txt')
         htmly = get_template('emailsadd/user_reminder.html')
-        d = Context({'participant_name': participant_name_reminder, 'event_date': event_date})
+        d = Context({'participant_name': participant_name_reminder,
+                     'participant_email_reminder': participant_email_reminder, 'event_name': event_name})
         subject, from_email, to = event_name, 'donotreplypitaya@gmail.com', participant_email_reminder
+        print("subject " + subject + " from_email " + from_email + " to " + to)
         text_content = plaintext.render(d)
         html_content = htmly.render(d)
         msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
@@ -37,12 +39,13 @@ def send_email_reminder(event_name, participant_email_reminder, participant_name
         print(message)
 
 
-def send_email_survey(event_name, participant_name_survey, participant_email_survey, event_date):
+def send_email_survey(event_name, participant_name_survey, participant_email_survey, participant_id, event_id ):
     try:
         plaintext = get_template('emailsadd/email.txt')
-        htmly = get_template('emailsadd/invite_survey.html')
-        d = Context({'participant_name': participant_name_survey, 'event_date': event_date})
+        htmly = get_template('emailsadd/invitesurvey.html')
+        d = Context({'participant_id':str(participant_id)})
         subject, from_email, to = event_name, 'donotreplypitaya@gmail.com', participant_email_survey
+        print("subject " + subject + " from_email " + from_email + " to " + to)
         text_content = plaintext.render(d)
         html_content = htmly.render(d)
         msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
@@ -67,12 +70,14 @@ class Command(BaseCommand):
               db.connections.databases['default']['ENGINE'])
         yesterday = datetime.date.today() - datetime.timedelta(days=1)
         tomorrow = datetime.date.today() + datetime.timedelta(days=1)
+        print(yesterday)
         print(tomorrow)
         today = datetime.date.today()
 
-        yesterday_events = Booker.objects.filter(date__gt=datetime.date(yesterday.year, yesterday.month, yesterday.day),
-                                                 date__lt=datetime.date(today.year, today.month, today.day))
-        tomorrow_events = Booker.objects.filter(date__gt=today, date__lt=tomorrow)
+        #datetime.datetime.strptime(
+        yesterday_events = Booker.objects.filter(date__gte=datetime.date(yesterday.year, yesterday.month, yesterday.day), date__lt=datetime.date(today.year, today.month, today.day))
+        tomorrow_events = Booker.objects.filter(date__gt=datetime.date(today.year, today.month, today.day) , date__lte=datetime.date(tomorrow.year, tomorrow.month, tomorrow.day))
+
         print(tomorrow_events)
 
         print("eventos de ontem yesterday_events.count() = " + str(yesterday_events.count()))
@@ -87,8 +92,7 @@ class Command(BaseCommand):
                 participant_name_reminder = attender.participants_name
                 participant_email_reminder = attender.participants_email
 
-                send_email_reminder(event_name, participant_email_reminder, participant_name_reminder, event_pic,
-                                    event_date)
+                send_email_reminder(event_name, participant_email_reminder, participant_name_reminder, event_pic)
 
         print("eventos de amanha tomorrow_events.count() = " + str(tomorrow_events.count()))
         for event in tomorrow_events:
@@ -100,8 +104,10 @@ class Command(BaseCommand):
                 print('inside tomorrow_events participants')
                 participant_name_survey = attender.participants_name
                 participant_email_survey = attender.participants_email
+                participant_id = attender.id
+                event_id = attender.booker_id_id
 
-                send_email_survey(event_name, participant_name_survey, participant_email_survey, event_date)
+                send_email_survey(event_name, participant_name_survey, participant_email_survey,participant_id,event_id )
 
 
 
