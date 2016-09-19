@@ -1,4 +1,5 @@
 import datetime
+import os
 from email.mime.image import MIMEImage
 
 from django.core.mail import EmailMultiAlternatives
@@ -8,6 +9,7 @@ from django.template.loader import get_template
 
 from emailsadd.models import Booker, Newsletter
 
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pitaya.settings")
 
 def send_email_reminder(event_name, participant_email_reminder, participant_name_reminder, event_pic,event_date):
     try:
@@ -74,7 +76,9 @@ class Command(BaseCommand):
             event_pic = event.pic
             event_name = event.event_name
             participants = Newsletter.objects.filter(booker_id=event.id, approved=True)
+            print("yesterday_events participants.count() = " + participants.count())
             for attender in participants:
+                print('inside yesterday_events participants')
                 participant_name_reminder = attender.participants_name
                 participant_email_reminder = attender.participants_email
 
@@ -85,7 +89,9 @@ class Command(BaseCommand):
             event_date = event.date
             event_name = event.event_name
             participants = Newsletter.objects.filter(booker_id_id=event.id, approved=True)
+            print("tomorrow_events participants.count() = " + participants.count())
             for attender in participants:
+                print('inside tomorrow_events participants')
                 participant_name_survey = attender.participants_name
                 participant_email_survey = attender.participants_email
 
