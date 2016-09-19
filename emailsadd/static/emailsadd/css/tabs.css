@@ -38,7 +38,6 @@ ul.tab li a:focus, .active {background-color: #E5BF44; color: white}
     border-top: none;
 }
 
-.
 .tabcontent {
     display: block;
     padding: 6px 12px;
@@ -47,6 +46,6 @@ ul.tab li a:focus, .active {background-color: #E5BF44; color: white}
 }
 
 #London.tabcontent{
-    padding:0px;
+    padding:0px;}
 
 
