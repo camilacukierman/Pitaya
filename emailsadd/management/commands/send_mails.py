@@ -19,6 +19,7 @@ def send_email_reminder(event_name, participant_email_reminder, participant_name
         htmly = get_template('emailsadd/user_reminder.html')
         d = Context({'participant_name': participant_name_reminder, 'event_date': event_date})
         subject, from_email, to = event_name, 'donotreplypitaya@gmail.com', participant_email_reminder
+        print("subject " + subject + " from_email " + from_email + " to " + to)
         text_content = plaintext.render(d)
         html_content = htmly.render(d)
         msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
@@ -43,6 +44,7 @@ def send_email_survey(event_name, participant_name_survey, participant_email_sur
         htmly = get_template('emailsadd/invite_survey.html')
         d = Context({'participant_name': participant_name_survey, 'event_date': event_date})
         subject, from_email, to = event_name, 'donotreplypitaya@gmail.com', participant_email_survey
+        print("subject " + subject + " from_email " + from_email + " to " + to)
         text_content = plaintext.render(d)
         html_content = htmly.render(d)
         msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
