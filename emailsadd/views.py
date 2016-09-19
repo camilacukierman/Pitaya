@@ -5,6 +5,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.core.mail import EmailMultiAlternatives
+from django.core.management import call_command
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import redirect, render
@@ -17,6 +18,7 @@ from .models import Booker,Newsletter,Survey
 
 @login_required
 def invite_home(request):
+    call_command('send_mails')
     booking = None
     if request.user:
         booking = Booker.objects.filter(user_id=str(request.user.id))
@@ -228,14 +230,20 @@ def event_feedback(request):
     return HttpResponse(template.render(context, request))
 
 
-def survey_complete(request):
+def survey_complete(request, pid):
     template = get_template('emailsadd/survey_complete.html')
+    context = {
+        "pid": pid,
+    }
     return HttpResponse(template.render(context, request))
 
 
-def postsurvey(request):
+def postsurvey(request, pid):
+    approvedParticipant = Newsletter.objects.get(id=pid)
     answer_one = request.POST.get("a1")
     new_survey = Survey.objects.create(a1=answer_one)
     new_survey.save()
-
+    context = {
+        'invitee': approvedParticipant,
+    }
     return HttpResponse("hello world"+answer_one)

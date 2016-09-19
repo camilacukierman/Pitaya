@@ -43,7 +43,7 @@ def send_email_survey(event_name, participant_name_survey, participant_email_sur
     try:
         plaintext = get_template('emailsadd/email.txt')
         htmly = get_template('emailsadd/survey.html')
-        d = Context({'participant_name': participant_name_survey, 'event_name' : event_name , 'participant_email_survey':participant_email_survey})
+        d = Context({'participant_name': participant_name_survey, 'event_name': event_name , 'participant_email_survey':participant_email_survey, 'participant_id':})
         subject, from_email, to = event_name, 'donotreplypitaya@gmail.com', participant_email_survey
         print("subject " + subject + " from_email " + from_email + " to " + to)
         text_content = plaintext.render(d)
