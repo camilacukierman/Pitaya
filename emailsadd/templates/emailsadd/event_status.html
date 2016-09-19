@@ -23,6 +23,9 @@
             </div>
         </div>
 
+        <br>
+
+
 <div class="col-md-2"></div>
 
 <div class="col-md-8">
@@ -31,6 +34,7 @@
     <div  class="col-md-6">
           <img src="" name="image_preview" id="image_preview_status" class="view_image" />
     </div>
+        <br>
 
     <div class="input_event col-md-6">
 
@@ -51,7 +55,8 @@
          {% for p in participants %}
 
         <div class="box_grey">{{p.participants_name}}
-            {% if p.approved %}<i class="fa fa-check margin_confirmed symbol_txt" aria-hidden="true">CONFIRMED</i>
+            {% if p.approved %} <i class="fa fa-check margin_confirmed" aria-hidden="true">CONFIRMED</i>
+
             {% else %}<i class="fa fa-times margin_notconfirmed symbol_txt" aria-hidden="true"> NOT CONFIRMED</i> {% endif %}
         </div>
 
