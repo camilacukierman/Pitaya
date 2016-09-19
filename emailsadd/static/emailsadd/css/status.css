@@ -36,10 +36,14 @@
     margin-left: 5px;
 }
 .box_grey{
-    height: 20px;
-   width: auto;
-    background-color:lightgray;
-    margin: 5px 5px;
+      width: auto;
+    margin-top: 5px;
+    /*font-family: HelveticaNeue;*/
+    background-color: #F2F2F2;
+    border: none;
+    height: 26px;
+    margin-bottom: 5px;
+    vertical-align: middle;
 }
 
 /*.symbol_txt {*/
@@ -47,6 +51,8 @@
     /*size: 18px;*/
     /*alignment: rigth;*/
 /*}*/
+
+
 .margin_notconfirmed{
     margin-left: 80%;
     color: red;
@@ -55,3 +61,4 @@
     margin-left: 80%;
     color: green;
 }
+
