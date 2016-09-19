@@ -1,0 +1,57 @@
+.btn_activities{
+     padding: 2px 20px;
+    background-color: white;
+    padding: 2px 20px;
+    background-color: white;
+    color: #E5BF44;
+    box-shadow: none;
+    font-family: HelveticaNeueBold;
+    border: 1px solid #E5BF44;
+    margin: 5px 5px;
+}
+
+.img_cover{
+
+    border: 1px solid black;
+    width: 400px;
+    margin: 5px auto ;
+    display: inline-block;
+    height: 200px;
+
+}
+
+.input_event{
+
+    width: 400px;
+    margin: 5px auto ;
+    display: inline-block;
+    height: 200px;
+    text-align: left;
+    vertical-align: text-bottom;
+}
+.text6{
+    font-family: HelveticaNeue;
+    size: 18px;
+    text-align: left;
+    margin-left: 5px;
+}
+.box_grey{
+    height: 20px;
+   width: auto;
+    background-color:lightgray;
+    margin: 5px 5px;
+}
+
+/*.symbol_txt {*/
+    /*font-family: HelveticaNeue;*/
+    /*size: 18px;*/
+    /*alignment: rigth;*/
+/*}*/
+.margin_notconfirmed{
+    margin-left: 80%;
+    color: red;
+}
+.margin_confirmed{
+    margin-left: 80%;
+    color: green;
+}
