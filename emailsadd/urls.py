@@ -1,8 +1,4 @@
-from django.conf import settings
-from django.conf.urls import include, url
 from django.conf.urls import url
-from django.conf.urls.static import static
-from django.contrib import admin
 
 from . import views
 
@@ -18,7 +14,7 @@ urlpatterns = [
     url(r'^status/(?P<eid>\w+)/$', views.event_status, name='event_status'),
     url(r'^approved/(?P<pid>\w+)/(?P<approved>\w+)/$', views.approved, name='approved'),
     url(r'^survey/(?P<pid>\w+)/$', views.survey, name='survey'),
-    url(r'^event_feedback/$', views.event_feedback, name='event_feedback'),
+    url(r'^event_feedback/(?P<eid>\w+)', views.event_feedback, name='event_feedback'),
     url(r'^survey_complete/$', views.survey_complete, name='survey_complete'),
     url(r'^postsurvey/$', views.postsurvey, name='postsurvey'),
     url(r'^postform/$', views.postform, name='postform'),

@@ -39,11 +39,11 @@ def send_email_reminder(event_name, participant_email_reminder, participant_name
         print(message)
 
 
-def send_email_survey(event_name, participant_name_survey, participant_email_survey, participant_id, event_id ):
+def send_email_survey(event_name, participant_name_survey, participant_email_survey, participant_id, event_id):
     try:
         plaintext = get_template('emailsadd/email.txt')
         htmly = get_template('emailsadd/invitesurvey.html')
-        d = Context({'participant_id':str(participant_id)})
+        d = Context({'participant_id': str(participant_id)})
         subject, from_email, to = event_name, 'donotreplypitaya@gmail.com', participant_email_survey
         print("subject " + subject + " from_email " + from_email + " to " + to)
         text_content = plaintext.render(d)
@@ -74,14 +74,33 @@ class Command(BaseCommand):
         print(tomorrow)
         today = datetime.date.today()
 
-        #datetime.datetime.strptime(
-        yesterday_events = Booker.objects.filter(date__gte=datetime.date(yesterday.year, yesterday.month, yesterday.day), date__lt=datetime.date(today.year, today.month, today.day))
-        tomorrow_events = Booker.objects.filter(date__gt=datetime.date(today.year, today.month, today.day) , date__lte=datetime.date(tomorrow.year, tomorrow.month, tomorrow.day))
+        # datetime.datetime.strptime(
+        yesterday_events = Booker.objects.filter(
+            date__gte=datetime.date(yesterday.year, yesterday.month, yesterday.day),
+            date__lt=datetime.date(today.year, today.month, today.day))
+        tomorrow_events = Booker.objects.filter(date__gt=datetime.date(today.year, today.month, today.day),
+                                                date__lte=datetime.date(tomorrow.year, tomorrow.month, tomorrow.day))
 
         print(tomorrow_events)
 
         print("eventos de ontem yesterday_events.count() = " + str(yesterday_events.count()))
         for event in yesterday_events:
+            event_date = event.date
+            event_name = event.event_name
+            participants = Newsletter.objects.filter(booker_id_id=event.id, approved=True)
+            print("tomorrow_events participants.count() = " + str(participants.count()))
+            for attender in participants:
+                print('inside tomorrow_events participants')
+                participant_name_survey = attender.participants_name
+                participant_email_survey = attender.participants_email
+                participant_id = attender.id
+                event_id = attender.booker_id_id
+
+                send_email_survey(event_name, participant_name_survey, participant_email_survey, participant_id,
+                                  event_id)
+
+        print("eventos de amanha tomorrow_events.count() = " + str(tomorrow_events.count()))
+        for event in tomorrow_events:
             event_date = event.date
             event_pic = event.pic
             event_name = event.event_name
@@ -94,20 +113,6 @@ class Command(BaseCommand):
 
                 send_email_reminder(event_name, participant_email_reminder, participant_name_reminder, event_pic)
 
-        print("eventos de amanha tomorrow_events.count() = " + str(tomorrow_events.count()))
-        for event in tomorrow_events:
-            event_date = event.date
-            event_name = event.event_name
-            participants = Newsletter.objects.filter(booker_id_id=event.id, approved=True)
-            print("tomorrow_events participants.count() = " + str(participants.count()))
-            for attender in participants:
-                print('inside tomorrow_events participants')
-                participant_name_survey = attender.participants_name
-                participant_email_survey = attender.participants_email
-                participant_id = attender.id
-                event_id = attender.booker_id_id
-
-                send_email_survey(event_name, participant_name_survey, participant_email_survey,participant_id,event_id )
 
 
 

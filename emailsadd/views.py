@@ -1,14 +1,16 @@
-from datetime import datetime
+import datetime
+from email.mime.image import MIMEImage
+
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.core.mail import EmailMultiAlternatives
 from django.core.urlresolvers import reverse
+from django.db.models import Avg
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import redirect, render
 from django.template import Context
 from django.template.loader import get_template
-from email.mime.image import MIMEImage
 
 from .forms import ImageUploadForm
 from .models import Booker,Newsletter,Survey
@@ -50,11 +52,20 @@ def events(request):
 def event_status(request, eid):
     booking = Booker.objects.get(id=eid)
     participants = Newsletter.objects.filter(booker_id=booking.id)
+    surveys = Survey.objects.filter(booker_id=booking.id)
+
+    survey_a1_avg = surveys.aggregate(Avg('a1'))
+    survey_a2_avg = surveys.aggregate(Avg('a2'))
+    survey_a3_avg = surveys.aggregate(Avg('a3'))
 
     template = get_template('emailsadd/event_status.html')
     context = {
         'booking': booking,
-        'participants': participants
+        'participants': participants,
+        'surveys' : surveys,
+        'a1_avg' : survey_a1_avg['a1__avg'],
+        'a2_avg': survey_a2_avg['a2__avg'],
+        'a3_avg': survey_a3_avg['a3__avg'],
     }
     return HttpResponse(template.render(context, request))
 
@@ -104,15 +115,13 @@ def postform(request):
     myevent_description = request.POST.get("event_description")
     mymanager_message = request.POST.get("manager_message")
 
-    myfromtime = datetime.strptime(mydate +' ' + myfromtime, "%Y-%m-%d %H:%M")
-    mytotime = datetime.strptime(mydate +' ' + mytotime, "%Y-%m-%d %H:%M")
-
-
+    myfromtime = datetime.datetime.strptime(mydate +' ' + myfromtime, "%Y-%m-%d %H:%M")
+    mytotime = datetime.datetime.strptime(mydate +' ' + mytotime, "%Y-%m-%d %H:%M")
 
     new_activity = Booker.objects.create(manager_name=mymanager_name,
-                                         event_name=myevent_name, location=mylocation, from_time=myfromtime,
-                                         to_time=mytotime,
-                                         date=mydate, event_description=myevent_description,
+                                         event_name=myevent_name, location=mylocation, from_time= datetime.datetime(myfromtime.year, myfromtime.month, myfromtime.day, myfromtime.hour, myfromtime.minute),
+                                         to_time=datetime.datetime(mytotime.year, mytotime.month, mytotime.day, mytotime.hour, mytotime.minute),
+                                         date=datetime.datetime.strptime(mydate, "%Y-%m-%d").date(), event_description=myevent_description,
                                          manager_message=mymanager_message)
 
     numberOfEmails = int(request.POST.get("participants_number"))
@@ -249,20 +258,11 @@ def postsurvey(request):
     survey_participant = Newsletter.objects.get(id=pid)
     answer_one = request.POST.get("a1")
     answer_two = request.POST.get("a2")
-    answer_three = request.POST.get("a2")
+    answer_three = request.POST.get("a3")
     answer_four = request.POST.get("a4")
-    answer_five = request.POST.get("a5")
-
-    new_survey = Survey.objects.create(a1=answer_one, a2=answer_two, a3=answer_three, a4=answer_four, a5=answer_five)
-
-
+    new_survey = Survey.objects.create(participant_ref_id = survey_participant.id,a1=answer_one, a2=answer_two, a3=answer_three, a4=answer_four)
     new_survey.booker_id = survey_participant.booker_id.id
-    new_survey.participant_ref_id = survey_participant.id
-    new_survey.a1 = answer_one
-    new_survey.a2 = answer_two
-    new_survey.a3 = answer_three
-    new_survey.a4 = answer_four
-    new_survey.a5 = answer_five
+
 
     if survey_participant.answer_survey == True:
         template = get_template('emailsadd/thankyou.html')
