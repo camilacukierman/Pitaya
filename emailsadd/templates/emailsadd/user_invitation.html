@@ -11,7 +11,7 @@
 
 
 
-    <div style="height: 70%;    width: 50%;    border: 0.5px solid black;     display: block;    margin: 50px auto ;">
+    <div style="   width: 50%;    border: 0.5px solid black;     display: block; text-align: center;   margin: 50px auto ;">
 
          <div style="   padding: 10px;   margin: 0 auto; text-align: center   ">
         <a href="https://frozen-atoll-20042.herokuapp.com{% url 'approved' pid=invitee.id  approved='true' %}"      style=" padding: 2px 20px;    background-color: white;    padding: 2px 20px;    background-color: white;    color: #E5BF44;    box-shadow: none;    font-family:Arial ;    border: 1px solid #E5BF44;">WILL
@@ -49,16 +49,14 @@
         </div>
 
         {% if not_email %}
-        <img src="{{ booking.pic.url }}" name="image_preview" style=" height=200px  border: 0px; margin: auto 0;">
+        <img src="{{ booking.pic.url }}" name="image_preview" style=" max-height=200px  border: 0px; margin: auto 0;" width="400" >
         {% else %}
-        <div style=" text-align: center; width: 100%;    min-height:200px;    background-image: url('../images/image_defult.jpg'); background-repeat: no-repeat; background-position: center; border: 0px; margin: auto 0;">
-            <img src="cid:image1" name="image_preview" alt="Image preview">
+        <div style=" text-align: center; width: 100%;    min-height:200%;  background-image: url('../images/image_defult.jpg'); background-repeat: no-repeat; background-position: center; border: 0px; margin: auto 0;">
+            <img src="cid:image1" name="image_preview" alt="Image preview" width="400" />
         </div>
         {% endif %}
     </div>
-
-
-
+    
 </div>
 </div>
 <div class="col-md-2"></div>
