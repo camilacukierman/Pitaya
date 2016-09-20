@@ -1,10 +1,27 @@
 <div> THIS IS THE SURVEY</div>
 
-Yesterday
+
 <form action="{% url 'postsurvey' %}" method="post">
     {% csrf_token %}
     <input  value="{{pid}}" name="pid"/>
+
+    <div>1. What did you think about it?</div>
     <input type="number" min="1" max="5" class="input-text-one" name="a1" required><br>
+
+    <div>2. How would you rate the  facilitator?</div>
+     <input type="number" min="1" max="5" class="input-text-one" name="a2" required><br>
+
+     <div>3. This activity impacted you  </div>
+     <input type="number" min="1" max="5" class="input-text-one" name="a2" required><br>
+
+      <div>4. How likely is it that you would recommend this team activity to a friend or colleague
+(Not at all likely) 0-10 (Extremely likely)  </div>
+     <input type="number" min="1" max="5" class="input-text-one" name="a2" required><br>
+
+      <div>5. Share your thoughts! Leave a public review and get famous!</div>
+     <input type="text" class="input-text-one" name="event_name" placeholder=" Sugestions" required ><br>
+
+
     <input type="submit" class="button_invite_send" value="SEND FEEDBACK"><br>
 </form>
 

@@ -166,13 +166,7 @@
     font-size: 17px;
 }
 
-.view_image{
-    width: 120%;
-    height: 200px;
-    border: 0.5px solid lightgray;
-    margin: 5px 5px;
-    font-family: HelveticaNeue;
-}
+
 
 .upload-holder{
     display: inline-block;
@@ -324,6 +318,15 @@
 #upload_image{
     text-align: right;
 }
+
+.view_image{
+    width: 120%;
+    height: 200px;
+    border: 0.5px solid lightgray;
+    margin: 5px 5px;
+    font-family: HelveticaNeue;
+}
+
 .btn_upload{
     color: white;
     background-color: white;

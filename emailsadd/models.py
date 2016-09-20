@@ -36,5 +36,7 @@ class Survey(models.Model):
     participant_ref = models.ForeignKey(Newsletter, on_delete=models.CASCADE, default=1)
     booker_id = models.IntegerField(default=0)
     a1 = models.IntegerField(default=0)
-
-
+    a2 = models.IntegerField(default=0)
+    a3 = models.IntegerField(default=0)
+    a4 = models.IntegerField(default=0)
+    a5 = models.CharField(max_length=5000, null=True)
