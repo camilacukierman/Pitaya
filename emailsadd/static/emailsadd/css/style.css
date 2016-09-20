@@ -499,17 +499,17 @@ text-align: left;
 .my_event_infos_name{
     font-family: HelveticaNeueBold;
     color: #838586;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 .my_events_infos_date{
     font-family: HelveticaNeueBold;
     color: #838586;
-    font-size: 16px;
+    font-size: 14px;
 }
 .my_events_info_fromtime_totime{
     display: inline-block;
-    font-family: HelveticaNeueBold;
+    font-family: HelveticaNeue;
     color: #838586;
     font-size: 14px;
 }
