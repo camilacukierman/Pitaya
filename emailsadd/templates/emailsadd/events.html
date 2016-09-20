@@ -19,7 +19,7 @@
     <div class="header">
         <div class="header_infos">
             <div class="spaceforlogo"></div>
-            <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
+            <img src="{% static  'emailsadd/images/yellow%20logo.png' %}" class="header_logo">
             <div class="header_menu">
 
                 <div class="header_user"> Hello, {{ user }}</div>
@@ -49,7 +49,9 @@
 {% for e in booking %}
 <div class="col-md-1"></div>
     <div class="my_event_unit col-lg-10">
-        <div class="image_my_event_unit col-lg-3"></div>
+        <div class=" col-lg-3">
+             <img  name="image_preview" id="image_preview_status" class="view_image" src="{{ e.pic.url }}">
+        </div>
     <div class="my_event_infos col-lg-4">
         <div class="my_event_infos_name">{{e.event_name}}</div>
         <div class="my_events_info_fromtime_totime"> from {{e.from_time}} <br>to {{e.to_time}}</div>

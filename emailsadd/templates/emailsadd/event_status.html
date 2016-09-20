@@ -10,7 +10,7 @@
     <div class="header">
         <div class="header_infos">
             <div class="spaceforlogo"></div>
-             <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
+             <img src="{% static  'emailsadd/images/yellow%20logo.png' %}" class="header_logo">
             <div class="header_menu">
                 <button class="my_activity_btn"><a class="my_activity" href="../../my_events">MY ACTIVITIES</a></button>
 
@@ -33,7 +33,9 @@
 
     <div class="col-md-12">
     <div  class="col-md-6">
-          <img src="" name="image_preview" id="image_preview_status" class="view_image" />
+          <div>  <img  name="image_preview" id="image_preview_status" class="view_image" src="{{ booking.pic.url }}"> </div>
+
+
     </div>
         <br>
 
