@@ -1,71 +1,91 @@
 {% load static %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/status.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}"/>
 
 
-
 <div class="col-md-2"></div>
-    <div class="header">
-        <div class="header_infos">
-            <div class="spaceforlogo"></div>
-             <img src="{% static  'emailsadd/images/yellow%20logo.png' %}" class="header_logo">
-            <div class="header_menu">
-                <button class="my_activity_btn"><a class="my_activity" href="../../my_events">MY ACTIVITIES</a></button>
+<div class="header">
+    <div class="header_infos">
+        <div class="spaceforlogo"></div>
+        <img src="{% static  'emailsadd/images/yellow%20logo.png' %}" class="header_logo">
+        <div class="header_menu">
+            <button class="my_activity_btn"><a class="my_activity" href="../../my_events">MY ACTIVITIES</a></button>
 
-                <div class="header_user"> Hello, {{ user }}</div>
-                <a href="{% url 'django.contrib.auth.views.logout' %}" class="logout_link">logout</a>
+            <div class="header_user"> Hello, {{ user }}</div>
+            <a href="{% url 'django.contrib.auth.views.logout' %}" class="logout_link">logout</a>
         </div>
-</div>
-        <div class="header_image">
-            <div class="header_image_text">
-                EASILY SEND INVITATIONS, MANAGE ATTENDANCE AND GET FEEDBACK
+    </div>
+    <div class="header_image">
+        <div class="header_image_text">
+            EASILY SEND INVITATIONS, MANAGE ATTENDANCE AND GET FEEDBACK
+        </div>
+    </div>
+
+    <br>
+
+
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8">
+
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <div><img name="image_preview" id="image_preview_status" class="view_image" src="{{ booking.pic.url }}">
+                </div>
+
+
+            </div>
+            <br>
+
+            <div class="input_event col-md-6">
+
+                <div class="intro_text">{{booking.event_name}}</div>
+                <br>
+                <div class="intro_text">{{ booking.description }}</div>
+                <br>
+                <div class="text6"> {{ booking.location }}</div>
+                <br>
+                <div class="text6">{{ booking.date }} from {{booking.from_time }} to {{booking.to_time }}</div>
+            </div>
+
+        </div>
+        <div class="col-md-12">
+
+            {% for p in participants %}
+
+            <div class="box_grey">{{p.participants_name}}
+                {% if p.approved %} <i class="fa fa-check margin_confirmed" aria-hidden="true">CONFIRMED</i>
+
+                {% else %}<i class="fa fa-times margin_notconfirmed symbol_txt" aria-hidden="true"> NOT
+                    CONFIRMED</i> {% endif %}
+            </div>
+
+            {% endfor %}
+        </div>
+
+        {% if surveys %}
+        <div class="col-md-12">
+
+            <div class="answers-survey">
+                Amount of surveys answered for this event {{ surveys.count }}
+                1. What did you think about it? {{ a1_avg }}
+                2. How would you rate the facilitator? {{ a2_avg }}
+                3. How would you rate the facilitator? {{ a3_avg }}
+                4. Share your thoughts! Leave a public review and get famous!
+                {% for s in surveys %}
+                <div>
+                    {{s.a4}}
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+
+            <div class="col-md-2">
+
             </div>
         </div>
-
-        <br>
-
-
-<div class="col-md-2"></div>
-
-<div class="col-md-8">
-
-    <div class="col-md-12">
-    <div  class="col-md-6">
-          <div>  <img  name="image_preview" id="image_preview_status" class="view_image" src="{{ booking.pic.url }}"> </div>
-
-
     </div>
-        <br>
-
-    <div class="input_event col-md-6">
-
-        <div class="intro_text">{{booking.event_name}}</div>
-        <br>
-        <div class="intro_text">{{ booking.description }}</div>
-        <br>
-        <div class="text6"> {{ booking.location }}</div>
-        <br>
-        <div class="text6">{{ booking.date }} from {{booking.from_time }} to {{booking.to_time }}</div>
-    </div>
-
-        </div>
-
-
-        <div class="col-md-12" >
-
-         {% for p in participants %}
-
-        <div class="box_grey">{{p.participants_name}}
-            {% if p.approved %} <i class="fa fa-check margin_confirmed" aria-hidden="true">CONFIRMED</i>
-
-            {% else %}<i class="fa fa-times margin_notconfirmed symbol_txt" aria-hidden="true"> NOT CONFIRMED</i> {% endif %}
-        </div>
-
-        {% endfor %}
-        </div>
-
 </div>
-
-<div class="col-md-2"></div>
