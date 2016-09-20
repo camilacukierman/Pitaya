@@ -1,23 +1,21 @@
 from datetime import datetime
+
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.core.mail import EmailMultiAlternatives
-from django.core.management import call_command
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import redirect, render
 from django.template import Context
 from django.template.loader import get_template
-from email.mime.image import MIMEImage
 
 from .forms import ImageUploadForm
-from .models import Booker,Newsletter
+from .models import Booker,Newsletter,Survey
 
 
 @login_required
 def invite_home(request):
-    # call_command('send_mails')
     booking = None
     if request.user:
         booking = Booker.objects.filter(user_id=str(request.user.id))
@@ -229,11 +227,35 @@ def event_feedback(request):
     return HttpResponse(template.render(context, request))
 
 
-def survey_complete(request):
+def survey_complete(request, pid):
     template = get_template('emailsadd/survey_complete.html')
+    context = {
+        "pid": pid,
+    }
     return HttpResponse(template.render(context, request))
 
 
+
 def postsurvey(request):
+    pid = request.POST.get("pid")
+    survey_participant = Newsletter.objects.get(id=pid)
     answer_one = request.POST.get("a1")
-    return HttpResponse("hello world"+answer_one)
+    new_survey = Survey.objects.create(a1=answer_one)
+    new_survey.booker_id = survey_participant.booker_id.id
+    new_survey.participant_ref_id = survey_participant.id
+    new_survey.a1 = answer_one
+
+    if survey_participant.answer_survey == True:
+        template = get_template('emailsadd/thankyou.html')
+
+    else:
+        survey_participant.answer_survey = True
+        survey_participant.save()
+        new_survey.save()
+        template = get_template('emailsadd/thankyou.html')
+    context = {
+        'invitee': survey_participant,
+    }
+    return HttpResponse(template.render(context, request))
+
+

@@ -110,35 +110,14 @@
     font-family: HelveticaNeueBold;
     font-size: 18px;
     padding-left: 5px;
+    width:auto;
+    margin-left:10%;
+    display: inline-block;
 
 }
 
-.button_invite_preview {
-    padding: 2px 20px;
-    background-color: white;
-    padding: 2px 20px;
-    background-color: white;
-    color: #E5BF44;
-    box-shadow: none;
-    font-family: HelveticaNeueBold;
-    border: 1px solid #E5BF44;
-}
-.button_invite_preview {
-    padding: 2px 20px;
-    background-color: white;
-    color: #E5BF44;
-    box-shadow: none;
-    font-family: HelveticaNeueBold;
-    border: 1px solid #E5BF44;
-}
-.button_invite_preview {
-    padding: 2px 20px;
-    background-color: white;
-    color: #E5BF44;
-    box-shadow: none;
-    font-family: HelveticaNeueBold;
-    border: 1px solid #E5BF44;
-}
+
+
 .button_invite_preview {
     padding: 2px 20px;
     background-color: white;
@@ -155,12 +134,13 @@
 }
 
 .button_invite_send{
-    padding: 2px 20px;
+    padding: 3px 80px;
     background-color:#E5BF44;
     color: white;
     box-shadow: none;
     font-family: HelveticaNeueBold;
     border: 1px solid #E5BF44;
+    font-size: 17px;
 }
 
 .view_image{
@@ -364,7 +344,10 @@
 }
 
 .checkbuttons{
-    text-align: center;
+text-align: left;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    padding: 0px;
 }
 
 .final_btns{
@@ -413,5 +396,69 @@
     background-position: center;
     border: 0px;
 
+}
+
+.plus_btn{
+    text-align: center;
+}
+
+.header_booked_events{
+    display: inline-block;
+    margin-top:20px;
+    margin-bottom:40px;
+}
+.new_invite_btn{
+    width:auto;
+    display: inline-block;
+    text-align: center;
+    font-family: HelveticaNeueBold;
+    border: 1px solid #E5BF44;
+    background-color: white;
+    color: #E5BF44;
+    margin-left: 40%;
+    padding:2px 20px;
+}
+
+.my_new_event{
+    color:#E5BF44;
+}
+
+.my_new_event:hover{
+     color:#E5BF44;
+}
+
+.my_event_unit{
+    background-color: #F2F2F2;
+    margin: 5px;
+    height:150px;
+    vertical-align: center;
+}
+.image_my_event_unit{
+    border: 1px solid #95989A;
+    width: 200px;
+    height:130px;
+    display: inline-block;
+    margin: 5px 0px 0px 5px;
+    position: absolute;
+}
+
+.check_status_btn{
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    font-family: HelveticaNeueBold;
+    background-color: #E5BF44;
+    color: white;
+    margin-left: 70%;
+    padding: 2px 20px;
+    border: 0px;
+    margin-top: 40px;
+}
+.my_new_status{
+    color: white;
+}
+
+.my_new_status:hover{
+    color: white;
 }
 

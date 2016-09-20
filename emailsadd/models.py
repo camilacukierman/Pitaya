@@ -29,9 +29,12 @@ class Newsletter(models.Model):
                                            error_messages={'required': 'Please provide the email address.',
                                                            'unique': 'An account with this email exist.'}, )
     approved = models.BooleanField(default=False)
+    answer_survey = models.BooleanField(default=False)
 
 
 class Survey(models.Model):
     participant_ref = models.ForeignKey(Newsletter, on_delete=models.CASCADE, default=1)
+    booker_id = models.IntegerField(default=0)
     a1 = models.IntegerField(default=0)
+
 

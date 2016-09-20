@@ -82,7 +82,7 @@
                 <input type="time" name="to_time" class="time_input" placeholder="Time"><br></div></div>
 
                 <input type="text" class="input_descr" name="manager_message"
-                       placeholder=" Here you can write more about the activity or leave a personal note for your team."><br>
+                       placeholder=" Write more about the activity or leave a personal note for your team."><br>
                 <input type="text" class="input_loc" name="manager_name" placeholder=" Add manager's name (Signature for the invite)" required ><br>
             </div>
 
@@ -117,7 +117,6 @@
                 </div>
                 </div>
             </div>
-            <button>Upload .xls or CSV</button>
         </div>
 
         <div id="Paris" class="tabcontentp">
@@ -133,23 +132,24 @@
 
         <br>
         <div class="final_btns">
-        <div class="checkbuttons">
+        <div class="checkbuttons col-lg-12">
         <input type="checkbox" name="send_reminder" value="True" checked> Send reminder to participants one day
         before the activity<br>
         <input type="checkbox" name="send_survey" value="True" checked>Send request to answer the feedback
         survey one day after the event<br>
         </div>
-
+        </div>
         <br>
         <div class="`">
             <div class="plus_btn">
 
                 <!--<button class="my_activity_btn"> <input type="submit" class="button_invite_send" value="  Preview " name='_preview'><a class="my_activity" href="{% url 'user_invitation' %}">PREVIEW</a></button>-->
-                <input type="submit" class="button_invite_send" value="  SEND "  name='_send'><br>
+                <input type="submit" class="button_invite_send" value="  SEND INVITATIONS "  name='_send'><br>
                 <br>
             </div>
         </div>
             </div>
+        </div>
 
     </form>
 
