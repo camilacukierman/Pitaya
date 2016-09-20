@@ -1,5 +1,4 @@
 from datetime import datetime
-
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
@@ -9,6 +8,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import redirect, render
 from django.template import Context
 from django.template.loader import get_template
+from email.mime.image import MIMEImage
 
 from .forms import ImageUploadForm
 from .models import Booker,Newsletter,Survey
@@ -16,6 +16,7 @@ from .models import Booker,Newsletter,Survey
 
 @login_required
 def invite_home(request):
+    # call_command('send_mails')
     booking = None
     if request.user:
         booking = Booker.objects.filter(user_id=str(request.user.id))
@@ -233,7 +234,6 @@ def survey_complete(request, pid):
         "pid": pid,
     }
     return HttpResponse(template.render(context, request))
-
 
 
 def postsurvey(request):

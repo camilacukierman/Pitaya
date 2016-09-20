@@ -24,9 +24,9 @@
 }
 .register_box {
    margin: auto;
-    height: 80%;
-    width: 50%;
-    border: 0.5px solid #E5BF44;
+    height: 45%;
+    width: 55%;
+    border: 0.5px solid white;
     padding: 10px;
     top: 30%;
     left: 50%;
@@ -36,7 +36,9 @@
      display: block;
     margin: auto;
     padding: 53px 60px;
+    margin-top: 120px;
 }
+
 
 .register_btn {
     padding: 2px 20px;
@@ -47,7 +49,6 @@
     box-shadow: none;
     font-family: HelveticaNeueBold;
     border: 1px solid #E5BF44;
-
 }
 
 .input_register {
@@ -60,15 +61,16 @@
 .logo{
     width: 150px;
     height: 150px;
-    border: 1px solid #E5BF44;
+    border: 1px solid white;
     border-radius: 100px;
     background-image: url('../images/yellow logo.png');
-    background-size: 75%;
+    background-size: 55%;
     background-repeat: no-repeat;
     background-position:center;
     background-color: white;
     display: block;
-    margin: auto;
+     margin-left: 30%;
+    margin-top: -112px;
 
     }
 
