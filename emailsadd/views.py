@@ -181,9 +181,9 @@ def init_newsletter(new_activity, request, participants_name, participants_email
         return None
 
 
-def approved(request, pid):
+def approved(request, pid,approved):
     approvedParticipant = Newsletter.objects.get(id=pid)
-    approvedParticipant.approved = True
+    approvedParticipant.approved = approved
     approvedParticipant.save()
     template = get_template('emailsadd/thankyou.html')
     context = {
