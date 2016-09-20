@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css" afterPath="$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" />
     </list>
     <ignored path="Pitaya.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,7 +69,7 @@
       <file leaf-file-name="invite_home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="-1122">
               <caret line="54" column="37" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="37" />
               <folding />
             </state>
@@ -86,7 +86,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thankyou.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="thankyou.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -96,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_invitation.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user_invitation.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="38" column="18" selection-start-line="37" selection-start-column="12" selection-end-line="38" selection-end-column="18" />
+            <state relative-caret-position="459">
+              <caret line="51" column="130" selection-start-line="51" selection-start-column="130" selection-end-line="51" selection-end-column="130" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -222,9 +222,9 @@
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/events.html" />
         <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css" />
-        <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/thankyou.html" />
         <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css" />
+        <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" />
       </list>
     </option>
   </component>
@@ -746,13 +746,6 @@
       <option name="presentableId" value="Default" />
       <updated>1472285009134</updated>
     </task>
-    <task id="LOCAL-00061" summary="structure for command managment cron">
-      <created>1474117818832</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1474117818832</updated>
-    </task>
     <task id="LOCAL-00062" summary="adding survey part - fixing db">
       <created>1474184278617</created>
       <option name="number" value="00062" />
@@ -1089,7 +1082,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474386856472</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="thanku!!!">
+      <created>1474386961199</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1474386961199</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1444,9 +1444,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/thankyou.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="-1122">
           <caret line="54" column="37" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="37" />
           <folding />
         </state>
@@ -1454,8 +1470,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="38" column="18" selection-start-line="37" selection-start-column="12" selection-end-line="38" selection-end-column="18" />
+        <state relative-caret-position="459">
+          <caret line="51" column="130" selection-start-line="51" selection-start-column="130" selection-end-line="51" selection-end-column="130" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -1474,22 +1490,6 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/thankyou.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
