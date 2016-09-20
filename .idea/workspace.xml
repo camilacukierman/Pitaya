@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="adding css+html for my_events testing for camila">
+    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="adding css+html for my_events testing">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pitaya.iws" />
@@ -897,13 +897,6 @@
       <option name="presentableId" value="Default" />
       <updated>1472285009134</updated>
     </task>
-    <task id="LOCAL-00049" summary="database dict declared&#10;">
-      <created>1474110171226</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1474110171226</updated>
-    </task>
     <task id="LOCAL-00050" summary="local bootsrapp&#10;&#10;">
       <created>1474112018987</created>
       <option name="number" value="00050" />
@@ -1240,7 +1233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474359606278</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="adding css+html for my_events testing">
+      <created>1474359645969</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1474359645970</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1327,7 +1327,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="test get_host" />
     <MESSAGE value="trying to make attend work in heroku" />
     <MESSAGE value="structure for command managment cron" />
     <MESSAGE value="adding survey part - fixing db" />
@@ -1352,7 +1351,8 @@
     <MESSAGE value="adding css+html for my_events" />
     <MESSAGE value="adding css+html for my_events testing for camila" />
     <MESSAGE value="adding css+html for my_events more" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding css+html for my_events more" />
+    <MESSAGE value="adding css+html for my_events testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding css+html for my_events testing" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
