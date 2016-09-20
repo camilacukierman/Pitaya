@@ -4,8 +4,6 @@
     <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css" afterPath="$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/thankyou.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/thankyou.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" />
     </list>
     <ignored path="Pitaya.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,21 +76,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thankyou.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="thankyou.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/thankyou.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="331">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thankyou.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="thankyou.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="391">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -225,8 +223,8 @@
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/events.html" />
         <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" />
-        <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/thankyou.html" />
+        <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css" />
       </list>
     </option>
   </component>
@@ -748,13 +746,6 @@
       <option name="presentableId" value="Default" />
       <updated>1472285009134</updated>
     </task>
-    <task id="LOCAL-00060" summary="trying to make attend work in heroku">
-      <created>1474116360841</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1474116360841</updated>
-    </task>
     <task id="LOCAL-00061" summary="structure for command managment cron">
       <created>1474117818832</created>
       <option name="number" value="00061" />
@@ -1091,7 +1082,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474380580599</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="thanku!!!">
+      <created>1474386856472</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1474386856472</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1178,7 +1176,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="upload again because of merge error" />
     <MESSAGE value="fixing frontend look on invite_home" />
     <MESSAGE value="TESTING FOR PULL" />
     <MESSAGE value="heroku push" />
@@ -1203,7 +1200,8 @@
     <MESSAGE value="adding css+html for my_events changes" />
     <MESSAGE value="invite_user css" />
     <MESSAGE value="css status / my activities" />
-    <option name="LAST_COMMIT_MESSAGE" value="css status / my activities" />
+    <MESSAGE value="thanku!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="thanku!!!" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.80753136" />
   </component>
@@ -1479,18 +1477,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css">
+    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/thankyou.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="331">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/thankyou.html">
+    <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -2,12 +2,12 @@
 
 .thanku_image_text{
    font-family: HelveticaNeueBold;
-    color: black;
+    color: grey;
     font-size: 30px;
     transform: translateX(200%);
     position: absolute;
     top: 331px;
-    left: 225px;
+    left: 200px;
 
     }
 
