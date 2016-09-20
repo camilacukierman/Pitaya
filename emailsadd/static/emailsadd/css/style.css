@@ -326,7 +326,16 @@
     margin: 5px 5px;
     font-family: HelveticaNeue;
 }
+.view_image_event{
+    width: 140px;
+    height: 141px;
+    border: 0.5px solid lightgray;
+    margin: 5px 5px;
+    font-family: HelveticaNeue;
 
+
+
+}
 .btn_upload{
     color: white;
     background-color: white;
