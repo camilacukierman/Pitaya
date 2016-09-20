@@ -1,0 +1,23 @@
+
+
+.thanku_image_text{
+   font-family: HelveticaNeueBold;
+    color: black;
+    font-size: 30px;
+    transform: translateX(200%);
+    position: absolute;
+    top: 331px;
+    left: 225px;
+
+    }
+
+.image_thanku{
+
+    height: 500px;
+    width: auto;
+    float: none;
+    margin: 5% 15%;
+    position: static;
+
+}
+
