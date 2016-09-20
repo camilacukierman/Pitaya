@@ -122,11 +122,14 @@
 
         <div id="Paris" class="tabcontentp">
             <div>
-                {% if booking %}
-                {% for booker in booking %}
-                {{ booker.manager_name }} {{ booker.manager_email }}
-                {% endfor %}
-                {% endif %}
+                 <div class="email_holder col-lg-12" style="padding: 0px">
+                <div class="email_holder_nojs col-lg-12" style="padding: 0px">
+                <div id="email_participant_input input_location">
+                    <input type="text" class="input_name col-lg-4" name="participants_name0" placeholder=" Manager Name" >
+                    <input type="text" class="input_mail col-lg-6" name="participants_email0" placeholder="Manager E-mail">
+                </div>
+                </div>
+            </div>
             </div>
         </div>
             </div>
@@ -141,7 +144,7 @@
         </div>
         </div>
         <br>
-        <div class="`">
+        <div>
             <div class="plus_btn">
 
                 <!--<button class="my_activity_btn"> <input type="submit" class="button_invite_send" value="  Preview " name='_preview'><a class="my_activity" href="{% url 'user_invitation' %}">PREVIEW</a></button>-->
