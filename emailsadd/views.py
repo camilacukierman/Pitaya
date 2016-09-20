@@ -42,7 +42,7 @@ def events(request):
     template = get_template('emailsadd/events.html')
 
     context = {
-        'booking': booking,
+        'booking': booking.order_by('-date'),
         'number_of_bookings': len(booking),
     }
     return HttpResponse(template.render(context, request))

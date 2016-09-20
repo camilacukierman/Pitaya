@@ -69,14 +69,15 @@
         <div class="col-md-12">
 
             <div class="answers-survey">
-                Amount of surveys answered for this event {{ surveys.count }}
-                1. What did you think about it? {{ a1_avg }}
-                2. How would you rate the facilitator? {{ a2_avg }}
-                3. How would you rate the facilitator? {{ a3_avg }}
-                4. Share your thoughts! Leave a public review and get famous!
+                <div class="intro_text"> Amount of surveys answered for this event {{ surveys.count }} </div>
+
+                <div class="box_grey"> 1. What did you think about it? {{ a1_avg }} </div>
+               <div class="box_grey">2. How would you rate the facilitator? {{ a2_avg }}            </div>
+               <div class="box_grey">3. How would you rate the facilitator? {{ a3_avg }}</div>
+               <div class="box_grey">4. Share your thoughts! Leave a public review and get famous!</div>
                 {% for s in surveys %}
                 <div>
-                    {{s.a4}}
+                    <div class="box_grey">{{s.a4}}</div>
                 </div>
                 {% endfor %}
             </div>
