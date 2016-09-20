@@ -111,7 +111,6 @@
     font-size: 18px;
     padding-left: 5px;
     width:auto;
-    margin-left:10%;
     display: inline-block;
 
 }
@@ -428,7 +427,7 @@ text-align: left;
 
 .header_booked_events{
     display: inline-block;
-    margin-top:20px;
+    margin-top:30px;
     margin-bottom:40px;
 }
 .new_invite_btn{
@@ -439,8 +438,8 @@ text-align: left;
     border: 1px solid #E5BF44;
     background-color: white;
     color: #E5BF44;
-    margin-left: 40%;
     padding:2px 20px;
+    float: right;
 }
 
 .my_new_event{
@@ -463,20 +462,22 @@ text-align: left;
     height:130px;
     display: inline-block;
     margin: 5px 0px 0px 5px;
-    position: absolute;
+    float:left;
 }
 
 .check_status_btn{
     width: auto;
     display: inline-block;
     text-align: center;
-    font-family: HelveticaNeueBold;
+    font-family: HelveticaNeue;
     background-color: #E5BF44;
     color: white;
-    margin-left: 70%;
-    padding: 2px 20px;
-    border: 0px;
-    margin-top: 40px;
+    padding: 4px 20px;
+    margin-top: 60px;
+    font-size: 14px;
+    border: 1px solid white;
+    float: right;
+    margin-right: 8%;
 }
 .my_new_status{
     color: white;
@@ -486,3 +487,9 @@ text-align: left;
     color: white;
 }
 
+.logout_link{
+    color: #E5BF44;
+}
+.logout_link:hover{
+    color: #E5BF44;
+}
