@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="pushig the links by heroku references">
+    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="editing the time zone for heroku">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pitaya/settings.py" afterPath="$PROJECT_DIR$/pitaya/settings.py" />
     </list>
@@ -60,9 +60,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="237">
               <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
-              <folding>
-                <element signature="e#331#340#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -899,13 +897,6 @@
       <option name="presentableId" value="Default" />
       <updated>1472285009134</updated>
     </task>
-    <task id="LOCAL-00063" summary="changing e-mail to donotreply@pitaya.com because of smtp google error">
-      <created>1474190112290</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1474190112293</updated>
-    </task>
     <task id="LOCAL-00064" summary="cron jobs test ---&gt; ready">
       <created>1474216034490</created>
       <option name="number" value="00064" />
@@ -1242,7 +1233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474388897860</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="editing the time zone for heroku">
+      <created>1474389019377</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1474389019377</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1329,7 +1327,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="changing invite survey ling on sending emails" />
     <MESSAGE value="adding logs" />
     <MESSAGE value="adding logs about events" />
     <MESSAGE value="trying to make chronejobs work by changing date" />
@@ -1354,7 +1351,8 @@
     <MESSAGE value="adding migrations" />
     <MESSAGE value="developed survey and fixed dates , updated models" />
     <MESSAGE value="pushig the links by heroku references" />
-    <option name="LAST_COMMIT_MESSAGE" value="pushig the links by heroku references" />
+    <MESSAGE value="editing the time zone for heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="editing the time zone for heroku" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.80753136" />
   </component>
@@ -1832,9 +1830,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
-          <folding>
-            <element signature="e#331#340#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
