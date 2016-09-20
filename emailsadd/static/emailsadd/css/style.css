@@ -499,7 +499,7 @@ text-align: left;
 .my_event_infos_name{
     font-family: HelveticaNeueBold;
     color: #838586;
-    font-size: 18px;
+    font-size: 14px;
 
 }
 .my_events_infos_date{
@@ -511,7 +511,7 @@ text-align: left;
     display: inline-block;
     font-family: HelveticaNeue;
     color: #838586;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .my_events_infos_description{

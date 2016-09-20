@@ -38,8 +38,8 @@
             <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="312">
-                    <caret line="513" column="20" selection-start-line="513" selection-start-column="20" selection-end-line="513" selection-end-column="20" />
+                  <state relative-caret-position="346">
+                    <caret line="515" column="0" selection-start-line="515" selection-start-column="0" selection-end-line="515" selection-end-column="0" />
                     <folding />
                   </state>
                 </provider>
@@ -56,18 +56,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailsadd/models.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -113,8 +101,8 @@
       <file leaf-file-name="invite_home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="20" selection-end-column="74" />
+            <state relative-caret-position="381">
+              <caret line="150" column="109" selection-start-line="150" selection-start-column="109" selection-end-line="150" selection-end-column="109" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#form#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#form#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -123,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="events.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="events.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/events.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            <state relative-caret-position="204">
+              <caret line="12" column="88" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -139,6 +127,18 @@
             <state relative-caret-position="560">
               <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -213,8 +213,8 @@
         <option value="$PROJECT_DIR$/emailsadd/views.py" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html" />
         <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/thankyou.css" />
-        <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/events.html" />
+        <option value="$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css" />
       </list>
     </option>
   </component>
@@ -225,10 +225,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="y" value="18" />
-    <option name="width" value="1065" />
-    <option name="height" value="958" />
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -700,13 +700,6 @@
       <option name="presentableId" value="Default" />
       <updated>1472285009134</updated>
     </task>
-    <task id="LOCAL-00053" summary="deleted bootsrap file">
-      <created>1474112447300</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1474112447300</updated>
-    </task>
     <task id="LOCAL-00054" summary="deleted bootsrap file">
       <created>1474114005879</created>
       <option name="number" value="00054" />
@@ -1043,7 +1036,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474361227315</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="adding css+html for my_events testing">
+      <created>1474361492679</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1474361492679</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1056,12 +1056,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="18" width="1065" height="958" extended-state="0" />
+    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13113007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40303358" sideWeight="0.50319827" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40242425" sideWeight="0.50319827" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27952328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32394367" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1152,10 +1152,10 @@
     <MESSAGE value="adding css+html for my_events" />
     <MESSAGE value="adding css+html for my_events testing for camila" />
     <MESSAGE value="adding css+html for my_events more" />
-    <MESSAGE value="adding css+html for my_events testing" />
     <MESSAGE value="adding hhtps so heroku can read bootstrap in events.html" />
     <MESSAGE value="leaving only ttime/date in event.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="leaving only ttime/date in event.html" />
+    <MESSAGE value="adding css+html for my_events testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding css+html for my_events testing" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1495,16 +1495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1563,10 +1553,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="515" column="0" selection-start-line="515" selection-start-column="0" selection-end-line="515" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="88" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="20" selection-end-column="74" />
+        <state relative-caret-position="381">
+          <caret line="150" column="109" selection-start-line="150" selection-start-column="109" selection-end-line="150" selection-end-column="109" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#form#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#form#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1574,19 +1580,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css">
+    <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="513" column="20" selection-start-line="513" selection-start-column="20" selection-end-line="513" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/events.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="645">
+          <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
