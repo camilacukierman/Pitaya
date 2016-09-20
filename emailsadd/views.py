@@ -133,6 +133,19 @@ def postform(request):
     return redirect(reverse('user_invitation'))
 
 
+def init_newsletter(new_activity, request, participants_name, participants_email):
+    myparticipants_name = request.POST.get(participants_name)
+    myparticipants_email = request.POST.get(participants_email)
+    if myparticipants_email:
+        new_mail = Newsletter.objects.create(booker_id=new_activity, participants_name=myparticipants_name,
+                                             participants_email=myparticipants_email)
+        new_mail.save()
+        return new_mail
+    else:
+        return None
+
+
+
 def save_image(new_activity, request):
     # saving the pic for the event
     if request.method == 'POST':
@@ -169,16 +182,7 @@ def send_email(new_mail, new_activity):
         print (message)
 
 
-def init_newsletter(new_activity, request, participants_name, participants_email):
-    myparticipants_name = request.POST.get(participants_name)
-    myparticipants_email = request.POST.get(participants_email)
-    if myparticipants_email:
-        new_mail = Newsletter.objects.create(booker_id=new_activity, participants_name=myparticipants_name,
-                                             participants_email=myparticipants_email)
-        new_mail.save()
-        return new_mail
-    else:
-        return None
+
 
 
 def approved(request, pid,approved):
