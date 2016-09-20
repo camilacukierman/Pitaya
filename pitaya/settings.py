@@ -9,8 +9,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
-import dj_database_url
 import os
+
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -134,8 +135,8 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'Asia/Jerusalem'
 USE_I18N = True
 USE_L10N = True
-USE_TZ = True
-
+# USE_TZ = True
+USE_TZ = False
 
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()

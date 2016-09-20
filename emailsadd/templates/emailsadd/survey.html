@@ -1,32 +1,46 @@
-<div> THIS IS THE SURVEY</div>
+{% load static %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/status.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}"/>
 
+
+
+
+        <div class="header_image">
+            <div class="header_image_text">
+                LET US KNOW YOUR THOUGHTS :)
+            </div>
+        </div>
+
+        <br>
+
+
+<div class="col-md-2"></div>
+<div class="col-md-8">
+
+    <br>
+              <div class="intro_text">Leave your feedback here</div><br><br>
 
 <form action="{% url 'postsurvey' %}" method="post">
     {% csrf_token %}
     <input  value="{{pid}}" name="pid"/>
-
-    <div>1. What did you think about it?</div>
+    <div class="question_answer_holder">
+        <br>
+        <label>1. What did you think about it?</label>
     <input type="number" min="1" max="5" class="input-text-one" name="a1" required><br>
-
-    <div>2. How would you rate the  facilitator?</div>
-     <input type="number" min="1" max="5" class="input-text-one" name="a2" required><br>
-
-     <div>3. This activity impacted you  </div>
-     <input type="number" min="1" max="5" class="input-text-one" name="a2" required><br>
-
-      <div>4. How likely is it that you would recommend this team activity to a friend or colleague
-(Not at all likely) 0-10 (Extremely likely)  </div>
-     <input type="number" min="1" max="5" class="input-text-one" name="a2" required><br>
-
-      <div>5. Share your thoughts! Leave a public review and get famous!</div>
-     <input type="text" class="input-text-one" name="event_name" placeholder=" Sugestions" required ><br>
-
-
-    <input type="submit" class="button_invite_send" value="SEND FEEDBACK"><br>
+                <label>2. How would you rate the  facilitator?</label>
+    <input type="number" min="1" max="5" class="input-text-one" name="a2" required><br>
+                <label> 3. How would you rate the  facilitator?</label>
+    <input type="number" min="1" max="5" class="input-text-one" name="a3" required><br>
+              <div>4. Share your thoughts! Leave a public review and get famous!</div>
+     <input type="text" class="input-text-one" name="a4" required ><br>
+    <br> <input type="submit" class="button_invite_send" value="SEND FEEDBACK"><br>
+        </div>
 </form>
 
-
-
+</div>
+<div class="col-md-2"></div>
 
 
 
