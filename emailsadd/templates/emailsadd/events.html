@@ -51,13 +51,14 @@
 <div class="col-md-1"></div>
     <div class="my_event_unit col-lg-10">
         <div class="image_my_event_unit col-lg-3"></div>
-    <div class="my_event_infos col-lg-5">
+    <div class="my_event_infos col-lg-6">
         <div class="my_event_infos_name">{{e.event_name}}</div>
         <div class="my_events_infos_date"> {{e.date}}</div>
+        <div class="my_events_info_fromtime_totime"> from {{e.from_time}} to {{e.to_time}}</div>
         <div class="my_events_infos_description"> {{e.event_description}}</div>
     </div>
          <button class="check_status_btn col-lg-4"><a class="my_new_status" href="../status/{{e.id}}">Check Status</a></button>
-        </div>
+    </div>
 {% endfor %}
     </div>
 

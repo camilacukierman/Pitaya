@@ -461,13 +461,13 @@ text-align: left;
     width: 200px;
     height:130px;
     display: inline-block;
-    margin: 5px 0px 0px 5px;
+    margin: 8px 0px 0px 5px;
     float:left;
 }
 
 .check_status_btn{
     width: auto;
-    display: inline-block;
+    display: block;
     text-align: center;
     font-family: HelveticaNeue;
     background-color: #E5BF44;
@@ -477,7 +477,9 @@ text-align: left;
     font-size: 14px;
     border: 1px solid white;
     float: right;
-    margin-right: 8%;
+    margin-left: 70%;
+    position: absolute;
+
 }
 .my_new_status{
     color: white;
@@ -492,4 +494,34 @@ text-align: left;
 }
 .logout_link:hover{
     color: #E5BF44;
+}
+
+.my_event_infos_name{
+    font-family: HelveticaNeueBold;
+    color: #838586;
+    font-size: 20px;
+
+}
+.my_events_infos_date{
+    font-family: HelveticaNeueBold;
+    color: #838586;
+    font-size: 16px;
+}
+.my_events_info_fromtime_totime{
+    display: inline-block;
+    font-family: HelveticaNeueBold;
+    color: #838586;
+    font-size: 14px;
+}
+
+.my_events_infos_description{
+    font-family: HelveticaNeue;
+    color: #838586;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.my_event_infos{
+    margin-top: 10px;
+    margin-left:5px;
+    padding: 10px;
 }
