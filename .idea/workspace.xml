@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html" />
     </list>
     <ignored path="Pitaya.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,8 +98,8 @@
       <file leaf-file-name="user_invitation.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="51" column="130" selection-start-line="51" selection-start-column="130" selection-end-line="51" selection-end-column="130" />
+            <state relative-caret-position="595">
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -746,13 +745,6 @@
       <option name="presentableId" value="Default" />
       <updated>1472285009134</updated>
     </task>
-    <task id="LOCAL-00062" summary="adding survey part - fixing db">
-      <created>1474184278617</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1474184278618</updated>
-    </task>
     <task id="LOCAL-00063" summary="changing e-mail to donotreply@pitaya.com because of smtp google error">
       <created>1474190112290</created>
       <option name="number" value="00063" />
@@ -1089,7 +1081,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474386961199</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="fixing the image - user_invitation">
+      <created>1474389857249</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1474389857249</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1176,7 +1175,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="fixing frontend look on invite_home" />
     <MESSAGE value="TESTING FOR PULL" />
     <MESSAGE value="heroku push" />
     <MESSAGE value="changing invite survey ling on sending emails" />
@@ -1201,7 +1199,8 @@
     <MESSAGE value="invite_user css" />
     <MESSAGE value="css status / my activities" />
     <MESSAGE value="thanku!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="thanku!!!" />
+    <MESSAGE value="fixing the image - user_invitation" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing the image - user_invitation" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.80753136" />
   </component>
@@ -1470,8 +1469,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="51" column="130" selection-start-line="51" selection-start-column="130" selection-end-line="51" selection-end-column="130" />
+        <state relative-caret-position="595">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
