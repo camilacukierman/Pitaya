@@ -8,7 +8,8 @@
     {% load static %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!--<link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/bootstrap.min.css' %}"/>-->
     <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
     <link rel="stylesheet" type="text/css" href="{% static 'emailsadd/css/style.css' %}"/>
@@ -26,7 +27,7 @@
 
 <div class="col-md-2"></div>
 <div class="col-md-8">
-   <!--{{ user}}-->
+    <!--{{ user}}-->
     {% if user.is_anonymous %}
     <a href="{% url 'django.contrib.auth.views.login' %}">login</a>
     {% else %}
@@ -38,127 +39,124 @@
     {% if user.is_authenticated %}
 </div>
 <div class="col-md-2"></div>
-    <div class="header">
-        <div class="header_infos">
-            <div class="spaceforlogo"></div>
-            <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
-            <div class="header_menu">
-                <button class="my_activity_btn"><a class="my_activity" href="../emailsadd/my_events">MY ACTIVITIES</a></button>
+<div class="header">
+    <div class="header_infos">
+        <div class="spaceforlogo"></div>
+        <img src="../../static/emailsadd/images/yellow%20logo.png" class="header_logo">
+        <div class="header_menu">
+            <button class="my_activity_btn"><a class="my_activity" href="../emailsadd/my_events">MY ACTIVITIES</a>
+            </button>
 
-                <div class="header_user"> Hello, {{ user }}</div>
-                 <a href="{% url 'django.contrib.auth.views.logout' %}"  class="logout_link">logout</a>
+            <div class="header_user"> Hello, {{ user }}</div>
+            <a href="{% url 'django.contrib.auth.views.logout' %}" class="logout_link">logout</a>
         </div>
-</div>
-        <div class="header_image">
-            <div class="header_image_text">
-                EASILY SEND INVITATIONS, MANAGE ATTENDANCE AND GET FEEDBACK
-            </div>
+    </div>
+    <div class="header_image">
+        <div class="header_image_text">
+            EASILY SEND INVITATIONS, MANAGE ATTENDANCE AND GET FEEDBACK
         </div>
+    </div>
 
-<div class="col-md-2"></div>
-<div class="col-md-8">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
 
-    <br>
-    <div class="col-md-1"></div>
-
-    <form method="post" action="{% url 'postform' %}" name="form" class="display_form col-md-10" enctype="multipart/form-data">
-        {% csrf_token %}
         <br>
-        <div class="intro_text">Create a new invitation</div>
-        <br>
-        <input type="text" class="input-text-one" name="event_name" placeholder=" Add booked activity's name"
-               required ><br>
-        <input type="text" class="input-text-one" name="event_description"
-               placeholder=" Add booked activity's description" required ><br>
+        <div class="col-md-1"></div>
 
-        <div class="form_invite col-md-12" style="padding:0px">
-            <div class="input_location col-lg-7">
-                                <input type="text" class="input_loc" name="location" placeholder=" Location"><br>
-                <input type="date" class="input-date" name="date" id="datepicker" placeholder="Date" required>
-                                <div class="time-holder">
-                                    <div class="to_time_div">
-                        <div class="adding_time">from</div>
-                <input type="time" name="from_time" class="time_input" placeholder="Time" required></div>
-                   <div class="to_time_div"> <div class="adding_time">to</div>
-                <input type="time" name="to_time" class="time_input" placeholder="Time"><br></div></div>
+        <form method="post" action="{% url 'postform' %}" name="form" class="display_form col-md-10"
+              enctype="multipart/form-data">
+            {% csrf_token %}
+            <br>
+            <div class="intro_text">Create a new invitation</div>
+            <br>
+            <input type="text" class="input-text-one" name="event_name" placeholder=" Add booked activity's name"
+                   required><br>
+            <input type="text" class="input-text-one" name="event_description"
+                   placeholder=" Add booked activity's description" required><br>
 
-                <input type="text" class="input_descr" name="manager_message"
-                       placeholder=" Write more about the activity or leave a personal note for your team."><br>
-                <input type="text" class="input_loc" name="manager_name" placeholder=" Add manager's name (Signature for the invite)" required ><br>
-            </div>
+            <div class="form_invite col-md-12" style="padding:0px">
+                <div class="input_location col-lg-7">
+                    <input type="text" class="input_loc" name="location" placeholder=" Location"><br>
+                    <input type="date" class="input-date" name="date" id="datepicker" placeholder="Date" required>
+                    <div class="time-holder">
+                        <div class="to_time_div">
+                            <div class="adding_time">from</div>
+                            <input type="time" name="from_time" class="time_input" placeholder="Time" required></div>
+                        <div class="to_time_div">
+                            <div class="adding_time">to</div>
+                            <input type="time" name="to_time" class="time_input" placeholder="Time"><br></div>
+                    </div>
 
-            <div class="upload_holder col-lg-5">
-                <div id="upload_image">
-                     <img src="" name="image_preview" id="image_preview" class="view_image" />
-                    <div id="input_img_btn">
-                     <input type="file" id="files" name="image" class="btn_upload"/></div>
-                    <br/>
+                    <input type="text" class="input_descr" name="manager_message"
+                           placeholder=" Write more about the activity or leave a personal note for your team."><br>
+                    <input type="text" class="input_loc" name="manager_name"
+                           placeholder=" Add manager's name (Signature for the invite)" required><br>
+                </div>
+
+                <div class="upload_holder col-lg-5">
+                    <div id="upload_image">
+                        <img src="" name="image_preview" id="image_preview" class="view_image"/>
+                        <div id="input_img_btn">
+                            <input type="file" id="files" name="image" class="btn_upload"/></div>
+                        <br/>
+                    </div>
                 </div>
             </div>
-</div>
 
 
-        <div class="tabs_addparticipants col-lg-12">
-        <ul class="tab">
-            <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">SEND TO ALL PARTICIPANTS</a>
-            </li>
-            <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">SEND ONLY TO MY E-MAIL</a></li>
-        </ul>
-        <div id="London" class="tabcontent">
-            <div class="num_of_participants col-lg-12">
-                <label class="adding_participants_txt"> Number of participants:</label>
-            <input type="number" min="1" max="5000" id="participants_number" class="input_part"
-                   name="participants_number"
-                   placeholder="Participants" required value="1"></div>
-            <div class="email_holder col-lg-12" style="padding: 0px">
-                <div class="email_holder_nojs col-lg-12" style="padding: 0px">
-                <div id="email_participant_input input_location">
-                    <input type="text" class="input_name col-lg-4" name="participants_name0" placeholder=" Name" >
-                    <input type="text" class="input_mail col-lg-6" name="participants_email0" placeholder=" E-mail">
+            <div class="tabs_addparticipants col-lg-12">
+                <ul class="tab">
+                    <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">SEND TO ALL PARTICIPANTS</a>
+                    </li>
+                    <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">SEND ONLY TO MY E-MAIL</a></li>
+                </ul>
+                <div id="London" class="tabcontent">
+                    <div class="num_of_participants col-lg-12">
+                        <label class="adding_participants_txt"> Number of participants:</label>
+                        <input type="number" min="1" max="5000" id="participants_number" class="input_part"
+                               name="participants_number"
+                               placeholder="Participants" required value="1"></div>
+                    <div class="email_holder col-lg-12" style="padding: 0px">
+                        <div class="email_holder_nojs col-lg-12" style="padding: 0px">
+                            <div id="email_participant_input input_location">
+                                <input type="text" class="input_name col-lg-4" name="participants_name0"
+                                       placeholder=" Name">
+                                <input type="text" class="input_mail col-lg-6" name="participants_email0"
+                                       placeholder=" E-mail">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
+            </div>
+
+            <br>
+            <div class="final_btns">
+                <div class="checkbuttons col-lg-12">
+                    <input type="checkbox" name="send_reminder" value="True" checked> Send reminder to participants one
+                    day
+                    before the activity<br>
+                    <input type="checkbox" name="send_survey" value="True" checked>Send request to answer the feedback
+                    survey one day after the event<br>
                 </div>
             </div>
-        </div>
-
-        <div id="Paris" class="tabcontentp">
+            <br>
             <div>
-                 <div class="email_holder col-lg-12" style="padding: 0px">
-                <div class="email_holder_nojs col-lg-12" style="padding: 0px">
-                <div id="email_participant_input input_location">
-                    <input type="text" class="input_name col-lg-4" name="participants_name0" placeholder=" Manager Name" >
-                    <input type="text" class="input_mail col-lg-6" name="participants_email0" placeholder="Manager E-mail">
+                <div class="plus_btn">
+
+                    <!--<button class="my_activity_btn"> <input type="submit" class="button_invite_send" value="  Preview " name='_preview'><a class="my_activity" href="{% url 'user_invitation' %}">PREVIEW</a></button>-->
+                    <input type="submit" class="button_invite_send" value=" SEND INVITATIONS " name='_send'><br>
+                    <br>
                 </div>
-                </div>
             </div>
-            </div>
-        </div>
-            </div>
+    </div>
+</div>
 
-        <br>
-        <div class="final_btns">
-        <div class="checkbuttons col-lg-12">
-        <input type="checkbox" name="send_reminder" value="True" checked> Send reminder to participants one day
-        before the activity<br>
-        <input type="checkbox" name="send_survey" value="True" checked>Send request to answer the feedback
-        survey one day after the event<br>
-        </div>
-        </div>
-        <br>
-        <div>
-            <div class="plus_btn">
-
-                <!--<button class="my_activity_btn"> <input type="submit" class="button_invite_send" value="  Preview " name='_preview'><a class="my_activity" href="{% url 'user_invitation' %}">PREVIEW</a></button>-->
-                <input type="submit" class="button_invite_send" value=" SEND INVITATIONS "  name='_send'><br>
-                <br>
-            </div>
-        </div>
-            </div>
-        </div>
-
-    </form>
+</form>
 
 
-    <div class="col-md-1"></div>
+<div class="col-md-1"></div>
 
 
 </div>

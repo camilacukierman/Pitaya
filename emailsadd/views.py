@@ -1,4 +1,6 @@
 from datetime import datetime
+from email.mime.image import MIMEImage
+
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
@@ -8,7 +10,6 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import redirect, render
 from django.template import Context
 from django.template.loader import get_template
-from email.mime.image import MIMEImage
 
 from .forms import ImageUploadForm
 from .models import Booker,Newsletter,Survey
@@ -16,7 +17,6 @@ from .models import Booker,Newsletter,Survey
 
 @login_required
 def invite_home(request):
-    # call_command('send_mails')
     booking = None
     if request.user:
         booking = Booker.objects.filter(user_id=str(request.user.id))
@@ -63,9 +63,13 @@ def event_status(request, eid):
 @login_required
 def user_invitation(request):
     booking = Booker.objects.get(pk=request.session.get('new_activity_id'))
+    print(booking.event_name)
+    newsletter = Newsletter.objects.get(pk=request.session.get('new_mail_id'))
     template = get_template('emailsadd/user_invitation.html')
     context = {
         'booking': booking,
+        'invitee': newsletter,
+        'not_email': True
     }
     return HttpResponse(template.render(context, request))
 
@@ -120,11 +124,12 @@ def postform(request):
 
     for i in range(0, numberOfEmails):
         new_mail = init_newsletter(new_activity, request, "participants_name" + str(i), "participants_email" + str(i))
-
+        request.session['new_mail_id'] = new_mail.id
         if new_mail:
             send_email(new_mail, new_activity)
 
     request.session['new_activity_id'] = new_activity.id
+
     return redirect(reverse('user_invitation'))
 
 
