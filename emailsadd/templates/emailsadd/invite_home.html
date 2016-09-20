@@ -26,11 +26,11 @@
 
 <div class="col-md-2"></div>
 <div class="col-md-8">
-   {{ user}}
+   <!--{{ user}}-->
     {% if user.is_anonymous %}
     <a href="{% url 'django.contrib.auth.views.login' %}">login</a>
     {% else %}
-    <a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>
+    <!--<a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>-->
     {% endif %}
     {% block content %}
     {% endblock %}
@@ -46,6 +46,7 @@
                 <button class="my_activity_btn"><a class="my_activity" href="../emailsadd/my_events">MY ACTIVITIES</a></button>
 
                 <div class="header_user"> Hello, {{ user }}</div>
+                 <a href="{% url 'django.contrib.auth.views.logout' %}"  class="logout_link">logout</a>
         </div>
 </div>
         <div class="header_image">
