@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="developed survey and fixed dates">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/emailsadd/migrations/0005_auto_20160920_1721.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+    <list default="true" id="353c691c-ac53-418c-969c-0ad6412d71b8" name="Default" comment="developed survey and fixed dates , updated models">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/management/commands/send_mails.py" afterPath="$PROJECT_DIR$/emailsadd/management/commands/send_mails.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/models.py" afterPath="$PROJECT_DIR$/emailsadd/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css" afterPath="$PROJECT_DIR$/emailsadd/static/emailsadd/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/invitesurvey.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/invitesurvey.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/survey.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/survey.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/urls.py" afterPath="$PROJECT_DIR$/emailsadd/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/views.py" afterPath="$PROJECT_DIR$/emailsadd/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pitaya/settings.py" afterPath="$PROJECT_DIR$/pitaya/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_email_invitation.html" afterPath="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_email_invitation.html" />
     </list>
     <ignored path="Pitaya.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/pitaya/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
-              <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+              <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,16 +71,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="340" column="8" selection-start-line="340" selection-start-column="8" selection-end-line="340" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emailsadd/management/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -119,9 +101,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
               <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,16 +111,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
               <caret line="723" column="44" selection-start-line="723" selection-start-column="9" selection-end-line="723" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invite_home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invite_home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="79" column="84" selection-start-line="79" selection-start-column="74" selection-end-line="79" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -164,13 +134,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            <state relative-caret-position="257">
+              <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="invitesurvey.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invitesurvey.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_email_invitation.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_email_invitation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,7 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/index.html" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/emailsadd/statics/emailsadd/js/js.js" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/invitation.html" />
@@ -244,11 +235,12 @@
         <option value="$PROJECT_DIR$/emailsadd/urls.py" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/survey.html" />
         <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/event_status.html" />
-        <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/invitesurvey.html" />
         <option value="$PROJECT_DIR$/pitaya/settings.py" />
         <option value="$PROJECT_DIR$/emailsadd/management/commands/send_mails.py" />
         <option value="$PROJECT_DIR$/emailsadd/models.py" />
         <option value="$PROJECT_DIR$/emailsadd/views.py" />
+        <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/invitesurvey.html" />
+        <option value="$PROJECT_DIR$/emailsadd/templates/emailsadd/user_email_invitation.html" />
       </list>
     </option>
   </component>
@@ -906,13 +898,6 @@
       <option name="presentableId" value="Default" />
       <updated>1472285009134</updated>
     </task>
-    <task id="LOCAL-00061" summary="structure for command managment cron">
-      <created>1474117818832</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1474117818832</updated>
-    </task>
     <task id="LOCAL-00062" summary="adding survey part - fixing db">
       <created>1474184278617</created>
       <option name="number" value="00062" />
@@ -1249,7 +1234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474370996709</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="developed survey and fixed dates , updated models">
+      <created>1474388701872</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1474388701872</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1263,18 +1255,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24413647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25159913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40242425" sideWeight="0.50319827" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2792208" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.57529795" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32394367" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45287108" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.496208" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4202658" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42099568" sideWeight="0.4968017" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42036837" sideWeight="0.4968017" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41017315" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1336,7 +1328,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="TESTING FOR PULL" />
     <MESSAGE value="heroku push" />
     <MESSAGE value="changing invite survey ling on sending emails" />
     <MESSAGE value="adding logs" />
@@ -1361,7 +1352,8 @@
     <MESSAGE value="push invite home to heroku" />
     <MESSAGE value="testing and works!" />
     <MESSAGE value="adding migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding migrations" />
+    <MESSAGE value="developed survey and fixed dates , updated models" />
+    <option name="LAST_COMMIT_MESSAGE" value="developed survey and fixed dates , updated models" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.80753136" />
   </component>
@@ -1370,27 +1362,27 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>196</line>
+          <line>198</line>
           <option name="timeStamp" value="297" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>197</line>
+          <line>199</line>
           <option name="timeStamp" value="303" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>264</line>
+          <line>266</line>
           <option name="timeStamp" value="304" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>50</line>
+          <line>52</line>
           <option name="timeStamp" value="306" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>205</line>
+          <line>207</line>
           <option name="timeStamp" value="308" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -1400,12 +1392,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>204</line>
+          <line>206</line>
           <option name="timeStamp" value="312" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>18</line>
+          <line>20</line>
           <option name="timeStamp" value="313" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -1420,12 +1412,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>125</line>
+          <line>127</line>
           <option name="timeStamp" value="319" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emailsadd/views.py</url>
-          <line>263</line>
+          <line>265</line>
           <option name="timeStamp" value="321" />
         </line-breakpoint>
       </breakpoints>
@@ -1483,6 +1475,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="1038" column="53" selection-start-line="1038" selection-start-column="53" selection-end-line="1038" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1490,6 +1483,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1709,26 +1703,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_email_invitation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_invitation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invitesurvey.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1784,7 +1762,7 @@
     <entry file="file://$PROJECT_DIR$/pitaya/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
-          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1801,9 +1779,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1833,10 +1809,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emailsadd/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="257">
+          <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/invitesurvey.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailsadd/templates/emailsadd/user_email_invitation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
